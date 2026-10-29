@@ -5,6 +5,7 @@
 //   { id, t: 'tier',  c: cardId, v: 'S'|'A'|'B'|'C', ts }
 //   { id, t: 'match', a: cardId, b: cardId, w: 'a'|'b'|'t',
 //     s: 'swiss'|'rescue'|'finals'|'boundary'|'roundrobin', r?: round, ts }
+//   { id, t: 'mark', m: 'tiers-reviewed', ts }   (tier review confirmed)
 
 export const CONFIG = {
   swissRounds: 5,
@@ -249,10 +250,15 @@ export function derive(save, cards, index) {
   // ---- 1. tier draft --------------------------------------------------------
   const draftOrder = seededOrder(n, seed);
   const untiered = draftOrder.filter((i) => !tierOf[i]);
-  left.tier = untiered.length;
+  left.tier = untiered.length ? untiered.length + 1 : 0;
   if (untiered.length) {
     question = { kind: 'tier', card: cards[untiered[0]].id, stage: 'tier' };
     stage = 'tier';
+  } else if (!matches.length && !events.some((e) => e.t === 'mark' && e.m === 'tiers-reviewed')) {
+    // Pause after the draft so tiers can be checked before the swiss rounds.
+    question = { kind: 'review', stage: 'tier' };
+    stage = 'tier';
+    left.tier = 1;
   }
 
   // ---- 2. swiss rounds + rescue round --------------------------------------

@@ -515,6 +515,22 @@ main { flex: 1; min-height: 0; display: flex; flex-direction: column; }
 .menu-list .danger { color: #c0466b; }
 .menu-note { font-size: 13px; color: var(--ink-soft); text-align: center; margin: 6px 0 0; }
 
+/* tier review */
+.tier-section { margin-bottom: 8px; }
+.tier-head { display: flex; align-items: center; gap: 8px; }
+.tier-section { scroll-margin-top: 4px; }
+.tier-section .small-grid { grid-template-columns: repeat(auto-fill, minmax(72px, 1fr)); gap: 8px; padding: 4px 2px; }
+.tier-section .cap { font-size: 11px; }
+.tier-count { display: inline-flex; align-items: center; gap: 3px; margin-right: 6px; white-space: nowrap; }
+.board-meta .tier-count { cursor: pointer; }
+button.result-card { padding: 0; background: none; text-align: center; font: inherit; color: inherit; }
+.sheet-foot { flex: none; padding: 10px 14px calc(12px + var(--sab)); border-top: 1px solid var(--line); }
+.sheet-foot .btn { width: 100%; }
+.retier { text-align: center; }
+.retier img { width: min(46vw, 200px); margin: 4px auto 10px; border-radius: 8px; box-shadow: var(--glow); cursor: zoom-in; }
+.retier p { margin: 0 0 4px; }
+.tier-btn.current { opacity: 0.45; }
+
 /* install sheet */
 .install p { line-height: 1.45; margin: 4px 0 12px; }
 .install ol { padding-left: 22px; margin: 0 0 14px; line-height: 1.5; display: grid; gap: 6px; }

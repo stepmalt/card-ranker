@@ -116,7 +116,7 @@ function preload(url) {
 function preloadQuestion(q) {
   if (!q) return;
   if (q.kind === 'tier') preload(card(q.card).image);
-  else { preload(card(q.a).image); preload(card(q.b).image); }
+  else if (q.kind === 'match') { preload(card(q.a).image); preload(card(q.b).image); }
 }
 
 // Work out what the next question would be for every possible answer and warm
@@ -128,7 +128,8 @@ function preloadAhead() {
     d.tierQueue.slice(1, 5).forEach((id) => preload(card(id).image));
     if (d.tierQueue.length > 2) return;
   }
-  const outcomes = q.kind === 'tier' ? [{ t: 'tier', c: q.card, v: 'B' }]
+  const outcomes = q.kind === 'review' ? [{ t: 'mark', m: 'tiers-reviewed' }]
+    : q.kind === 'tier' ? [{ t: 'tier', c: q.card, v: 'B' }]
     : ['a', 'b', 't'].map((w) => ({ t: 'match', a: q.a, b: q.b, w, s: q.stage, r: q.round }));
   for (const ev of outcomes) {
     const next = derive({ ...save, events: [...save.events, ev] }, cards, index).question;
@@ -161,6 +162,8 @@ function commit(ev) {
 function transition(prevQ, nextQ) {
   if (!prevQ) return null;
   if (!nextQ) return 'done';
+  // The review screen already explains what comes next.
+  if (prevQ.kind === 'review') return null;
   if (prevQ.stage === nextQ.stage && prevQ.round === nextQ.round) return null;
   return { from: { stage: prevQ.stage, round: prevQ.round }, to: { stage: nextQ.stage, round: nextQ.round } };
 }
@@ -173,7 +176,7 @@ function undo() {
   ui.interstitial = null;
   render();
   refreshLayers();
-  const what = ev.t === 'tier' ? `${card(ev.c)?.name} → ${ev.v}` : `${card(ev.a)?.name} vs ${card(ev.b)?.name}`;
+  const what = ev.t === 'tier' ? `${card(ev.c)?.name} → ${ev.v}` : ev.t === 'mark' ? 'start of the swiss rounds' : `${card(ev.a)?.name} vs ${card(ev.b)?.name}`;
   toast(`↶ Undid ${esc(what)}`, { ms: 1800 });
 }
 
@@ -415,6 +418,7 @@ function render() {
   if (ui.interstitial) main.innerHTML = interstitialView(ui.interstitial);
   else if (!q) main.innerHTML = doneView();
   else if (q.kind === 'tier') main.innerHTML = tierView(q);
+  else if (q.kind === 'review') main.innerHTML = reviewGateView();
   else main.innerHTML = matchView(q);
   sizeArena();
   preloadQuestion(q);
@@ -468,6 +472,21 @@ function matchNote(q) {
   if (q.stage === 'roundrobin') return 'Top 10 round robin';
   if (q.stage === 'swiss' && q.round >= CONFIG.contenderFrom) return 'Contender round · both of these could make the finals';
   return 'Tap your favourite · hold to zoom';
+}
+
+function tierCounts() {
+  return TIERS.map((t) => `<span class="tier-count" data-action="jump-tier" data-tier="${t}">${tierPill(t)} ${d.order.filter((id) => d.tier(id) === t).length}</span>`).join(' ');
+}
+
+function reviewGateView() {
+  return `<div class="center"><div class="panel">
+    <h2>🌸 Tier draft complete!</h2>
+    <p>${tierCounts()}</p>
+    <p>Before the swiss rounds start, look over your tiers and move anything that doesn't feel right. Changing your mind here is free.</p>
+    <button class="btn primary" data-action="tiers">🔍 Review my tiers</button>
+    <button class="btn" data-action="tiers-done">Looks good — start Swiss rounds ✨</button>
+    <button class="btn" data-action="undo">↶ Undo last pick</button>
+  </div></div>`;
 }
 
 function matchView(q) {
@@ -665,12 +684,38 @@ function fillLayer(layer, first) {
             <button class="btn" data-action="backup">💾 Back up (download .json)</button>
             <button class="btn" data-action="load">📂 Load backup</button>
             <button class="btn" data-action="results">🌈 Results &amp; CSV export</button>
+            <button class="btn" data-action="tiers">🗂️ Review tiers</button>
             ${isStandalone ? '' : '<button class="btn" data-action="install">📱 Add to Home Screen</button>'}
             <button class="btn" data-action="rename">✏️ Rename save</button>
             <button class="btn danger" data-action="reset">🗑️ Start over</button>
           </div>
           <p class="menu-note">${save.events.length} picks · ${backupStatus()}</p>
           <p class="menu-note">Keys: 1–4 tiers · ← → (or ↑ ↓) pick · Space tie · Z undo · L leaderboard · hold a card to zoom</p>
+        </div>
+      </div>`;
+  } else if (type === 'tiers') {
+    const gate = d.question && d.question.kind === 'review';
+    el.innerHTML = `<div class="backdrop" data-action="close"></div>
+      <div class="sheet full" role="dialog" aria-label="Review tiers">
+        <div class="sheet-grip"></div>
+        <div class="sheet-head"><h2>🗂️ Your tiers</h2><button class="close-btn" data-action="close" aria-label="Close">✕</button></div>
+        <div class="board-meta">Tap any card to move it. Jump to: ${tierCounts()}</div>
+        <div class="sheet-body">${tierReviewBody()}</div>
+        ${gate ? '<div class="sheet-foot"><button class="btn primary" data-action="tiers-done">Looks good — start Swiss rounds ✨</button></div>' : ''}
+      </div>`;
+  } else if (type === 'retier') {
+    const c = card(data.id);
+    const cur = d.tier(data.id);
+    el.innerHTML = `<div class="backdrop" data-action="close"></div>
+      <div class="sheet" role="dialog" aria-label="Move ${esc(c.name)}">
+        <div class="sheet-grip"></div>
+        <div class="sheet-head"><h2>${esc(c.name)}</h2><button class="close-btn" data-action="close" aria-label="Close">✕</button></div>
+        <div class="sheet-body retier">
+          <img src="${c.image}" alt="${esc(c.name)}" data-action="zoom" data-src="${c.image}">
+          <p>Currently ${cur ? `${tierPill(cur)} <b>${TIER_INFO[cur].label}</b>` : 'not tiered'} · move to:</p>
+          <div class="tier-buttons">
+            ${TIERS.map((t) => `<button class="tier-btn tier-${t} ${t === cur ? 'current' : ''}" data-action="retier-set" data-tier="${t}" data-card="${data.id}" ${t === cur ? 'disabled' : ''}><b>${t}</b><span>${t === cur ? 'current' : TIER_INFO[t].label}</span></button>`).join('')}
+          </div>
         </div>
       </div>`;
   } else if (type === 'install') {
@@ -739,6 +784,34 @@ function boardRows(query) {
     html += rowHtml(id, rank);
   });
   return html || '<li class="empty">No Pokémon match that search.</li>';
+}
+
+function tierReviewBody() {
+  return TIERS.map((t) => {
+    const ids = d.order.filter((id) => d.tier(id) === t).sort((x, y) => card(x).name.localeCompare(card(y).name));
+    return `<div class="tier-section" id="tier-sec-${t}"><div class="row-section tier-head tier-${t}">${tierPill(t)} ${TIER_INFO[t].label} · ${ids.length}</div>
+      <div class="small-grid">${ids.map((id) => `<button class="result-card" data-action="retier" data-card="${id}"><img src="${card(id).thumb}" alt="" loading="lazy"><div class="cap">${esc(card(id).name)}</div></button>`).join('') || '<p class="empty">No cards here.</p>'}</div></div>`;
+  }).join('');
+}
+
+// Moving a card from the tier review applies straight away (the dialog itself is
+// the deliberate step) and offers an undo.
+function moveTier(id, tier) {
+  let ev = null;
+  for (const e of save.events) if (e.t === 'tier' && e.c === id) ev = e;
+  if (!ev || ev.v === tier) return;
+  const prev = ev.v;
+  const apply = (v) => {
+    ev.v = v;
+    ev.edited = Date.now();
+    persist();
+    recompute();
+    if (!(d.question && d.question.kind === 'review')) ui.interstitial = null;
+    render();
+    refreshLayers();
+  };
+  apply(tier);
+  toast(`Moved ${esc(card(id).name)}: ${prev} → <b>${tier}</b>`, { ms: 5000, action: { label: 'Undo', fn: () => apply(prev) } });
 }
 
 function noticeHtml(n) {
@@ -913,6 +986,20 @@ document.addEventListener('click', (e) => {
       break;
     }
     case 'backup': backup(); break;
+    case 'tiers': openLayer('tiers'); break;
+    case 'jump-tier': {
+      const sec = t.closest('.layer') && $(`#tier-sec-${t.dataset.tier}`, t.closest('.layer'));
+      if (sec) sec.scrollIntoView({ behavior: reduceMotion.matches ? 'auto' : 'smooth', block: 'start' });
+      break;
+    }
+    case 'retier': openLayer('retier', { id: t.dataset.card }); break;
+    case 'retier-set': closeTopLayer(); moveTier(t.dataset.card, t.dataset.tier); break;
+    case 'tiers-done':
+      if (d.question && d.question.kind === 'review') {
+        closeAllLayers();
+        commit({ t: 'mark', m: 'tiers-reviewed' });
+      }
+      break;
     case 'install': closeAllLayers(); openLayer('install'); break;
     case 'tip-dismiss':
       try { localStorage.setItem(TIP_KEY, '1'); } catch { /* private mode */ }

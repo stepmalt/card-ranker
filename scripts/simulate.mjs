@@ -56,7 +56,9 @@ for (let run = 0; run < runs; run++) {
     const q = d.question;
     if (!q) break;
     totals.stages[q.stage] = (totals.stages[q.stage] || 0) + 1;
-    if (q.kind === 'tier') {
+    if (q.kind === 'review') {
+      save.events.push({ id: save.nextId++, t: 'mark', m: 'tiers-reviewed' });
+    } else if (q.kind === 'tier') {
       const v = truth.get(q.card) + gauss() * TIER_NOISE;
       save.events.push({ id: save.nextId++, t: 'tier', c: q.card, v: v > 1.3 ? 'S' : v > 0.3 ? 'A' : v > -0.7 ? 'B' : 'C' });
     } else {
