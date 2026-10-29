@@ -371,6 +371,7 @@ export function derive(save, cards, index) {
     return null;
   }
 
+  let seqRoundLeft = 0;
   let swissDone = false;
   if (!question) {
     let reached = false;
@@ -386,6 +387,7 @@ export function derive(save, cards, index) {
         stage = spec.stage;
         round = spec.round;
         left[spec.stage] += nx.left;
+        seqRoundLeft = nx.left;
         question = mk(nx.pair[0], nx.pair[1], spec.stage, spec.round);
       }
     }
@@ -638,6 +640,18 @@ export function derive(save, cards, index) {
     if (dec.every((w) => w === dec[0])) agreed++;
   }
 
+  // How far through the current round/stage: picks made in it vs picks it still needs.
+  let roundLeft = 0;
+  let roundDone = 0;
+  if (stage === 'tier') {
+    roundLeft = untiered.length;
+    roundDone = n - untiered.length;
+  } else if (stage && stage !== 'done') {
+    roundLeft = stage === 'swiss' || stage === 'rescue' ? seqRoundLeft
+      : stage === 'finals' ? finals.left : left[stage];
+    roundDone = matches.filter((m) => m.e.s === stage && (stage !== 'swiss' || m.e.r === round)).length;
+  }
+
   const picksLeft = Object.values(left).reduce((a, b) => a + b, 0);
   const tierQueue = untiered.slice(0, 6).map((i) => cards[i].id);
 
@@ -662,6 +676,6 @@ export function derive(save, cards, index) {
     rrComplete: !!(rr && rr.complete),
     contenderCount,
     consistency: { checked, agreed },
-    progress: { done: events.length, left: picksLeft, byStage: left },
+    progress: { done: events.length, left: picksLeft, byStage: left, round: { done: roundDone, left: roundLeft } },
   };
 }

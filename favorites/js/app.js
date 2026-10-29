@@ -62,6 +62,7 @@ function validateSave(s) {
   s.nextId += s.events.length;
   s.picksAtLastBackup = s.picksAtLastBackup || 0;
   s.lastBackupAt = s.lastBackupAt || null;
+  if (s.predictions && !Array.isArray(s.predictions.top25)) delete s.predictions;
   return s;
 }
 
@@ -150,6 +151,7 @@ function preloadAhead() {
 // ---------------------------------------------------------------- actions
 
 function commit(ev) {
+  trackPick(ev);
   const prevQ = d.question;
   ev.id = save.nextId++;
   ev.ts = Date.now();
@@ -167,6 +169,7 @@ function commit(ev) {
     render();
   }
   maybeRemind();
+  maybeNudge();
 }
 
 function transition(prevQ, nextQ) {
@@ -245,12 +248,17 @@ function burst(el, tier) {
   el.appendChild(b);
 }
 
-function backup() {
+async function backup() {
+  const file = new File([JSON.stringify(save)], `${slug(save.name)}-${today()}.json`, { type: 'application/json' });
+  const result = await shareOrDownload(file, `${save.name} backup`);
+  if (result === 'cancelled') {
+    toast('Backup cancelled. Nothing was saved.', { ms: 2200 });
+    return;
+  }
   save.picksAtLastBackup = save.events.length;
   save.lastBackupAt = Date.now();
-  download(`${slug(save.name)}-${today()}.json`, JSON.stringify(save), 'application/json');
   persist();
-  toast('💾 Backup downloaded', { ms: 2200 });
+  toast(result === 'shared' ? '💾 Backup shared. Choose “Save to Files” to keep it in iCloud.' : '💾 Backup downloaded', { ms: 3500 });
 }
 
 const daysSince = (ts) => (Date.now() - ts) / 86400000;
@@ -442,6 +450,7 @@ function render() {
   else if (q.kind === 'heart-review') main.innerHTML = heartsGateView();
   else main.innerHTML = matchView(q);
   sizeArena();
+  if (q && (q.kind === 'match' || q.kind === 'tier') && !ui.interstitial) session.shownAt = performance.now();
   preloadQuestion(q);
   setTimeout(preloadAhead, 40);
 }
@@ -452,7 +461,10 @@ function renderHeader() {
   const pct = left ? Math.min(99, (done / (done + left)) * 100) : 100;
   $('.progress-fill').style.width = `${pct}%`;
   $('.progress').setAttribute('aria-valuenow', Math.round(pct));
-  $('.progress-stage').textContent = d.question ? stageLabel(d.question.stage, d.question.round) : 'Complete ✨';
+  const r = d.progress.round;
+  const roundPct = r && r.done + r.left ? Math.min(100, Math.round((r.done / (r.done + r.left)) * 100)) : 0;
+  $('.progress-stage').textContent = d.question ? `${stageLabel(d.question.stage, d.question.round)} · ${roundPct}% done` : 'Complete ✨';
+  $('.round-fill').style.width = `${d.question ? roundPct : 100}%`;
   $('.progress-left').textContent = left ? `${done} picks · ~${left} to go` : `${done} picks · all done!`;
 }
 
@@ -698,8 +710,10 @@ function doneView() {
     <h2>🎉 Ranking complete!</h2>
     <p>All ${save.events.length} picks are in. You can still edit any matchup from the leaderboard — everything recalculates live.</p>
     ${consistencyHtml()}
+    ${predictionSummaryHtml()}
     <div class="hero-grid" style="grid-template-columns:repeat(3,1fr);margin:14px 0">${top3}</div>
     <button class="btn primary" data-action="results">See full results</button>
+    <button class="btn" data-action="share">📸 Share my top cards</button>
     <button class="btn" data-action="backup">💾 Back up</button>
   </div></div>`;
 }
@@ -795,6 +809,10 @@ function fillLayer(layer, first) {
             <button class="btn" data-action="backup">💾 Back up (download .json)</button>
             <button class="btn" data-action="load">📂 Load backup</button>
             <button class="btn" data-action="results">🌈 Results &amp; CSV export</button>
+            <button class="btn" data-action="share">📸 Share my top cards</button>
+            <button class="btn" data-action="insights">📈 Taste insights</button>
+            <button class="btn" data-action="predict">🔮 Predictions</button>
+            ${hasPredictions() ? '<button class="btn" data-action="scorecard">📊 Predictions vs now</button>' : ''}
             <button class="btn" data-action="hearts">💗 Review hearts</button>
             <button class="btn" data-action="tiers">🗂️ Review tiers</button>
             ${isStandalone ? '' : '<button class="btn" data-action="install">📱 Add to Home Screen</button>'}
@@ -845,6 +863,56 @@ function fillLayer(layer, first) {
           </div>
         </div>
       </div>`;
+  } else if (type === 'share') {
+    if (first) {
+      el.innerHTML = `<div class="backdrop" data-action="close"></div>
+        <div class="sheet full" role="dialog" aria-label="Share image">
+          <div class="sheet-grip"></div>
+          <div class="sheet-head"><h2>📸 Share my top cards</h2><button class="close-btn" data-action="close" aria-label="Close">✕</button></div>
+          <div class="sheet-body"></div>
+        </div>`;
+    }
+    $('.sheet-body', el).innerHTML = shareBody(data);
+  } else if (type === 'break') {
+    el.innerHTML = `<div class="backdrop" data-action="close"></div>
+      <div class="sheet" role="dialog" aria-label="Take a break">
+        <div class="sheet-grip"></div>
+        <div class="sheet-head"><h2>Time for a breather?</h2><button class="close-btn" data-action="close" aria-label="Close">✕</button></div>
+        <div class="sheet-body">${breakBody(data.reason)}</div>
+      </div>`;
+  } else if (type === 'insights') {
+    el.innerHTML = `<div class="backdrop" data-action="close"></div>
+      <div class="sheet full" role="dialog" aria-label="Taste insights">
+        <div class="sheet-grip"></div>
+        <div class="sheet-head"><h2>📈 Taste insights</h2><button class="close-btn" data-action="close" aria-label="Close">✕</button></div>
+        <div class="sheet-body">${insightsBody()}</div>
+      </div>`;
+  } else if (type === 'predict') {
+    if (first) {
+      el.innerHTML = `<div class="backdrop" data-action="close"></div>
+        <div class="sheet full" role="dialog" aria-label="Predictions">
+          <div class="sheet-grip"></div>
+          <div class="sheet-head"><h2>🔮 Predictions</h2><button class="close-btn" data-action="close" aria-label="Close">✕</button></div>
+          <div class="sheet-body"></div>
+        </div>`;
+    }
+    const focused = document.activeElement && document.activeElement.dataset.input === 'predict-search';
+    $('.sheet-body', el).innerHTML = predictBody(layer);
+    if (focused) $('[data-input="predict-search"]', el).focus({ preventScroll: true });
+  } else if (type === 'scorecard') {
+    el.innerHTML = `<div class="backdrop" data-action="close"></div>
+      <div class="sheet full" role="dialog" aria-label="Predictions vs now">
+        <div class="sheet-grip"></div>
+        <div class="sheet-head"><h2>📊 Predictions vs now</h2><button class="close-btn" data-action="close" aria-label="Close">✕</button></div>
+        <div class="sheet-body">${scorecardBody()}</div>
+      </div>`;
+  } else if (type === 'guide') {
+    el.innerHTML = `<div class="backdrop" data-action="close"></div>
+      <div class="sheet" role="dialog" aria-label="How it works">
+        <div class="sheet-grip"></div>
+        <div class="sheet-head"><h2>❔ How it works</h2><button class="close-btn" data-action="close" aria-label="Close">✕</button></div>
+        <div class="sheet-body">${guideBody()}</div>
+      </div>`;
   } else if (type === 'install') {
     const hasPicks = save && save.events.length > 0;
     el.innerHTML = `<div class="backdrop" data-action="close"></div>
@@ -867,7 +935,7 @@ function fillLayer(layer, first) {
     el.innerHTML = `<div class="backdrop" data-action="close"></div>
       <div class="sheet full" role="dialog" aria-label="Results">
         <div class="sheet-grip"></div>
-        <div class="sheet-head"><h2>🌈 Results</h2><button class="pill-btn" data-action="csv">⬇ CSV</button><button class="close-btn" data-action="close" aria-label="Close">✕</button></div>
+        <div class="sheet-head"><h2>🌈 Results</h2><button class="pill-btn" data-action="share">📸</button><button class="pill-btn" data-action="csv">⬇ CSV</button><button class="close-btn" data-action="close" aria-label="Close">✕</button></div>
         <div class="sheet-body">${resultsBody()}</div>
       </div>`;
   }
@@ -1024,6 +1092,18 @@ function detailBody(id, data) {
         <button class="btn primary" data-action="tier-save">Save tier</button>
       </div>
     </div>` : '';
+  // Cards that aren't favourites have no rating, tier or matchups yet.
+  if (!d.isFav(id)) {
+    return `<div class="detail-top">
+        <img class="big-thumb" src="${c.thumb}" alt="${esc(c.name)}" data-action="zoom" data-src="${c.image}">
+        <div class="detail-facts">
+          <div class="fact-row"><div class="fact"><b>#${d.rank(id)}</b>not a favourite</div></div>
+          <div class="fact-row"><div class="fact">${esc(c.setName || c.set)} · #${esc(c.number)}</div></div>
+        </div>
+      </div>
+      ${favToggleHtml(id)}
+      <p class="menu-note">Heart it to add it to your favourites. It then gets a tier and joins the matchups.</p>`;
+  }
   return `<div class="detail-top">
       <img class="big-thumb" src="${c.thumb}" alt="${esc(c.name)}" data-action="zoom" data-src="${c.image}">
       <div class="detail-facts">
@@ -1058,7 +1138,7 @@ function resultsBody() {
     return `<div class="result-card" data-action="detail" data-card="${id}"><span class="badge">${from + k + 1}</span><img src="${c.thumb}" alt="${esc(c.name)}" loading="lazy"><div class="cap">${esc(c.name)}</div></div>`;
   }).join('')}</div>`;
   const status = d.stage === 'done' ? '' : `<p class="menu-note">Still in progress (${stageLabel(d.stage, d.round)}) — this is the live ranking so far.</p>`;
-  return `${status}${consistencyHtml()}
+  return `${status}<div class="results-actions"><button class="btn" data-action="share">📸 Share image</button><button class="btn" data-action="insights">📈 Insights</button></div>${consistencyHtml()}${predictionSummaryHtml()}
     <div class="results-title"><h3>🏆 Top 10</h3></div>${grid(0, 10, 'hero-grid')}
     <div class="results-title"><h3>⭐ 11 – 25</h3></div>${grid(10, 25, 'small-grid')}
     <div class="results-title"><h3>💖 26 – 50</h3></div>${grid(25, 50, 'small-grid')}
@@ -1066,6 +1146,459 @@ function resultsBody() {
     <div class="results-title"><h3>☁️ Full list</h3></div>
     <ul class="rows">${d.order.map((id, k) => rowHtml(id, k + 1)).join('')}</ul>
     <div style="padding:16px 0"><button class="btn primary" style="width:100%" data-action="csv">⬇ Export CSV</button></div>`;
+}
+
+// ---------------------------------------------------------------- sharing
+
+// On phones, hand files to the share sheet (Save to Files / iCloud, Photos,
+// AirDrop, Messages); elsewhere, or if sharing isn't possible, download them.
+async function shareOrDownload(file, title) {
+  const touch = matchMedia('(pointer: coarse)').matches;
+  if (touch && navigator.canShare && navigator.canShare({ files: [file] })) {
+    try {
+      await navigator.share({ files: [file], title });
+      return 'shared';
+    } catch (err) {
+      if (err && err.name === 'AbortError') return 'cancelled';
+    }
+  }
+  const url = URL.createObjectURL(file);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = file.name;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 2000);
+  return 'downloaded';
+}
+
+const SHARE_SIZES = [5, 10, 25];
+
+function loadImage(src) {
+  return new Promise((resolve) => {
+    const im = new Image();
+    im.onload = () => resolve(im);
+    im.onerror = () => resolve(null);
+    im.src = src;
+  });
+}
+
+function roundRectPath(ctx, x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.arcTo(x + w, y, x + w, y + h, r);
+  ctx.arcTo(x + w, y + h, x, y + h, r);
+  ctx.arcTo(x, y + h, x, y, r);
+  ctx.arcTo(x, y, x + w, y, r);
+  ctx.closePath();
+}
+
+function fitText(ctx, text, max) {
+  if (ctx.measureText(text).width <= max) return text;
+  let t = text;
+  while (t.length > 1 && ctx.measureText(`${t}…`).width > max) t = t.slice(0, -1);
+  return `${t}…`;
+}
+
+// Draws a pastel image of the top n cards: title, cards in rows with rank badges and names.
+async function renderShareImage(n) {
+  const pool = typeof d.isFav === 'function' ? d.order.filter((id) => d.isFav(id)) : d.order;
+  const ids = pool.slice(0, n);
+  const cols = n <= 5 ? 3 : 5;
+  const W = 1080;
+  const pad = 48;
+  const gap = n <= 5 ? 30 : 18;
+  const cw = Math.floor((W - pad * 2 - gap * (cols - 1)) / cols);
+  const ch = Math.round(cw * CARD_RATIO);
+  const capH = n <= 5 ? 66 : 50;
+  const rows = Math.ceil(ids.length / cols);
+  const headH = 200;
+  const footH = 86;
+  const H = headH + rows * (ch + capH) + (rows - 1) * gap + footH;
+  const canvas = document.createElement('canvas');
+  canvas.width = W;
+  canvas.height = H;
+  const ctx = canvas.getContext('2d');
+
+  const bg = ctx.createLinearGradient(0, 0, W, H);
+  bg.addColorStop(0, '#ffd3ea');
+  bg.addColorStop(0.4, '#e2d6ff');
+  bg.addColorStop(0.72, '#d3eaff');
+  bg.addColorStop(1, '#cff5e6');
+  ctx.fillStyle = bg;
+  ctx.fillRect(0, 0, W, H);
+  ctx.fillStyle = 'rgba(255, 255, 255, 0.85)';
+  for (let k = 0; k < 26; k++) {
+    const x = ((k * 397) % 1000) / 1000 * W;
+    const y = ((k * 677 + 211) % 1000) / 1000 * H;
+    const s = 6 + ((k * 13) % 9);
+    ctx.beginPath();
+    ctx.moveTo(x, y - s);
+    ctx.lineTo(x + s * 0.25, y - s * 0.25);
+    ctx.lineTo(x + s, y);
+    ctx.lineTo(x + s * 0.25, y + s * 0.25);
+    ctx.lineTo(x, y + s);
+    ctx.lineTo(x - s * 0.25, y + s * 0.25);
+    ctx.lineTo(x - s, y);
+    ctx.lineTo(x - s * 0.25, y - s * 0.25);
+    ctx.fill();
+  }
+
+  try { await document.fonts.load('700 56px Fredoka'); } catch { /* fall back to system font */ }
+  const font = (w, px) => `${w} ${px}px Fredoka, ui-rounded, system-ui, sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.fillStyle = '#5a4677';
+  ctx.font = font(700, 60);
+  ctx.fillText(fitText(ctx, save.name, W - pad * 2), W / 2, 96);
+  ctx.fillStyle = '#e8559f';
+  ctx.font = font(600, 36);
+  ctx.fillText(`✨ My top ${n} favourite cards ✨`, W / 2, 152);
+
+  const imgs = await Promise.all(ids.map((id) => loadImage(n <= 10 ? card(id).image : card(id).thumb)));
+  ids.forEach((id, k) => {
+    const row = Math.floor(k / cols);
+    const inRow = Math.min(cols, ids.length - row * cols);
+    const x0 = (W - (inRow * cw + (inRow - 1) * gap)) / 2;
+    const x = x0 + (k % cols) * (cw + gap);
+    const y = headH + row * (ch + capH + gap);
+    const r = cw * 0.05;
+    ctx.save();
+    ctx.shadowColor = 'rgba(255, 130, 200, 0.45)';
+    ctx.shadowBlur = 26;
+    ctx.fillStyle = '#fff';
+    roundRectPath(ctx, x - 5, y - 5, cw + 10, ch + 10, r + 4);
+    ctx.fill();
+    ctx.restore();
+    if (imgs[k]) {
+      ctx.save();
+      roundRectPath(ctx, x, y, cw, ch, r);
+      ctx.clip();
+      ctx.drawImage(imgs[k], x, y, cw, ch);
+      ctx.restore();
+    }
+    const br = n <= 5 ? 34 : 26;
+    const badge = ctx.createLinearGradient(x - br, y - br, x + br, y + br);
+    badge.addColorStop(0, '#ff9fd0');
+    badge.addColorStop(1, '#b9a2ff');
+    ctx.fillStyle = badge;
+    ctx.beginPath();
+    ctx.arc(x + br * 0.55, y + br * 0.55, br, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 4;
+    ctx.stroke();
+    ctx.fillStyle = '#fff';
+    ctx.font = font(700, n <= 5 ? 34 : 26);
+    ctx.textBaseline = 'middle';
+    ctx.fillText(String(k + 1), x + br * 0.55, y + br * 0.6);
+    ctx.textBaseline = 'alphabetic';
+    ctx.fillStyle = '#5a4677';
+    ctx.font = font(600, n <= 5 ? 30 : 24);
+    ctx.fillText(fitText(ctx, card(id).name, cw), x + cw / 2, y + ch + (n <= 5 ? 46 : 36));
+  });
+
+  ctx.fillStyle = '#8c7aa8';
+  ctx.font = font(500, 24);
+  const date = new Date().toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+  ctx.fillText(`${date} · ${save.events.length.toLocaleString()} picks${d.stage === 'done' ? '' : ' so far'}`, W / 2, H - 36);
+  return canvas;
+}
+
+async function prepareShareImage(layer) {
+  const n = layer.data.size;
+  const token = (layer.data.token = (layer.data.token || 0) + 1);
+  layer.data.file = null;
+  fillLayer(layer, false);
+  const canvas = await renderShareImage(n);
+  const blob = await new Promise((r) => canvas.toBlob(r, 'image/png'));
+  if (token !== layer.data.token || !ui.layers.includes(layer)) return;
+  if (layer.data.url) URL.revokeObjectURL(layer.data.url);
+  layer.data.url = URL.createObjectURL(blob);
+  layer.data.file = new File([blob], `${slug(save.name)}-top-${n}.png`, { type: 'image/png' });
+  fillLayer(layer, false);
+}
+
+function shareBody(data) {
+  return `<div class="seg share-sizes">${SHARE_SIZES.map((n) => `<button class="${data.size === n ? 'on' : ''}" data-action="share-size" data-size="${n}">Top ${n}</button>`).join('')}</div>
+    <div class="share-preview">${data.file ? `<img src="${data.url}" alt="Your top ${data.size}">` : '<p class="empty">✨ Making your image…</p>'}</div>
+    <button class="btn primary" style="width:100%" data-action="share-go" ${data.file ? '' : 'disabled'}>📤 Share or save image</button>
+    ${d.stage === 'done' ? '' : '<p class="menu-note">You\'re still ranking, so this shows your live ranking right now.</p>'}`;
+}
+
+// ---------------------------------------------------------------- take-a-break nudge
+
+// Per-visit pick timing (not saved). Rushed or contradictory picks hurt accuracy
+// more than anything in the maths, so the app suggests a breather when it sees them.
+const session = { shownAt: 0, times: [], picks: 0, lastPickAt: 0, flips: [], nudgedAtPick: -1e9, nudgedAt: 0 };
+const median = (xs) => { const s = xs.slice().sort((a, b) => a - b); return s.length ? s[Math.floor(s.length / 2)] : 0; };
+
+function trackPick(ev) {
+  if (ev.t !== 'match' && ev.t !== 'tier') return;
+  const now = Date.now();
+  if (now - session.lastPickAt > 5 * 60 * 1000) Object.assign(session, { times: [], picks: 0, flips: [] });
+  session.lastPickAt = now;
+  session.picks++;
+  if (session.shownAt) session.times.push(Math.min(60000, performance.now() - session.shownAt));
+  if (ev.t === 'match' && ev.w !== 't') {
+    const winner = ev.w === 'a' ? ev.a : ev.b;
+    const earlier = save.events.filter((e) => e.t === 'match' && e.w !== 't' && ((e.a === ev.a && e.b === ev.b) || (e.a === ev.b && e.b === ev.a)));
+    if (earlier.some((e) => (e.w === 'a' ? e.a : e.b) !== winner)) session.flips.push(now);
+  }
+}
+
+function maybeNudge() {
+  if (ui.layers.length || session.picks - session.nudgedAtPick < 60 || Date.now() - session.nudgedAt < 10 * 60 * 1000) return;
+  let reason = null;
+  const t = session.times;
+  if (t.length >= 50) {
+    const start = median(t.slice(0, 30));
+    const recent = median(t.slice(-15));
+    if (recent < start * 0.45 && recent < 1500) reason = 'fast';
+  }
+  if (!reason && session.flips.filter((ts) => Date.now() - ts < 20 * 60 * 1000).length >= 3) reason = 'flip';
+  if (!reason && session.picks >= 200 && session.picks - session.nudgedAtPick >= 200) reason = 'long';
+  if (!reason) return;
+  session.nudgedAtPick = session.picks;
+  session.nudgedAt = Date.now();
+  openLayer('break', { reason });
+}
+
+function breakBody(reason) {
+  const why = {
+    fast: "You're picking a lot faster than when you started. Quick picks are fine, but rushed ones get noisy.",
+    flip: 'A few of your recent answers disagreed with how you answered the same matchups earlier. That\'s often a sign of tired eyes.',
+    long: `That's ${session.picks} picks this session. Amazing focus! 🌸`,
+  }[reason];
+  return `<div class="break">
+    <div class="break-emoji">☕</div>
+    <p><b>${why}</b></p>
+    <p>Your progress is saved after every pick. Maybe stretch, grab a snack, and come back fresh?</p>
+    <button class="btn primary" data-action="break-backup">💾 Back up &amp; take a break</button>
+    <button class="btn" data-action="close">I'm good, keep going</button>
+  </div>`;
+}
+
+// ---------------------------------------------------------------- taste insights
+
+const ERAS = [
+  [/^(base|gym|neo|si1|basep)/, 'Classic WotC · 1999–2002'],
+  [/^ecard/, 'e-Card · 2002–03'],
+  [/^(ex|pop[1-4]|np|tk1|tk2)/, 'EX · 2003–07'],
+  [/^(dp|pl|hgss|col|pop[5-9]|tk3|tk4|ru1)/, 'Diamond & Pearl–HGSS · 2007–11'],
+  [/^(bw|tk5|tk6|dv1)/, 'Black & White · 2011–13'],
+  [/^(xy|g1|tk7|tk8|tk9|tk10a|dc1|mcd1[4-6])/, 'XY · 2014–16'],
+  [/^(sm|det1|tk10b|mcd1[7-9])/, 'Sun & Moon · 2017–19'],
+  [/^(swsh|cel25|pgo|ba2|mcd2[0-2])/, 'Sword & Shield · 2020–23'],
+  [/^(sv|mcd2[34])/, 'Scarlet & Violet · 2023–25'],
+  [/^(me|cc|mfb)/, 'Mega Evolution · 2025–'],
+];
+const eraOf = (set) => (ERAS.find(([re]) => re.test(set)) || [null, 'Other'])[1];
+
+function barList(entries, total) {
+  const max = Math.max(1, ...entries.map((e) => e[1]));
+  return `<ul class="bars">${entries.map(([label, n]) => `<li><span class="bar-label">${esc(label)}</span><span class="bar"><span style="width:${Math.round((n / max) * 100)}%"></span></span><b>${n}</b></li>`).join('')}</ul>
+    <p class="menu-note" style="text-align:left">${total} cards counted.</p>`;
+}
+
+function insightsBody() {
+  const ranked = d.order.filter((id) => d.tier(id));
+  if (!d.order.some((id) => d.record(id).w + d.record(id).l + d.record(id).t > 0)) {
+    return '<p class="empty">Insights unlock once the head-to-head matchups start. Check back after Swiss round 1! ✨</p>';
+  }
+  // Where each tier "should" sit if your first impressions were exactly right.
+  const band = {};
+  let start = 0;
+  for (const t of TIERS) {
+    const size = ranked.filter((id) => d.tier(id) === t).length;
+    band[t] = { lo: start + 1, hi: start + size, mid: start + (size + 1) / 2, size };
+    start += size;
+  }
+  const delta = (id) => band[d.tier(id)].mid - d.rank(id);
+  const row = (id, txt) => `<li data-action="detail" data-card="${id}"><span class="r">#${d.rank(id)}</span><img src="${card(id).thumb}" alt="" loading="lazy"><span class="n">${esc(card(id).name)}</span>${txt}</li>`;
+  const climbers = ranked.filter((id) => delta(id) > 0).sort((x, y) => delta(y) - delta(x)).slice(0, 5);
+  const fallers = ranked.filter((id) => delta(id) < 0).sort((x, y) => delta(x) - delta(y)).slice(0, 5);
+  const inBand = ranked.filter((id) => d.rank(id) >= band[d.tier(id)].lo && d.rank(id) <= band[d.tier(id)].hi).length;
+  const gut = ranked.length ? Math.round((inBand / ranked.length) * 100) : 0;
+  const tierLines = TIERS.filter((t) => band[t].size).map((t) => {
+    const ids = ranked.filter((id) => d.tier(id) === t);
+    const avg = Math.round(ids.reduce((a, id) => a + d.rank(id), 0) / ids.length);
+    const kept = ids.filter((id) => d.rank(id) >= band[t].lo && d.rank(id) <= band[t].hi).length;
+    return `<li>${tierPill(t)}<span>${ids.length} cards · average rank <b>#${avg}</b> · <b>${Math.round((kept / ids.length) * 100)}%</b> stayed in the ${t} zone (#${band[t].lo}–${band[t].hi})</span></li>`;
+  }).join('');
+  const eraCounts = (n) => {
+    const m = new Map();
+    d.order.slice(0, n).forEach((id) => m.set(eraOf(card(id).set), (m.get(eraOf(card(id).set)) || 0) + 1));
+    return [...m.entries()].sort((a, b) => b[1] - a[1]);
+  };
+  const top = Math.min(50, ranked.length);
+  const species = new Map();
+  d.order.slice(0, top).forEach((id) => {
+    const base = card(id).name.replace(/\s+(ex|EX|V|VMAX|VSTAR|GX|δ)$/, '').replace(/^(Alolan|Galarian|Hisuian|Paldean|Light|Dark|Shining|Radiant)\s+/, '');
+    species.set(base, (species.get(base) || 0) + 1);
+  });
+  const repeats = [...species.entries()].filter(([, n]) => n > 1).sort((a, b) => b[1] - a[1]).slice(0, 8);
+  const early = d.stage !== 'done' ? `<p class="menu-note" style="text-align:left">Based on your live ranking at pick ${save.events.length}. These will sharpen as you go.</p>` : '';
+  return `${early}
+    <h3 class="score-title">🎯 How good was your gut?</h3>
+    <div class="score-head"><b>${gut}%</b><span>of your cards are in the same zone their first tier put them in</span></div>
+    <ul class="tier-lines">${tierLines}</ul>
+    ${climbers.length ? `<h3 class="score-title">🚀 Biggest climbers</h3><p class="menu-note" style="text-align:left">Cards that beat your first impression the most.</p><ul class="score-list">${climbers.map((id) => row(id, `<span class="up">${tierPill(d.tier(id))} ▲${Math.round(delta(id))}</span>`)).join('')}</ul>` : ''}
+    ${fallers.length ? `<h3 class="score-title">🍂 Biggest drops</h3><ul class="score-list">${fallers.map((id) => row(id, `<span class="down">${tierPill(d.tier(id))} ▼${Math.round(-delta(id))}</span>`)).join('')}</ul>` : ''}
+    <h3 class="score-title">📚 Eras in your top 25</h3>${barList(eraCounts(Math.min(25, ranked.length)), Math.min(25, ranked.length))}
+    <h3 class="score-title">📚 Eras in your top ${top}</h3>${barList(eraCounts(top), top)}
+    ${repeats.length ? `<h3 class="score-title">💞 Pokémon that show up more than once in your top ${top}</h3>${barList(repeats, top)}` : ''}
+    ${consistencyHtml()}`;
+}
+
+// ---------------------------------------------------------------- predictions
+
+// Predictions sit beside the event log (save.predictions), so they never change
+// the ranking: { top25: [ids], top10: [ids] (a subset of top25), at: pick count }.
+const PREDICT_TOP = 25;
+const PREDICT_STAR = 10;
+
+function predictions() {
+  if (!save.predictions) save.predictions = { top25: [], top10: [], at: 0 };
+  return save.predictions;
+}
+
+const hasPredictions = () => !!(save && save.predictions && save.predictions.top25.length);
+
+function predictionChanged() {
+  predictions().at = save.events.length;
+  persist();
+  refreshLayers();
+}
+
+function predictAdd(id) {
+  const p = predictions();
+  if (p.top25.includes(id)) return;
+  if (p.top25.length >= PREDICT_TOP) { toast(`Your top ${PREDICT_TOP} is full. Remove one first.`); return; }
+  p.top25.push(id);
+  predictionChanged();
+}
+
+function predictStar(id) {
+  const p = predictions();
+  if (p.top10.includes(id)) p.top10 = p.top10.filter((x) => x !== id);
+  else if (p.top10.length >= PREDICT_STAR) { toast(`You've already starred ${PREDICT_STAR}. Unstar one first.`); return; }
+  else p.top10.push(id);
+  predictionChanged();
+}
+
+function predictRemove(id) {
+  const p = predictions();
+  p.top25 = p.top25.filter((x) => x !== id);
+  p.top10 = p.top10.filter((x) => x !== id);
+  predictionChanged();
+}
+
+function predictCandidates(query) {
+  const p = predictions();
+  const q = normalize(query || '').trim();
+  const favFirst = (id) => (typeof d.isFav === 'function' && !d.isFav(id) ? 1 : 0);
+  return d.order
+    .filter((id) => !p.top25.includes(id) && (!q || normalize(card(id).name).includes(q)))
+    .sort((x, y) => favFirst(x) - favFirst(y) || card(x).name.localeCompare(card(y).name));
+}
+
+function predictTile(id, picked) {
+  const c = card(id);
+  const star = predictions().top10.includes(id);
+  return picked
+    ? `<div class="pred-tile ${star ? 'star' : ''}">
+        <button class="pred-card" data-action="predict-star" data-card="${id}" aria-label="${esc(c.name)}: ${star ? 'unstar' : 'star for top 10'}">
+          <img src="${c.thumb}" alt="" loading="lazy"><span class="pred-badge">${star ? '⭐' : '☆'}</span></button>
+        <button class="pred-x" data-action="predict-remove" data-card="${id}" aria-label="Remove ${esc(c.name)}">✕</button>
+        <div class="cap">${esc(c.name)}</div>
+      </div>`
+    : `<button class="pred-tile pred-card" data-action="predict-add" data-card="${id}" aria-label="Add ${esc(c.name)}">
+        <img src="${c.thumb}" alt="" loading="lazy"><div class="cap">${esc(c.name)}</div></button>`;
+}
+
+function predictBody(layer) {
+  const p = predictions();
+  const picked = [...p.top10, ...p.top25.filter((id) => !p.top10.includes(id))];
+  return `<p class="menu-note" style="text-align:left">Pick the ${PREDICT_TOP} cards you think will end up in your top ${PREDICT_TOP}, then tap to ⭐ the ${PREDICT_STAR} you think will make your top ${PREDICT_STAR}. Just for fun: it never changes your ranking.</p>
+    <div class="pred-count"><span>⭐ Top ${PREDICT_STAR}: <b>${p.top10.length}/${PREDICT_STAR}</b></span><span>Top ${PREDICT_TOP}: <b>${p.top25.length}/${PREDICT_TOP}</b></span></div>
+    ${picked.length ? `<div class="pred-grid">${picked.map((id) => predictTile(id, true)).join('')}</div>
+      <button class="btn primary" style="width:100%;margin-top:10px" data-action="scorecard">📊 See how it's holding up</button>` : ''}
+    <div class="section-label">Add cards · tap to add</div>
+    <input class="search" type="search" placeholder="Find a Pokémon…" autocomplete="off" data-input="predict-search" value="${esc(layer.data.query || '')}">
+    <div class="pred-grid pred-pool">${predictCandidates(layer.data.query).map((id) => predictTile(id, false)).join('')}</div>`;
+}
+
+function scoreSection(n, ids) {
+  if (!ids.length) return '';
+  const actual = new Set(d.order.slice(0, n));
+  const hits = ids.filter((id) => actual.has(id)).length;
+  const rows = ids.slice().sort((x, y) => d.rank(x) - d.rank(y)).map((id) => {
+    const c = card(id);
+    const ok = actual.has(id);
+    return `<li class="${ok ? 'hit' : 'miss'}" data-action="detail" data-card="${id}"><img src="${c.thumb}" alt="" loading="lazy">
+      <span class="n">${esc(c.name)}</span><span class="r">now #${d.rank(id)}</span><span class="mark">${ok ? '✓' : '✗'}</span></li>`;
+  }).join('');
+  const surprises = d.order.slice(0, n).filter((id) => !ids.includes(id));
+  return `<div class="score-head"><b>${hits}/${ids.length}</b><span>of your top-${n} predictions are in your top ${n} right now</span></div>
+    <ul class="score-list">${rows}</ul>
+    ${surprises.length ? `<div class="section-label">Surprises · in your top ${n} but not predicted</div>
+      <div class="pred-grid">${surprises.map((id) => `<button class="pred-tile pred-card" data-action="detail" data-card="${id}"><img src="${card(id).thumb}" alt="" loading="lazy"><div class="cap">#${d.rank(id)} ${esc(card(id).name)}</div></button>`).join('')}</div>` : ''}`;
+}
+
+function scorecardBody() {
+  const p = predictions();
+  const early = d.stage !== 'done' ? `<p class="menu-note" style="text-align:left">Still ranking, so this is against your live ranking at pick ${save.events.length}. It'll keep changing as you go.</p>` : '';
+  return `<p class="menu-note" style="text-align:left">Predictions last changed at pick ${p.at}.</p>${early}
+    <h3 class="score-title">⭐ Top ${PREDICT_STAR}</h3>${scoreSection(PREDICT_STAR, p.top10) || `<p class="empty">No ⭐ picks yet.</p>`}
+    <h3 class="score-title">Top ${PREDICT_TOP}</h3>${scoreSection(PREDICT_TOP, p.top25)}
+    <button class="btn" style="width:100%;margin-top:14px" data-action="predict">✏️ Edit predictions</button>`;
+}
+
+// One-line summary for the results and done screens.
+function predictionSummaryHtml() {
+  if (!hasPredictions()) return '';
+  const p = predictions();
+  const count = (n, ids) => ids.filter((id) => d.rank(id) <= n).length;
+  return `<button class="btn pred-summary" data-action="scorecard">🔮 Predictions: <b>${count(PREDICT_STAR, p.top10)}/${p.top10.length}</b> top ${PREDICT_STAR} · <b>${count(PREDICT_TOP, p.top25)}/${p.top25.length}</b> top ${PREDICT_TOP} →</button>`;
+}
+
+// ---------------------------------------------------------------- how it works
+
+// One short card per stage, built from CONFIG so it always matches the real numbers.
+function guideSections() {
+  const late = CONFIG.contenderFrom <= CONFIG.swissRounds;
+  const early = late ? CONFIG.contenderFrom - 1 : CONFIG.swissRounds;
+  const lines = CONFIG.cutoffs.map((c) => `#${c}`).join(', ');
+  return [
+    { key: 'triage', icon: '💖', title: 'Quick sort', text: `${PAGE_SIZE} cards at a time: tap ♡ on the ones you love, then Next. Only hearted cards move on. The pace line shows roughly how many picks your hearts will take.` },
+    { key: 'hearts', icon: '💗', title: 'Review your hearts', text: 'See all your hearted cards together and un-heart anything that doesn\'t hold up, or add one you missed. Cards you don\'t heart stay in the list as "not a favourite". You can change that anytime from a card\'s page.' },
+    { key: 'tier', icon: '🗂️', title: 'Tier draft', text: `See each favourite on its own and sort it into <b>S</b> (obsessed), <b>A</b> (love), <b>B</b> (like) or <b>C</b> (it's fine). That gives every card a starting rating. Afterwards you can look over all your tiers and move any card before the matchups begin.` },
+    { key: 'swiss', icon: '☁️', title: early > 1 ? `Swiss rounds 1–${early}` : 'Swiss round 1', text: `This-or-that between cards with similar ratings. Every card plays once per round, no matchup ever repeats, and cards near the ${lines} lines get extra attention. Every pick nudges both cards' ratings.` },
+    { key: 'rescue', icon: '🦸', title: `Rescue round (after round ${CONFIG.rescueAfterRound})`, text: `B and C cards with a winning record so far each face ${CONFIG.rescueGames} A/S cards, so a card you under-tiered can climb fast.` },
+    late ? { key: 'contender', icon: '🎯', title: CONFIG.contenderFrom === CONFIG.swissRounds ? `Swiss round ${CONFIG.swissRounds} · contenders` : `Swiss rounds ${CONFIG.contenderFrom}–${CONFIG.swissRounds} · contenders`, text: `Only cards with a real chance of making the top ${CONFIG.finalists} play. Cards whose spot is already clear sit these out, which saves you picks.` } : null,
+    { key: 'finals', icon: '👑', title: `Finals · top ${CONFIG.finalists}`, text: `A full head-to-head sort of your top ${CONFIG.finalists}, so cards just below #${CONFIG.cutoffs[CONFIG.cutoffs.length - 1]} still get a shot. A few close calls come back later without warning, and answers that look like misclicks are double-checked. If you disagree with yourself, you get asked a third time and the majority wins.` },
+    { key: 'boundary', icon: '⚔️', title: 'Boundary challenges', text: `The 2 cards just outside ${lines} each play the 2 just inside. A challenger that wins moves in.` },
+    { key: 'roundrobin', icon: '🏆', title: `Top ${CONFIG.topN} round robin`, text: `Every top-${CONFIG.topN} card plays every other one, fresh (${(CONFIG.topN * (CONFIG.topN - 1)) / 2} matchups).` },
+    { key: 'final', icon: '✨', title: 'How the final order is decided', text: 'Every answer you give feeds one rating per card, and the final order comes from those ratings, so one shaky pick can\'t knock a card far out of place. You can change any past answer from a card\'s page in the leaderboard, and everything recalculates.' },
+  ].filter(Boolean);
+}
+
+function guideCurrentKey() {
+  const q = d && d.question;
+  if (!q) return d ? 'final' : null;
+  if (q.kind === 'triage') return 'triage';
+  if (q.kind === 'heart-review') return 'hearts';
+  if (q.stage === 'swiss') return q.round >= CONFIG.contenderFrom ? 'contender' : 'swiss';
+  return q.stage;
+}
+
+function guideBody() {
+  const here = guideCurrentKey();
+  return `<ol class="guide">${guideSections().map((g) => `<li class="${g.key === here ? 'here' : ''}">
+      <div class="guide-head"><span class="guide-icon">${g.icon}</span><b>${g.title}</b>${g.key === here ? '<span class="here-pill">you are here</span>' : ''}</div>
+      <p>${g.text}</p>
+    </li>`).join('')}</ol>`;
 }
 
 // ---------------------------------------------------------------- zoom
@@ -1124,6 +1657,37 @@ document.addEventListener('click', (e) => {
     case 'close-zoom': closeZoom(); break;
     case 'continue': ui.interstitial = null; render(); break;
     case 'board': openLayer('board'); break;
+    case 'guide': openLayer('guide'); break;
+    case 'share': {
+      closeAllLayers();
+      openLayer('share', { size: 10 });
+      prepareShareImage(ui.layers[ui.layers.length - 1]);
+      break;
+    }
+    case 'share-size': {
+      const layer = ui.layers.find((l) => l.type === 'share');
+      if (layer && layer.data.size !== Number(t.dataset.size)) {
+        layer.data.size = Number(t.dataset.size);
+        prepareShareImage(layer);
+      }
+      break;
+    }
+    case 'share-go': {
+      const layer = ui.layers.find((l) => l.type === 'share');
+      if (layer && layer.data.file) {
+        shareOrDownload(layer.data.file, `My top ${layer.data.size}`).then((r) => {
+          if (r === 'downloaded') toast('📸 Image saved to your downloads');
+        });
+      }
+      break;
+    }
+    case 'insights': closeAllLayers(); openLayer('insights'); break;
+    case 'break-backup': closeTopLayer(); backup(); break;
+    case 'predict': closeAllLayers(); openLayer('predict'); break;
+    case 'scorecard': closeAllLayers(); openLayer('scorecard'); break;
+    case 'predict-add': predictAdd(t.dataset.card); break;
+    case 'predict-star': predictStar(t.dataset.card); break;
+    case 'predict-remove': predictRemove(t.dataset.card); break;
     case 'menu': openLayer('menu'); break;
     case 'results': closeAllLayers(); openLayer('results'); break;
     case 'close': closeTopLayer(); break;
@@ -1227,6 +1791,14 @@ document.addEventListener('submit', (e) => {
 });
 
 document.addEventListener('input', (e) => {
+  if (e.target.dataset.input === 'predict-search') {
+    const layer = ui.layers.find((l) => l.type === 'predict');
+    if (layer) {
+      layer.data.query = e.target.value;
+      $('.pred-pool', layer.el).innerHTML = predictCandidates(e.target.value).map((id) => predictTile(id, false)).join('');
+    }
+    return;
+  }
   if (e.target.dataset.input !== 'search') return;
   const layer = ui.layers.find((l) => l.el.contains(e.target));
   if (layer) {
@@ -1273,7 +1845,7 @@ document.addEventListener('contextmenu', (e) => {
 
 document.addEventListener('keydown', (e) => {
   if (e.metaKey || e.ctrlKey || e.altKey) return;
-  if (e.target.matches('input, textarea')) {
+  if (e.target instanceof Element && e.target.matches('input, textarea')) {
     if (e.key === 'Escape') { e.target.blur(); if (ui.layers.length) closeTopLayer(); }
     return;
   }

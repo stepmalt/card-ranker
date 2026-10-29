@@ -4,3 +4,4 @@ final pics/
 
 # Favourites ranker: full-size originals downloaded from Dex (~1 GB)
 favorites/source/originals/
+__pycache__/

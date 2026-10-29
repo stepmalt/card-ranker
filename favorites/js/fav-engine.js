@@ -81,6 +81,9 @@ export function derive(save, cards) {
   const isFav = (id) => fav.has(id);
   const pick = (fn, fallback) => (id) => (fav.has(id) ? fn(id) : fallback);
 
+  const roundProgress = question && question.kind === 'triage' ? { done: pageKeep.size, left: pages - pageKeep.size }
+    : question && question.kind === 'heart-review' ? { done: pages, left: 0 } : inner.progress.round;
+
   return {
     ...inner,
     stage,
@@ -101,6 +104,6 @@ export function derive(save, cards) {
     record: pick(inner.record, { w: 0, l: 0, t: 0 }),
     tier: pick(inner.tier, null),
     matchesFor: pick(inner.matchesFor, []),
-    progress: { done: save.events.length, left, byStage },
+    progress: { done: save.events.length, left, byStage, round: roundProgress },
   };
 }

@@ -17,6 +17,16 @@ All of this is recomputed from one **event log** every time anything changes. Th
 
 The results screen also shows a **consistency score**: how often you gave the same answer to a matchup you saw more than once.
 
+The **?** button in the header opens a short overview of every stage, with a "you are here" marker. The favourites ranker also shows how far through the current round you are (for example "Round 3 of 5 · 30% done").
+
+**🔮 Predictions** (⋯ menu, both rankers): pick the 25 cards you think will make your top 25, and star the 10 you think will make your top 10. **📊 Predictions vs now** shows how they're holding up at any point, and the results screen shows the score. Predictions are saved beside your picks (and in backups) but never affect the ranking.
+
+Also in the ⋯ menu (both rankers):
+- **📸 Share my top cards** makes a pastel image of your Top 5, 10 or 25 to save or send.
+- **📈 Taste insights** shows how good your first tiers were, your biggest climbers and drops, and which eras fill your top 25 and 50.
+- **On iPhone, Back up opens the share sheet.** Choose *Save to Files* to keep the backup in iCloud Drive.
+- **A gentle "time for a breather?" nudge** appears after 200 picks in a sitting, when you're suddenly picking much faster than you started, or when several recent answers contradict earlier ones.
+
 Keys on desktop: `1–4` tiers · `←/→` (or `↑/↓`) pick · `Space` tie · `Z` undo · `L` leaderboard · `Esc` close.
 
 ## Files
