@@ -1,0 +1,2842 @@
+[
+ {
+  "id": "ba22p-1",
+  "name": "Yamper",
+  "set": "ba22p",
+  "number": "1",
+  "image": "cards/ba22p-1.webp",
+  "thumb": "cards/thumbs/ba22p-1.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "base4-76",
+  "name": "Goldeen",
+  "set": "base4",
+  "number": "76",
+  "image": "cards/base4-76.webp",
+  "thumb": "cards/thumbs/base4-76.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "bw1-10",
+  "name": "Lilligant",
+  "set": "bw1",
+  "number": "10",
+  "image": "cards/bw1-10.webp",
+  "thumb": "cards/thumbs/bw1-10.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "bw1-13",
+  "name": "Deerling",
+  "set": "bw1",
+  "number": "13",
+  "image": "cards/bw1-13.webp",
+  "thumb": "cards/thumbs/bw1-13.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "bw1-15",
+  "name": "Tepig",
+  "set": "bw1",
+  "number": "15",
+  "image": "cards/bw1-15.webp",
+  "thumb": "cards/thumbs/bw1-15.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "bw1-30",
+  "name": "Dewott",
+  "set": "bw1",
+  "number": "30",
+  "image": "cards/bw1-30.webp",
+  "thumb": "cards/thumbs/bw1-30.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "bw10-38",
+  "name": "Azelf",
+  "set": "bw10",
+  "number": "38",
+  "image": "cards/bw10-38.webp",
+  "thumb": "cards/thumbs/bw10-38.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "bw11-33",
+  "name": "Piplup",
+  "set": "bw11",
+  "number": "33",
+  "image": "cards/bw11-33.webp",
+  "thumb": "cards/thumbs/bw11-33.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "bw11-78",
+  "name": "Meloetta",
+  "set": "bw11",
+  "number": "78",
+  "image": "cards/bw11-78.webp",
+  "thumb": "cards/thumbs/bw11-78.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "bw11-89",
+  "name": "Zorua",
+  "set": "bw11",
+  "number": "89",
+  "image": "cards/bw11-89.webp",
+  "thumb": "cards/thumbs/bw11-89.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "bw2-29",
+  "name": "Cubchoo",
+  "set": "bw2",
+  "number": "29",
+  "image": "cards/bw2-29.webp",
+  "thumb": "cards/thumbs/bw2-29.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "bw2-3",
+  "name": "Sewaddle",
+  "set": "bw2",
+  "number": "3",
+  "image": "cards/bw2-3.webp",
+  "thumb": "cards/thumbs/bw2-3.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "bw2-84",
+  "name": "Minccino",
+  "set": "bw2",
+  "number": "84",
+  "image": "cards/bw2-84.webp",
+  "thumb": "cards/thumbs/bw2-84.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "bw3-31",
+  "name": "Jellicent",
+  "set": "bw3",
+  "number": "31",
+  "image": "cards/bw3-31.webp",
+  "thumb": "cards/thumbs/bw3-31.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "bw3-4",
+  "name": "Petilil",
+  "set": "bw3",
+  "number": "4",
+  "image": "cards/bw3-4.webp",
+  "thumb": "cards/thumbs/bw3-4.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "bw3-6",
+  "name": "Dwebble",
+  "set": "bw3",
+  "number": "6",
+  "image": "cards/bw3-6.webp",
+  "thumb": "cards/thumbs/bw3-6.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "bw3-86",
+  "name": "Axew",
+  "set": "bw3",
+  "number": "86",
+  "image": "cards/bw3-86.webp",
+  "thumb": "cards/thumbs/bw3-86.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "bw4-83",
+  "name": "Pidove",
+  "set": "bw4",
+  "number": "83",
+  "image": "cards/bw4-83.webp",
+  "thumb": "cards/thumbs/bw4-83.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "bw5-15",
+  "name": "Torchic",
+  "set": "bw5",
+  "number": "15",
+  "image": "cards/bw5-15.webp",
+  "thumb": "cards/thumbs/bw5-15.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "bw6-30",
+  "name": "Sealeo",
+  "set": "bw6",
+  "number": "30",
+  "image": "cards/bw6-30.webp",
+  "thumb": "cards/thumbs/bw6-30.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "bw8-38",
+  "name": "Frillish",
+  "set": "bw8",
+  "number": "38",
+  "image": "cards/bw8-38.webp",
+  "thumb": "cards/thumbs/bw8-38.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "bw9-6",
+  "name": "Treecko",
+  "set": "bw9",
+  "number": "6",
+  "image": "cards/bw9-6.webp",
+  "thumb": "cards/thumbs/bw9-6.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "bw9-96",
+  "name": "Staravia",
+  "set": "bw9",
+  "number": "96",
+  "image": "cards/bw9-96.webp",
+  "thumb": "cards/thumbs/bw9-96.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "cel25-5",
+  "name": "Pikachu",
+  "set": "cel25",
+  "number": "5",
+  "image": "cards/cel25-5.webp",
+  "thumb": "cards/thumbs/cel25-5.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "dp1-18",
+  "name": "Azumarill",
+  "set": "dp1",
+  "number": "18",
+  "image": "cards/dp1-18.webp",
+  "thumb": "cards/thumbs/dp1-18.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "dp1-33",
+  "name": "Munchlax",
+  "set": "dp1",
+  "number": "33",
+  "image": "cards/dp1-33.webp",
+  "thumb": "cards/thumbs/dp1-33.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "dp1-91",
+  "name": "Misdreavus",
+  "set": "dp1",
+  "number": "91",
+  "image": "cards/dp1-91.webp",
+  "thumb": "cards/thumbs/dp1-91.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "dp2-106",
+  "name": "Totodile",
+  "set": "dp2",
+  "number": "106",
+  "image": "cards/dp2-106.webp",
+  "thumb": "cards/thumbs/dp2-106.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "dp4-77",
+  "name": "Luvdisc",
+  "set": "dp4",
+  "number": "77",
+  "image": "cards/dp4-77.webp",
+  "thumb": "cards/thumbs/dp4-77.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "dp6-49",
+  "name": "Castform Rain Form",
+  "set": "dp6",
+  "number": "49",
+  "image": "cards/dp6-49.webp",
+  "thumb": "cards/thumbs/dp6-49.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "dp7-45",
+  "name": "Pichu",
+  "set": "dp7",
+  "number": "45",
+  "image": "cards/dp7-45.webp",
+  "thumb": "cards/thumbs/dp7-45.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "ecard3-108",
+  "name": "Swinub",
+  "set": "ecard3",
+  "number": "108",
+  "image": "cards/ecard3-108.webp",
+  "thumb": "cards/thumbs/ecard3-108.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "ex12-17",
+  "name": "Gorebyss",
+  "set": "ex12",
+  "number": "17",
+  "image": "cards/ex12-17.webp",
+  "thumb": "cards/thumbs/ex12-17.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "ex12-65",
+  "name": "Spheal",
+  "set": "ex12",
+  "number": "65",
+  "image": "cards/ex12-65.webp",
+  "thumb": "cards/thumbs/ex12-65.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "ex2-31",
+  "name": "Azurill",
+  "set": "ex2",
+  "number": "31",
+  "image": "cards/ex2-31.webp",
+  "thumb": "cards/thumbs/ex2-31.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "ex2-54",
+  "name": "Wynaut",
+  "set": "ex2",
+  "number": "54",
+  "image": "cards/ex2-54.webp",
+  "thumb": "cards/thumbs/ex2-54.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "ex5-18",
+  "name": "Gorebyss",
+  "set": "ex5",
+  "number": "18",
+  "image": "cards/ex5-18.webp",
+  "thumb": "cards/thumbs/ex5-18.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "ex5-37",
+  "name": "Igglybuff",
+  "set": "ex5",
+  "number": "37",
+  "image": "cards/ex5-37.webp",
+  "thumb": "cards/thumbs/ex5-37.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "ex6-57",
+  "name": "Charmander",
+  "set": "ex6",
+  "number": "57",
+  "image": "cards/ex6-57.webp",
+  "thumb": "cards/thumbs/ex6-57.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "g1-38",
+  "name": "Diglett",
+  "set": "g1",
+  "number": "38",
+  "image": "cards/g1-38.webp",
+  "thumb": "cards/thumbs/g1-38.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "g1-55",
+  "name": "Doduo",
+  "set": "g1",
+  "number": "55",
+  "image": "cards/g1-55.webp",
+  "thumb": "cards/thumbs/g1-55.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "g1-rc22",
+  "name": "Diancie",
+  "set": "g1",
+  "number": "RC22",
+  "image": "cards/g1-rc22.webp",
+  "thumb": "cards/thumbs/g1-rc22.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "hgss1-45",
+  "name": "Mantine",
+  "set": "hgss1",
+  "number": "45",
+  "image": "cards/hgss1-45.webp",
+  "thumb": "cards/thumbs/hgss1-45.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "hgss1-51",
+  "name": "Skiploom",
+  "set": "hgss1",
+  "number": "51",
+  "image": "cards/hgss1-51.webp",
+  "thumb": "cards/thumbs/hgss1-51.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "hgss2-69",
+  "name": "Weedle",
+  "set": "hgss2",
+  "number": "69",
+  "image": "cards/hgss2-69.webp",
+  "thumb": "cards/thumbs/hgss2-69.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "hgss4-3",
+  "name": "Celebi",
+  "set": "hgss4",
+  "number": "3",
+  "image": "cards/hgss4-3.webp",
+  "thumb": "cards/thumbs/hgss4-3.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "mcd19fr-37",
+  "name": "Lickitung",
+  "set": "mcd19fr",
+  "number": "37",
+  "image": "cards/mcd19fr-37.webp",
+  "thumb": "cards/thumbs/mcd19fr-37.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "mcd21-24",
+  "name": "Sobble",
+  "set": "mcd21",
+  "number": "24",
+  "image": "cards/mcd21-24.webp",
+  "thumb": "cards/thumbs/mcd21-24.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "mcd22-4",
+  "name": "Growlithe",
+  "set": "mcd22",
+  "number": "4",
+  "image": "cards/mcd22-4.webp",
+  "thumb": "cards/thumbs/mcd22-4.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "mcd23-7",
+  "name": "Pawmi",
+  "set": "mcd23",
+  "number": "7",
+  "image": "cards/mcd23-7.webp",
+  "thumb": "cards/thumbs/mcd23-7.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me1-11",
+  "name": "Shuckle",
+  "set": "me1",
+  "number": "11",
+  "image": "cards/me1-11.webp",
+  "thumb": "cards/thumbs/me1-11.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me1-1",
+  "name": "Bulbasaur",
+  "set": "me1",
+  "number": "1",
+  "image": "cards/me1-1.webp",
+  "thumb": "cards/thumbs/me1-1.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me1-20",
+  "name": "Ninetales",
+  "set": "me1",
+  "number": "20",
+  "image": "cards/me1-20.webp",
+  "thumb": "cards/thumbs/me1-20.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me1-51",
+  "name": "Pachirisu",
+  "set": "me1",
+  "number": "51",
+  "image": "cards/me1-51.webp",
+  "thumb": "cards/thumbs/me1-51.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me1-59",
+  "name": "Kirlia",
+  "set": "me1",
+  "number": "59",
+  "image": "cards/me1-59.webp",
+  "thumb": "cards/thumbs/me1-59.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me1-9",
+  "name": "Bayleef",
+  "set": "me1",
+  "number": "9",
+  "image": "cards/me1-9.webp",
+  "thumb": "cards/thumbs/me1-9.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me2-21",
+  "name": "Seel",
+  "set": "me2",
+  "number": "21",
+  "image": "cards/me2-21.webp",
+  "thumb": "cards/thumbs/me2-21.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me2-22",
+  "name": "Dewgong",
+  "set": "me2",
+  "number": "22",
+  "image": "cards/me2-22.webp",
+  "thumb": "cards/thumbs/me2-22.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me2-44",
+  "name": "Alcremie",
+  "set": "me2",
+  "number": "44",
+  "image": "cards/me2-44.webp",
+  "thumb": "cards/thumbs/me2-44.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me2-81",
+  "name": "Zigzagoon",
+  "set": "me2",
+  "number": "81",
+  "image": "cards/me2-81.webp",
+  "thumb": "cards/thumbs/me2-81.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me2-83",
+  "name": "Buneary",
+  "set": "me2",
+  "number": "83",
+  "image": "cards/me2-83.webp",
+  "thumb": "cards/thumbs/me2-83.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me25-16",
+  "name": "Budew",
+  "set": "me25",
+  "number": "16",
+  "image": "cards/me25-16.webp",
+  "thumb": "cards/thumbs/me25-16.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me25-36",
+  "name": "Scorbunny",
+  "set": "me25",
+  "number": "36",
+  "image": "cards/me25-36.webp",
+  "thumb": "cards/thumbs/me25-36.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me25-49",
+  "name": "N's Vanillite",
+  "set": "me25",
+  "number": "49",
+  "image": "cards/me25-49.webp",
+  "thumb": "cards/thumbs/me25-49.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me25-83",
+  "name": "Marill",
+  "set": "me25",
+  "number": "83",
+  "image": "cards/me25-83.webp",
+  "thumb": "cards/thumbs/me25-83.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me25-8",
+  "name": "Chikorita",
+  "set": "me25",
+  "number": "8",
+  "image": "cards/me25-8.webp",
+  "thumb": "cards/thumbs/me25-8.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me25-95",
+  "name": "Hop's Phantump",
+  "set": "me25",
+  "number": "95",
+  "image": "cards/me25-95.webp",
+  "thumb": "cards/thumbs/me25-95.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me3-23",
+  "name": "Amaura",
+  "set": "me3",
+  "number": "23",
+  "image": "cards/me3-23.webp",
+  "thumb": "cards/thumbs/me3-23.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me3-24",
+  "name": "Aurorus",
+  "set": "me3",
+  "number": "24",
+  "image": "cards/me3-24.webp",
+  "thumb": "cards/thumbs/me3-24.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me3-29",
+  "name": "Dedenne",
+  "set": "me3",
+  "number": "29",
+  "image": "cards/me3-29.webp",
+  "thumb": "cards/thumbs/me3-29.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me3-36",
+  "name": "Aromatisse",
+  "set": "me3",
+  "number": "36",
+  "image": "cards/me3-36.webp",
+  "thumb": "cards/thumbs/me3-36.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me3-4",
+  "name": "Snivy",
+  "set": "me3",
+  "number": "4",
+  "image": "cards/me3-4.webp",
+  "thumb": "cards/thumbs/me3-4.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me3-9",
+  "name": "Vivillon",
+  "set": "me3",
+  "number": "9",
+  "image": "cards/me3-9.webp",
+  "thumb": "cards/thumbs/me3-9.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me4-14",
+  "name": "Litleo",
+  "set": "me4",
+  "number": "14",
+  "image": "cards/me4-14.webp",
+  "thumb": "cards/thumbs/me4-14.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me4-67",
+  "name": "Sliggoo",
+  "set": "me4",
+  "number": "67",
+  "image": "cards/me4-67.webp",
+  "thumb": "cards/thumbs/me4-67.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me4-90",
+  "name": "Ampharos",
+  "set": "me4",
+  "number": "90",
+  "image": "cards/me4-90.webp",
+  "thumb": "cards/thumbs/me4-90.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me5-20",
+  "name": "Primarina",
+  "set": "me5",
+  "number": "20",
+  "image": "cards/me5-20.webp",
+  "thumb": "cards/thumbs/me5-20.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me5-85",
+  "name": "Fomantis",
+  "set": "me5",
+  "number": "85",
+  "image": "cards/me5-85.webp",
+  "thumb": "cards/thumbs/me5-85.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me55-114",
+  "name": "Kangaskhan",
+  "set": "me55",
+  "number": "114",
+  "image": "cards/me55-114.webp",
+  "thumb": "cards/thumbs/me55-114.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me55-119",
+  "name": "Snorlax",
+  "set": "me55",
+  "number": "119",
+  "image": "cards/me55-119.webp",
+  "thumb": "cards/thumbs/me55-119.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me55-124",
+  "name": "Minior",
+  "set": "me55",
+  "number": "124",
+  "image": "cards/me55-124.webp",
+  "thumb": "cards/thumbs/me55-124.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me55-73",
+  "name": "Drifloon",
+  "set": "me55",
+  "number": "73",
+  "image": "cards/me55-73.webp",
+  "thumb": "cards/thumbs/me55-73.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me55-77",
+  "name": "Comfey",
+  "set": "me55",
+  "number": "77",
+  "image": "cards/me55-77.webp",
+  "thumb": "cards/thumbs/me55-77.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me55-7",
+  "name": "Cherrim",
+  "set": "me55",
+  "number": "7",
+  "image": "cards/me55-7.webp",
+  "thumb": "cards/thumbs/me55-7.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me55-88",
+  "name": "Nidorina",
+  "set": "me55",
+  "number": "88",
+  "image": "cards/me55-88.webp",
+  "thumb": "cards/thumbs/me55-88.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "me55-9",
+  "name": "Vulpix",
+  "set": "me55",
+  "number": "9",
+  "image": "cards/me55-9.webp",
+  "thumb": "cards/thumbs/me55-9.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "mep-105",
+  "name": "Mew",
+  "set": "mep",
+  "number": "105",
+  "image": "cards/mep-105.webp",
+  "thumb": "cards/thumbs/mep-105.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "neo1-35",
+  "name": "Furret",
+  "set": "neo1",
+  "number": "35",
+  "image": "cards/neo1-35.webp",
+  "thumb": "cards/thumbs/neo1-35.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "neo4-53",
+  "name": "Light Venomoth",
+  "set": "neo4",
+  "number": "53",
+  "image": "cards/neo4-53.webp",
+  "thumb": "cards/thumbs/neo4-53.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "neo4-54",
+  "name": "Light Wigglytuff",
+  "set": "neo4",
+  "number": "54",
+  "image": "cards/neo4-54.webp",
+  "thumb": "cards/thumbs/neo4-54.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "pl1-21",
+  "name": "Beautifly",
+  "set": "pl1",
+  "number": "21",
+  "image": "cards/pl1-21.webp",
+  "thumb": "cards/thumbs/pl1-21.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "pl3-109",
+  "name": "Kricketot",
+  "set": "pl3",
+  "number": "109",
+  "image": "cards/pl3-109.webp",
+  "thumb": "cards/thumbs/pl3-109.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "pl3-46",
+  "name": "Spinda",
+  "set": "pl3",
+  "number": "46",
+  "image": "cards/pl3-46.webp",
+  "thumb": "cards/thumbs/pl3-46.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "pop1-13",
+  "name": "Plusle",
+  "set": "pop1",
+  "number": "13",
+  "image": "cards/pop1-13.webp",
+  "thumb": "cards/thumbs/pop1-13.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "pop2-2",
+  "name": "Pidgeot",
+  "set": "pop2",
+  "number": "2",
+  "image": "cards/pop2-2.webp",
+  "thumb": "cards/thumbs/pop2-2.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "pop9-2",
+  "name": "Manaphy",
+  "set": "pop9",
+  "number": "2",
+  "image": "cards/pop9-2.webp",
+  "thumb": "cards/thumbs/pop9-2.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm1-103",
+  "name": "Lillipup",
+  "set": "sm1",
+  "number": "103",
+  "image": "cards/sm1-103.webp",
+  "thumb": "cards/thumbs/sm1-103.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm1-17",
+  "name": "Shiinotic",
+  "set": "sm1",
+  "number": "17",
+  "image": "cards/sm1-17.webp",
+  "thumb": "cards/thumbs/sm1-17.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm1-19",
+  "name": "Steenee",
+  "set": "sm1",
+  "number": "19",
+  "image": "cards/sm1-19.webp",
+  "thumb": "cards/thumbs/sm1-19.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm1-28",
+  "name": "Psyduck",
+  "set": "sm1",
+  "number": "28",
+  "image": "cards/sm1-28.webp",
+  "thumb": "cards/thumbs/sm1-28.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm1-7",
+  "name": "Surskit",
+  "set": "sm1",
+  "number": "7",
+  "image": "cards/sm1-7.webp",
+  "thumb": "cards/thumbs/sm1-7.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm1-8",
+  "name": "Masquerain",
+  "set": "sm1",
+  "number": "8",
+  "image": "cards/sm1-8.webp",
+  "thumb": "cards/thumbs/sm1-8.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm10-161",
+  "name": "Happiny",
+  "set": "sm10",
+  "number": "161",
+  "image": "cards/sm10-161.webp",
+  "thumb": "cards/thumbs/sm10-161.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm10-37",
+  "name": "Poliwag",
+  "set": "sm10",
+  "number": "37",
+  "image": "cards/sm10-37.webp",
+  "thumb": "cards/thumbs/sm10-37.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm11-185",
+  "name": "Komala",
+  "set": "sm11",
+  "number": "185",
+  "image": "cards/sm11-185.webp",
+  "thumb": "cards/thumbs/sm11-185.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm11-26",
+  "name": "Victini",
+  "set": "sm11",
+  "number": "26",
+  "image": "cards/sm11-26.webp",
+  "thumb": "cards/thumbs/sm11-26.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm11-37",
+  "name": "Snorunt",
+  "set": "sm11",
+  "number": "37",
+  "image": "cards/sm11-37.webp",
+  "thumb": "cards/thumbs/sm11-37.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm11-83",
+  "name": "Uxie",
+  "set": "sm11",
+  "number": "83",
+  "image": "cards/sm11-83.webp",
+  "thumb": "cards/thumbs/sm11-83.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm11-84",
+  "name": "Mesprit",
+  "set": "sm11",
+  "number": "84",
+  "image": "cards/sm11-84.webp",
+  "thumb": "cards/thumbs/sm11-84.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm12-182",
+  "name": "Bewear",
+  "set": "sm12",
+  "number": "182",
+  "image": "cards/sm12-182.webp",
+  "thumb": "cards/thumbs/sm12-182.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm12-42",
+  "name": "Vaporeon",
+  "set": "sm12",
+  "number": "42",
+  "image": "cards/sm12-42.webp",
+  "thumb": "cards/thumbs/sm12-42.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm3-47",
+  "name": "Togedemaru",
+  "set": "sm3",
+  "number": "47",
+  "image": "cards/sm3-47.webp",
+  "thumb": "cards/thumbs/sm3-47.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm35-5",
+  "name": "Breloom",
+  "set": "sm35",
+  "number": "5",
+  "image": "cards/sm35-5.webp",
+  "thumb": "cards/thumbs/sm35-5.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm4-55",
+  "name": "Stufful",
+  "set": "sm4",
+  "number": "55",
+  "image": "cards/sm4-55.webp",
+  "thumb": "cards/thumbs/sm4-55.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm5-84",
+  "name": "Shieldon",
+  "set": "sm5",
+  "number": "84",
+  "image": "cards/sm5-84.webp",
+  "thumb": "cards/thumbs/sm5-84.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm6-84",
+  "name": "Flabébé",
+  "set": "sm6",
+  "number": "84",
+  "image": "cards/sm6-84.webp",
+  "thumb": "cards/thumbs/sm6-84.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm6-87",
+  "name": "Sylveon",
+  "set": "sm6",
+  "number": "87",
+  "image": "cards/sm6-87.webp",
+  "thumb": "cards/thumbs/sm6-87.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm7-33",
+  "name": "Mudkip",
+  "set": "sm7",
+  "number": "33",
+  "image": "cards/sm7-33.webp",
+  "thumb": "cards/thumbs/sm7-33.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm8-11",
+  "name": "Hoppip",
+  "set": "sm8",
+  "number": "11",
+  "image": "cards/sm8-11.webp",
+  "thumb": "cards/thumbs/sm8-11.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm8-147",
+  "name": "Morelull",
+  "set": "sm8",
+  "number": "147",
+  "image": "cards/sm8-147.webp",
+  "thumb": "cards/thumbs/sm8-147.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm8-66",
+  "name": "Brionne",
+  "set": "sm8",
+  "number": "66",
+  "image": "cards/sm8-66.webp",
+  "thumb": "cards/thumbs/sm8-66.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm9-42",
+  "name": "Flaaffy",
+  "set": "sm9",
+  "number": "42",
+  "image": "cards/sm9-42.webp",
+  "thumb": "cards/thumbs/sm9-42.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm9-57",
+  "name": "Nidoran ♂",
+  "set": "sm9",
+  "number": "57",
+  "image": "cards/sm9-57.webp",
+  "thumb": "cards/thumbs/sm9-57.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sm9-69",
+  "name": "Cosmog",
+  "set": "sm9",
+  "number": "69",
+  "image": "cards/sm9-69.webp",
+  "thumb": "cards/thumbs/sm9-69.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "smp-sm24",
+  "name": "Popplio",
+  "set": "smp",
+  "number": "SM24",
+  "image": "cards/smp-sm24.webp",
+  "thumb": "cards/thumbs/smp-sm24.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv1-144",
+  "name": "Chansey",
+  "set": "sv1",
+  "number": "144",
+  "image": "cards/sv1-144.webp",
+  "thumb": "cards/thumbs/sv1-144.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv1-21",
+  "name": "Smoliv",
+  "set": "sv1",
+  "number": "21",
+  "image": "cards/sv1-21.webp",
+  "thumb": "cards/thumbs/sv1-21.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv1-42",
+  "name": "Slowpoke",
+  "set": "sv1",
+  "number": "42",
+  "image": "cards/sv1-42.webp",
+  "thumb": "cards/thumbs/sv1-42.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv1-52",
+  "name": "Quaxly",
+  "set": "sv1",
+  "number": "52",
+  "image": "cards/sv1-52.webp",
+  "thumb": "cards/thumbs/sv1-52.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv1-56",
+  "name": "Wiglett",
+  "set": "sv1",
+  "number": "56",
+  "image": "cards/sv1-56.webp",
+  "thumb": "cards/thumbs/sv1-56.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv1-66",
+  "name": "Mareep",
+  "set": "sv1",
+  "number": "66",
+  "image": "cards/sv1-66.webp",
+  "thumb": "cards/thumbs/sv1-66.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv1-98",
+  "name": "Fidough",
+  "set": "sv1",
+  "number": "98",
+  "image": "cards/sv1-98.webp",
+  "thumb": "cards/thumbs/sv1-98.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv10-10",
+  "name": "Shaymin",
+  "set": "sv10",
+  "number": "10",
+  "image": "cards/sv10-10.webp",
+  "thumb": "cards/thumbs/sv10-10.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv10-22",
+  "name": "Dolliv",
+  "set": "sv10",
+  "number": "22",
+  "image": "cards/sv10-22.webp",
+  "thumb": "cards/thumbs/sv10-22.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv10-58",
+  "name": "Floatzel",
+  "set": "sv10",
+  "number": "58",
+  "image": "cards/sv10-58.webp",
+  "thumb": "cards/thumbs/sv10-58.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv10-85",
+  "name": "Team Rocket's Chingling",
+  "set": "sv10",
+  "number": "85",
+  "image": "cards/sv10-85.webp",
+  "thumb": "cards/thumbs/sv10-85.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv105b-38",
+  "name": "Duosion",
+  "set": "sv105b",
+  "number": "38",
+  "image": "cards/sv105b-38.webp",
+  "thumb": "cards/thumbs/sv105b-38.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv105w-21",
+  "name": "Oshawott",
+  "set": "sv105w",
+  "number": "21",
+  "image": "cards/sv105w-21.webp",
+  "thumb": "cards/thumbs/sv105w-21.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv105w-37",
+  "name": "Swoobat",
+  "set": "sv105w",
+  "number": "37",
+  "image": "cards/sv105w-37.webp",
+  "thumb": "cards/thumbs/sv105w-37.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv2-12",
+  "name": "Sprigatito",
+  "set": "sv2",
+  "number": "12",
+  "image": "cards/sv2-12.webp",
+  "thumb": "cards/thumbs/sv2-12.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv2-154",
+  "name": "Girafarig",
+  "set": "sv2",
+  "number": "154",
+  "image": "cards/sv2-154.webp",
+  "thumb": "cards/thumbs/sv2-154.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv2-167",
+  "name": "Tandemaus",
+  "set": "sv2",
+  "number": "167",
+  "image": "cards/sv2-167.webp",
+  "thumb": "cards/thumbs/sv2-167.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv2-3",
+  "name": "Jumpluff",
+  "set": "sv2",
+  "number": "3",
+  "image": "cards/sv2-3.webp",
+  "thumb": "cards/thumbs/sv2-3.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv2-54",
+  "name": "Cetoddle",
+  "set": "sv2",
+  "number": "54",
+  "image": "cards/sv2-54.webp",
+  "thumb": "cards/thumbs/sv2-54.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv3-111",
+  "name": "Drilbur",
+  "set": "sv3",
+  "number": "111",
+  "image": "cards/sv3-111.webp",
+  "thumb": "cards/thumbs/sv3-111.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv3-116",
+  "name": "Rockruff",
+  "set": "sv3",
+  "number": "116",
+  "image": "cards/sv3-116.webp",
+  "thumb": "cards/thumbs/sv3-116.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv3-128",
+  "name": "Paldean Clodsire",
+  "set": "sv3",
+  "number": "128",
+  "image": "cards/sv3-128.webp",
+  "thumb": "cards/thumbs/sv3-128.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv3-173",
+  "name": "Audino",
+  "set": "sv3",
+  "number": "173",
+  "image": "cards/sv3-173.webp",
+  "thumb": "cards/thumbs/sv3-173.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv3-3",
+  "name": "Bellossom",
+  "set": "sv3",
+  "number": "3",
+  "image": "cards/sv3-3.webp",
+  "thumb": "cards/thumbs/sv3-3.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv3-80",
+  "name": "Cleffa",
+  "set": "sv3",
+  "number": "80",
+  "image": "cards/sv3-80.webp",
+  "thumb": "cards/thumbs/sv3-80.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv3-83",
+  "name": "Togepi",
+  "set": "sv3",
+  "number": "83",
+  "image": "cards/sv3-83.webp",
+  "thumb": "cards/thumbs/sv3-83.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv3-85",
+  "name": "Togekiss",
+  "set": "sv3",
+  "number": "85",
+  "image": "cards/sv3-85.webp",
+  "thumb": "cards/thumbs/sv3-85.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv35-10",
+  "name": "Caterpie",
+  "set": "sv35",
+  "number": "10",
+  "image": "cards/sv35-10.webp",
+  "thumb": "cards/thumbs/sv35-10.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv35-12",
+  "name": "Butterfree",
+  "set": "sv35",
+  "number": "12",
+  "image": "cards/sv35-12.webp",
+  "thumb": "cards/thumbs/sv35-12.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv35-132",
+  "name": "Ditto",
+  "set": "sv35",
+  "number": "132",
+  "image": "cards/sv35-132.webp",
+  "thumb": "cards/thumbs/sv35-132.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv35-14",
+  "name": "Kakuna",
+  "set": "sv35",
+  "number": "14",
+  "image": "cards/sv35-14.webp",
+  "thumb": "cards/thumbs/sv35-14.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv35-15",
+  "name": "Beedrill",
+  "set": "sv35",
+  "number": "15",
+  "image": "cards/sv35-15.webp",
+  "thumb": "cards/thumbs/sv35-15.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv35-35",
+  "name": "Clefairy",
+  "set": "sv35",
+  "number": "35",
+  "image": "cards/sv35-35.webp",
+  "thumb": "cards/thumbs/sv35-35.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv4-126",
+  "name": "Jirachi",
+  "set": "sv4",
+  "number": "126",
+  "image": "cards/sv4-126.webp",
+  "thumb": "cards/thumbs/sv4-126.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv4-23",
+  "name": "Fuecoco",
+  "set": "sv4",
+  "number": "23",
+  "image": "cards/sv4-23.webp",
+  "thumb": "cards/thumbs/sv4-23.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv4-39",
+  "name": "Mantyke",
+  "set": "sv4",
+  "number": "39",
+  "image": "cards/sv4-39.webp",
+  "thumb": "cards/thumbs/sv4-39.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv4-61",
+  "name": "Minun",
+  "set": "sv4",
+  "number": "61",
+  "image": "cards/sv4-61.webp",
+  "thumb": "cards/thumbs/sv4-61.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv4-77",
+  "name": "Pumpkaboo",
+  "set": "sv4",
+  "number": "77",
+  "image": "cards/sv4-77.webp",
+  "thumb": "cards/thumbs/sv4-77.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv4-86",
+  "name": "Scream Tail",
+  "set": "sv4",
+  "number": "86",
+  "image": "cards/sv4-86.webp",
+  "thumb": "cards/thumbs/sv4-86.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv45-37",
+  "name": "Mimikyu",
+  "set": "sv45",
+  "number": "37",
+  "image": "cards/sv45-37.webp",
+  "thumb": "cards/thumbs/sv45-37.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv45-58",
+  "name": "Paldean Wooper",
+  "set": "sv45",
+  "number": "58",
+  "image": "cards/sv45-58.webp",
+  "thumb": "cards/thumbs/sv45-58.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv5-130",
+  "name": "Skitty",
+  "set": "sv5",
+  "number": "130",
+  "image": "cards/sv5-130.webp",
+  "thumb": "cards/thumbs/sv5-130.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv5-26",
+  "name": "Ponyta",
+  "set": "sv5",
+  "number": "26",
+  "image": "cards/sv5-26.webp",
+  "thumb": "cards/thumbs/sv5-26.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv5-45",
+  "name": "Snom",
+  "set": "sv5",
+  "number": "45",
+  "image": "cards/sv5-45.webp",
+  "thumb": "cards/thumbs/sv5-45.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv5-70",
+  "name": "Solosis",
+  "set": "sv5",
+  "number": "70",
+  "image": "cards/sv5-70.webp",
+  "thumb": "cards/thumbs/sv5-70.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv6-10",
+  "name": "Illumise",
+  "set": "sv6",
+  "number": "10",
+  "image": "cards/sv6-10.webp",
+  "thumb": "cards/thumbs/sv6-10.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv6-131",
+  "name": "Tatsugiri",
+  "set": "sv6",
+  "number": "131",
+  "image": "cards/sv6-131.webp",
+  "thumb": "cards/thumbs/sv6-131.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv6-59",
+  "name": "Finizen",
+  "set": "sv6",
+  "number": "59",
+  "image": "cards/sv6-59.webp",
+  "thumb": "cards/thumbs/sv6-59.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv6-6",
+  "name": "Sunkern",
+  "set": "sv6",
+  "number": "6",
+  "image": "cards/sv6-6.webp",
+  "thumb": "cards/thumbs/sv6-6.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv6-75",
+  "name": "Wattrel",
+  "set": "sv6",
+  "number": "75",
+  "image": "cards/sv6-75.webp",
+  "thumb": "cards/thumbs/sv6-75.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv6-87",
+  "name": "Floette",
+  "set": "sv6",
+  "number": "87",
+  "image": "cards/sv6-87.webp",
+  "thumb": "cards/thumbs/sv6-87.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv6-9",
+  "name": "Volbeat",
+  "set": "sv6",
+  "number": "9",
+  "image": "cards/sv6-9.webp",
+  "thumb": "cards/thumbs/sv6-9.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv65-1",
+  "name": "Joltik",
+  "set": "sv65",
+  "number": "1",
+  "image": "cards/sv65-1.webp",
+  "thumb": "cards/thumbs/sv65-1.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv65-21",
+  "name": "Cresselia",
+  "set": "sv65",
+  "number": "21",
+  "image": "cards/sv65-21.webp",
+  "thumb": "cards/thumbs/sv65-21.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv7-10",
+  "name": "Gossifleur",
+  "set": "sv7",
+  "number": "10",
+  "image": "cards/sv7-10.webp",
+  "thumb": "cards/thumbs/sv7-10.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv7-113",
+  "name": "Eevee",
+  "set": "sv7",
+  "number": "113",
+  "image": "cards/sv7-113.webp",
+  "thumb": "cards/thumbs/sv7-113.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv7-12",
+  "name": "Applin",
+  "set": "sv7",
+  "number": "12",
+  "image": "cards/sv7-12.webp",
+  "thumb": "cards/thumbs/sv7-12.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv7-35",
+  "name": "Finneon",
+  "set": "sv7",
+  "number": "35",
+  "image": "cards/sv7-35.webp",
+  "thumb": "cards/thumbs/sv7-35.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv7-39",
+  "name": "Froakie",
+  "set": "sv7",
+  "number": "39",
+  "image": "cards/sv7-39.webp",
+  "thumb": "cards/thumbs/sv7-39.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv7-70",
+  "name": "Greavard",
+  "set": "sv7",
+  "number": "70",
+  "image": "cards/sv7-70.webp",
+  "thumb": "cards/thumbs/sv7-70.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv8-123",
+  "name": "Alolan Dugtrio",
+  "set": "sv8",
+  "number": "123",
+  "image": "cards/sv8-123.webp",
+  "thumb": "cards/thumbs/sv8-123.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv8-134",
+  "name": "Altaria",
+  "set": "sv8",
+  "number": "134",
+  "image": "cards/sv8-134.webp",
+  "thumb": "cards/thumbs/sv8-134.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv8-145",
+  "name": "Slakoth",
+  "set": "sv8",
+  "number": "145",
+  "image": "cards/sv8-145.webp",
+  "thumb": "cards/thumbs/sv8-145.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv8-46",
+  "name": "Shellos",
+  "set": "sv8",
+  "number": "46",
+  "image": "cards/sv8-46.webp",
+  "thumb": "cards/thumbs/sv8-46.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv8-5",
+  "name": "Scatterbug",
+  "set": "sv8",
+  "number": "5",
+  "image": "cards/sv8-5.webp",
+  "thumb": "cards/thumbs/sv8-5.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv8-75",
+  "name": "Smoochum",
+  "set": "sv8",
+  "number": "75",
+  "image": "cards/sv8-75.webp",
+  "thumb": "cards/thumbs/sv8-75.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv8-85",
+  "name": "Meowstic",
+  "set": "sv8",
+  "number": "85",
+  "image": "cards/sv8-85.webp",
+  "thumb": "cards/thumbs/sv8-85.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv8-89",
+  "name": "Oricorio",
+  "set": "sv8",
+  "number": "89",
+  "image": "cards/sv8-89.webp",
+  "thumb": "cards/thumbs/sv8-89.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv8-92",
+  "name": "Tapu Lele",
+  "set": "sv8",
+  "number": "92",
+  "image": "cards/sv8-92.webp",
+  "thumb": "cards/thumbs/sv8-92.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv8-94",
+  "name": "Flittle",
+  "set": "sv8",
+  "number": "94",
+  "image": "cards/sv8-94.webp",
+  "thumb": "cards/thumbs/sv8-94.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv85-25",
+  "name": "Glaceon",
+  "set": "sv85",
+  "number": "25",
+  "image": "cards/sv85-25.webp",
+  "thumb": "cards/thumbs/sv85-25.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv85-33",
+  "name": "Espeon",
+  "set": "sv85",
+  "number": "33",
+  "image": "cards/sv85-33.webp",
+  "thumb": "cards/thumbs/sv85-33.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv85-38",
+  "name": "Spritzee",
+  "set": "sv85",
+  "number": "38",
+  "image": "cards/sv85-38.webp",
+  "thumb": "cards/thumbs/sv85-38.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv85-8",
+  "name": "Whimsicott",
+  "set": "sv85",
+  "number": "8",
+  "image": "cards/sv85-8.webp",
+  "thumb": "cards/thumbs/sv85-8.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv9-109",
+  "name": "Cufant",
+  "set": "sv9",
+  "number": "109",
+  "image": "cards/sv9-109.webp",
+  "thumb": "cards/thumbs/sv9-109.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv9-122",
+  "name": "Kecleon",
+  "set": "sv9",
+  "number": "122",
+  "image": "cards/sv9-122.webp",
+  "thumb": "cards/thumbs/sv9-122.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv9-131",
+  "name": "Skwovet",
+  "set": "sv9",
+  "number": "131",
+  "image": "cards/sv9-131.webp",
+  "thumb": "cards/thumbs/sv9-131.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv9-132",
+  "name": "Greedent",
+  "set": "sv9",
+  "number": "132",
+  "image": "cards/sv9-132.webp",
+  "thumb": "cards/thumbs/sv9-132.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv9-66",
+  "name": "Lillie's Cutiefly",
+  "set": "sv9",
+  "number": "66",
+  "image": "cards/sv9-66.webp",
+  "thumb": "cards/thumbs/sv9-66.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv9-74",
+  "name": "Milcery",
+  "set": "sv9",
+  "number": "74",
+  "image": "cards/sv9-74.webp",
+  "thumb": "cards/thumbs/sv9-74.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "sv9-78",
+  "name": "Piloswine",
+  "set": "sv9",
+  "number": "78",
+  "image": "cards/sv9-78.webp",
+  "thumb": "cards/thumbs/sv9-78.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "svp-102",
+  "name": "Oddish",
+  "set": "svp",
+  "number": "102",
+  "image": "cards/svp-102.webp",
+  "thumb": "cards/thumbs/svp-102.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "svp-156",
+  "name": "Quagsire",
+  "set": "svp",
+  "number": "156",
+  "image": "cards/svp-156.webp",
+  "thumb": "cards/thumbs/svp-156.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "svp-25",
+  "name": "Tinkatink",
+  "set": "svp",
+  "number": "25",
+  "image": "cards/svp-25.webp",
+  "thumb": "cards/thumbs/svp-25.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "svp-48",
+  "name": "Squirtle",
+  "set": "svp",
+  "number": "48",
+  "image": "cards/svp-48.webp",
+  "thumb": "cards/thumbs/svp-48.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "svp-6",
+  "name": "Pawmot",
+  "set": "svp",
+  "number": "6",
+  "image": "cards/svp-6.webp",
+  "thumb": "cards/thumbs/svp-6.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh1-153",
+  "name": "Wooloo",
+  "set": "swsh1",
+  "number": "153",
+  "image": "cards/swsh1-153.webp",
+  "thumb": "cards/thumbs/swsh1-153.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh1-89",
+  "name": "Sinistea",
+  "set": "swsh1",
+  "number": "89",
+  "image": "cards/swsh1-89.webp",
+  "thumb": "cards/thumbs/swsh1-89.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh10-11",
+  "name": "Combee",
+  "set": "swsh10",
+  "number": "11",
+  "image": "cards/swsh10-11.webp",
+  "thumb": "cards/thumbs/swsh10-11.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh11-108",
+  "name": "Carbink",
+  "set": "swsh11",
+  "number": "108",
+  "image": "cards/swsh11-108.webp",
+  "thumb": "cards/thumbs/swsh11-108.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh11-35",
+  "name": "Horsea",
+  "set": "swsh11",
+  "number": "35",
+  "image": "cards/swsh11-35.webp",
+  "thumb": "cards/thumbs/swsh11-35.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh11-59",
+  "name": "Tynamo",
+  "set": "swsh11",
+  "number": "59",
+  "image": "cards/swsh11-59.webp",
+  "thumb": "cards/thumbs/swsh11-59.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh11-77",
+  "name": "Inkay",
+  "set": "swsh11",
+  "number": "77",
+  "image": "cards/swsh11-77.webp",
+  "thumb": "cards/thumbs/swsh11-77.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh12-129",
+  "name": "Dratini",
+  "set": "swsh12",
+  "number": "129",
+  "image": "cards/swsh12-129.webp",
+  "thumb": "cards/thumbs/swsh12-129.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh12-131",
+  "name": "Dragonite",
+  "set": "swsh12",
+  "number": "131",
+  "image": "cards/swsh12-131.webp",
+  "thumb": "cards/thumbs/swsh12-131.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh12-45",
+  "name": "Phione",
+  "set": "swsh12",
+  "number": "45",
+  "image": "cards/swsh12-45.webp",
+  "thumb": "cards/thumbs/swsh12-45.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh12-67",
+  "name": "Ralts",
+  "set": "swsh12",
+  "number": "67",
+  "image": "cards/swsh12-67.webp",
+  "thumb": "cards/thumbs/swsh12-67.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh12-6",
+  "name": "Sunflora",
+  "set": "swsh12",
+  "number": "6",
+  "image": "cards/swsh12-6.webp",
+  "thumb": "cards/thumbs/swsh12-6.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh12-84",
+  "name": "Slurpuff",
+  "set": "swsh12",
+  "number": "84",
+  "image": "cards/swsh12-84.webp",
+  "thumb": "cards/thumbs/swsh12-84.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh12-86",
+  "name": "Indeedee",
+  "set": "swsh12",
+  "number": "86",
+  "image": "cards/swsh12-86.webp",
+  "thumb": "cards/thumbs/swsh12-86.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh12pt5-47",
+  "name": "Emolga",
+  "set": "swsh12pt5",
+  "number": "47",
+  "image": "cards/swsh12pt5-47.webp",
+  "thumb": "cards/thumbs/swsh12pt5-47.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh2-75",
+  "name": "Clefable",
+  "set": "swsh2",
+  "number": "75",
+  "image": "cards/swsh2-75.webp",
+  "thumb": "cards/thumbs/swsh2-75.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh2-84",
+  "name": "Hattrem",
+  "set": "swsh2",
+  "number": "84",
+  "image": "cards/swsh2-84.webp",
+  "thumb": "cards/thumbs/swsh2-84.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh2-85",
+  "name": "Hatterene",
+  "set": "swsh2",
+  "number": "85",
+  "image": "cards/swsh2-85.webp",
+  "thumb": "cards/thumbs/swsh2-85.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh3-11",
+  "name": "Rowlet",
+  "set": "swsh3",
+  "number": "11",
+  "image": "cards/swsh3-11.webp",
+  "thumb": "cards/thumbs/swsh3-11.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh3-135",
+  "name": "Sentret",
+  "set": "swsh3",
+  "number": "135",
+  "image": "cards/swsh3-135.webp",
+  "thumb": "cards/thumbs/swsh3-135.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh35-18",
+  "name": "Hatenna",
+  "set": "swsh35",
+  "number": "18",
+  "image": "cards/swsh35-18.webp",
+  "thumb": "cards/thumbs/swsh35-18.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh4-143",
+  "name": "Pikipek",
+  "set": "swsh4",
+  "number": "143",
+  "image": "cards/swsh4-143.webp",
+  "thumb": "cards/thumbs/swsh4-143.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh4-17",
+  "name": "Skiddo",
+  "set": "swsh4",
+  "number": "17",
+  "image": "cards/swsh4-17.webp",
+  "thumb": "cards/thumbs/swsh4-17.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh4-26",
+  "name": "Flareon",
+  "set": "swsh4",
+  "number": "26",
+  "image": "cards/swsh4-26.webp",
+  "thumb": "cards/thumbs/swsh4-26.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh4-75",
+  "name": "Cottonee",
+  "set": "swsh4",
+  "number": "75",
+  "image": "cards/swsh4-75.webp",
+  "thumb": "cards/thumbs/swsh4-75.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh4-86",
+  "name": "Phanpy",
+  "set": "swsh4",
+  "number": "86",
+  "image": "cards/swsh4-86.webp",
+  "thumb": "cards/thumbs/swsh4-86.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh45-11",
+  "name": "Grookey",
+  "set": "swsh45",
+  "number": "11",
+  "image": "cards/swsh45-11.webp",
+  "thumb": "cards/thumbs/swsh45-11.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh5-114",
+  "name": "Lickilicky",
+  "set": "swsh5",
+  "number": "114",
+  "image": "cards/swsh5-114.webp",
+  "thumb": "cards/thumbs/swsh5-114.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh5-1",
+  "name": "Bellsprout",
+  "set": "swsh5",
+  "number": "1",
+  "image": "cards/swsh5-1.webp",
+  "thumb": "cards/thumbs/swsh5-1.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh5-59",
+  "name": "Chimecho",
+  "set": "swsh5",
+  "number": "59",
+  "image": "cards/swsh5-59.webp",
+  "thumb": "cards/thumbs/swsh5-59.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh5-60",
+  "name": "Espurr",
+  "set": "swsh5",
+  "number": "60",
+  "image": "cards/swsh5-60.webp",
+  "thumb": "cards/thumbs/swsh5-60.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh6-13",
+  "name": "Bounsweet",
+  "set": "swsh6",
+  "number": "13",
+  "image": "cards/swsh6-13.webp",
+  "thumb": "cards/thumbs/swsh6-13.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh6-67",
+  "name": "Swirlix",
+  "set": "swsh6",
+  "number": "67",
+  "image": "cards/swsh6-67.webp",
+  "thumb": "cards/thumbs/swsh6-67.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh7-126",
+  "name": "Teddiursa",
+  "set": "swsh7",
+  "number": "126",
+  "image": "cards/swsh7-126.webp",
+  "thumb": "cards/thumbs/swsh7-126.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh7-132",
+  "name": "Swablu",
+  "set": "swsh7",
+  "number": "132",
+  "image": "cards/swsh7-132.webp",
+  "thumb": "cards/thumbs/swsh7-132.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh7-136",
+  "name": "Rufflet",
+  "set": "swsh7",
+  "number": "136",
+  "image": "cards/swsh7-136.webp",
+  "thumb": "cards/thumbs/swsh7-136.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh7-42",
+  "name": "Tympole",
+  "set": "swsh7",
+  "number": "42",
+  "image": "cards/swsh7-42.webp",
+  "thumb": "cards/thumbs/swsh7-42.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh7-50",
+  "name": "Raichu",
+  "set": "swsh7",
+  "number": "50",
+  "image": "cards/swsh7-50.webp",
+  "thumb": "cards/thumbs/swsh7-50.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh7-53",
+  "name": "Lanturn",
+  "set": "swsh7",
+  "number": "53",
+  "image": "cards/swsh7-53.webp",
+  "thumb": "cards/thumbs/swsh7-53.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh7-79",
+  "name": "Ribombee",
+  "set": "swsh7",
+  "number": "79",
+  "image": "cards/swsh7-79.webp",
+  "thumb": "cards/thumbs/swsh7-79.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh8-109",
+  "name": "Morpeko",
+  "set": "swsh8",
+  "number": "109",
+  "image": "cards/swsh8-109.webp",
+  "thumb": "cards/thumbs/swsh8-109.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh8-121",
+  "name": "Munna",
+  "set": "swsh8",
+  "number": "121",
+  "image": "cards/swsh8-121.webp",
+  "thumb": "cards/thumbs/swsh8-121.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh8-199",
+  "name": "Meowth",
+  "set": "swsh8",
+  "number": "199",
+  "image": "cards/swsh8-199.webp",
+  "thumb": "cards/thumbs/swsh8-199.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh8-203",
+  "name": "Blissey",
+  "set": "swsh8",
+  "number": "203",
+  "image": "cards/swsh8-203.webp",
+  "thumb": "cards/thumbs/swsh8-203.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh8-211",
+  "name": "Delcatty",
+  "set": "swsh8",
+  "number": "211",
+  "image": "cards/swsh8-211.webp",
+  "thumb": "cards/thumbs/swsh8-211.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh9-117",
+  "name": "Starly",
+  "set": "swsh9",
+  "number": "117",
+  "image": "cards/swsh9-117.webp",
+  "thumb": "cards/thumbs/swsh9-117.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh9-12",
+  "name": "Cherubi",
+  "set": "swsh9",
+  "number": "12",
+  "image": "cards/swsh9-12.webp",
+  "thumb": "cards/thumbs/swsh9-12.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swsh9-6",
+  "name": "Turtwig",
+  "set": "swsh9",
+  "number": "6",
+  "image": "cards/swsh9-6.webp",
+  "thumb": "cards/thumbs/swsh9-6.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swshp-swsh191",
+  "name": "Leafeon",
+  "set": "swshp",
+  "number": "SWSH191",
+  "image": "cards/swshp-swsh191.webp",
+  "thumb": "cards/thumbs/swshp-swsh191.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swshp-swsh221",
+  "name": "Cyndaquil",
+  "set": "swshp",
+  "number": "SWSH221",
+  "image": "cards/swshp-swsh221.webp",
+  "thumb": "cards/thumbs/swshp-swsh221.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "swshp-swsh276",
+  "name": "Togetic",
+  "set": "swshp",
+  "number": "SWSH276",
+  "image": "cards/swshp-swsh276.webp",
+  "thumb": "cards/thumbs/swshp-swsh276.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "tk7a-12",
+  "name": "Bidoof",
+  "set": "tk7a",
+  "number": "12",
+  "image": "cards/tk7a-12.webp",
+  "thumb": "cards/thumbs/tk7a-12.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "tk7b-11",
+  "name": "Pidgey",
+  "set": "tk7b",
+  "number": "11",
+  "image": "cards/tk7b-11.webp",
+  "thumb": "cards/thumbs/tk7b-11.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "tk9a-12",
+  "name": "Blitzle",
+  "set": "tk9a",
+  "number": "12",
+  "image": "cards/tk9a-12.webp",
+  "thumb": "cards/thumbs/tk9a-12.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "xy0-3",
+  "name": "Chespin",
+  "set": "xy0",
+  "number": "3",
+  "image": "cards/xy0-3.webp",
+  "thumb": "cards/thumbs/xy0-3.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "xy1-49",
+  "name": "Spoink",
+  "set": "xy1",
+  "number": "49",
+  "image": "cards/xy1-49.webp",
+  "thumb": "cards/thumbs/xy1-49.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "xy1-88",
+  "name": "Jigglypuff",
+  "set": "xy1",
+  "number": "88",
+  "image": "cards/xy1-88.webp",
+  "thumb": "cards/thumbs/xy1-88.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "xy10-88",
+  "name": "Cinccino",
+  "set": "xy10",
+  "number": "88",
+  "image": "cards/xy10-88.webp",
+  "thumb": "cards/thumbs/xy10-88.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "xy11-94",
+  "name": "Fletchling",
+  "set": "xy11",
+  "number": "94",
+  "image": "cards/xy11-94.webp",
+  "thumb": "cards/thumbs/xy11-94.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "xy2-74",
+  "name": "Goodra",
+  "set": "xy2",
+  "number": "74",
+  "image": "cards/xy2-74.webp",
+  "thumb": "cards/thumbs/xy2-74.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "xy2-8",
+  "name": "Roselia",
+  "set": "xy2",
+  "number": "8",
+  "image": "cards/xy2-8.webp",
+  "thumb": "cards/thumbs/xy2-8.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "xy4-29",
+  "name": "Helioptile",
+  "set": "xy4",
+  "number": "29",
+  "image": "cards/xy4-29.webp",
+  "thumb": "cards/thumbs/xy4-29.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "xy4-40",
+  "name": "Musharna",
+  "set": "xy4",
+  "number": "40",
+  "image": "cards/xy4-40.webp",
+  "thumb": "cards/thumbs/xy4-40.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "xy4-6",
+  "name": "Swadloon",
+  "set": "xy4",
+  "number": "6",
+  "image": "cards/xy4-6.webp",
+  "thumb": "cards/thumbs/xy4-6.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "xy4-75",
+  "name": "Goomy",
+  "set": "xy4",
+  "number": "75",
+  "image": "cards/xy4-75.webp",
+  "thumb": "cards/thumbs/xy4-75.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "xy4-87",
+  "name": "Bunnelby",
+  "set": "xy4",
+  "number": "87",
+  "image": "cards/xy4-87.webp",
+  "thumb": "cards/thumbs/xy4-87.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "xy5-111",
+  "name": "Zigzagoon",
+  "set": "xy5",
+  "number": "111",
+  "image": "cards/xy5-111.webp",
+  "thumb": "cards/thumbs/xy5-111.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "xy7-3",
+  "name": "Vileplume",
+  "set": "xy7",
+  "number": "3",
+  "image": "cards/xy7-3.webp",
+  "thumb": "cards/thumbs/xy7-3.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "xy8-132",
+  "name": "Noibat",
+  "set": "xy8",
+  "number": "132",
+  "image": "cards/xy8-132.webp",
+  "thumb": "cards/thumbs/xy8-132.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "xy8-25",
+  "name": "Fennekin",
+  "set": "xy8",
+  "number": "25",
+  "image": "cards/xy8-25.webp",
+  "thumb": "cards/thumbs/xy8-25.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "xy9-29",
+  "name": "Corsola",
+  "set": "xy9",
+  "number": "29",
+  "image": "cards/xy9-29.webp",
+  "thumb": "cards/thumbs/xy9-29.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "xy9-36",
+  "name": "Ducklett",
+  "set": "xy9",
+  "number": "36",
+  "image": "cards/xy9-36.webp",
+  "thumb": "cards/thumbs/xy9-36.webp",
+  "width": 733,
+  "height": 1024
+ },
+ {
+  "id": "xy9-44",
+  "name": "Shinx",
+  "set": "xy9",
+  "number": "44",
+  "image": "cards/xy9-44.webp",
+  "thumb": "cards/thumbs/xy9-44.webp",
+  "width": 733,
+  "height": 1024
+ }
+]

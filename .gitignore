@@ -1,0 +1,3 @@
+# Original full-size PNGs (~210 MB) stay local only
+final pics/
+.DS_Store

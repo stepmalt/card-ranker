@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fbe0f0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Card Ranker">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>Card Ranker</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <div class="sky-layer sky-a"></div>
+    <div class="sky-layer sky-b"></div>
+    <div class="clouds"></div>
+    <div class="sparkles"></div>
+  </div>
+
+  <div class="app">
+    <header class="topbar" hidden>
+      <div class="topbar-row">
+        <button class="save-name" data-action="rename" title="Rename save"></button>
+        <div class="topbar-buttons">
+          <button class="pill-btn" data-action="board" title="Leaderboard (L)">🏆 <span>Ranking</span></button>
+          <button class="icon-btn" data-action="menu" title="Menu" aria-label="Menu">⋯</button>
+        </div>
+      </div>
+      <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-track"><div class="progress-fill"></div></div>
+        <div class="progress-text"><span class="progress-stage"></span><span class="progress-left"></span></div>
+      </div>
+    </header>
+    <main id="main"></main>
+  </div>
+
+  <div id="layers"></div>
+  <div id="toasts" aria-live="polite"></div>
+  <input type="file" id="file-input" accept="application/json,.json" hidden>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
