@@ -147,6 +147,8 @@ img { display: block; -webkit-user-drag: none; user-select: none; -webkit-touch-
   background: linear-gradient(90deg, #ffa9d6, #c8a9ff, #8fd8ff);
   transition: width 0.4s ease;
 }
+.round-track { height: 4px; margin-top: 3px; background: rgba(255, 255, 255, 0.55); border-radius: 999px; overflow: hidden; }
+.round-fill { height: 100%; width: 0; background: var(--accent); border-radius: 999px; transition: width 0.4s ease; }
 .progress-text { display: flex; justify-content: space-between; gap: 8px; font-size: 13px; color: var(--ink-soft); margin-top: 4px; font-weight: 500; }
 .progress-stage { color: var(--ink); font-weight: 600; }
 

@@ -440,7 +440,11 @@ function renderHeader() {
   const pct = left ? Math.min(99, (done / (done + left)) * 100) : 100;
   $('.progress-fill').style.width = `${pct}%`;
   $('.progress').setAttribute('aria-valuenow', Math.round(pct));
-  $('.progress-stage').textContent = d.question ? stageLabel(d.question.stage, d.question.round) : 'Complete ✨';
+  const r = d.progress.round;
+  const roundPct = r && r.done + r.left ? Math.min(100, Math.round((r.done / (r.done + r.left)) * 100)) : 0;
+  const showPct = d.question && d.question.kind !== 'review';
+  $('.progress-stage').textContent = d.question ? `${stageLabel(d.question.stage, d.question.round)}${showPct ? ` · ${roundPct}% done` : ''}` : 'Complete ✨';
+  $('.round-fill').style.width = `${d.question ? (showPct ? roundPct : 100) : 100}%`;
   $('.progress-left').textContent = left ? `${done} picks · ~${left} to go` : `${done} picks · all done!`;
 }
 
