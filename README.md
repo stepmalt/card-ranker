@@ -1,6 +1,6 @@
 # ✨ Card Ranker
 
-A static, mobile-first website for ranking my 284 Pokémon cards. It runs entirely in the browser with no backend, and saves to localStorage plus downloadable `.json` backups.
+A static, mobile-first website for ranking my 282 Pokémon cards. It runs entirely in the browser with no backend, and saves to localStorage plus downloadable `.json` backups.
 
 ## How the ranking works
 

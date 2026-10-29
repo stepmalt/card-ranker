@@ -27,6 +27,12 @@ FULL_QUALITY = 85
 THUMB_WIDTH = 300
 THUMB_QUALITY = 80
 
+# Cards left out on purpose (one card per Pokémon): set-number ids.
+EXCLUDE = {
+    "ex5-18",   # Gorebyss (2004 Hidden Legends); keeping ex12-17
+    "xy5-111",  # Zigzagoon (2015 Primal Clash); keeping me2-81
+}
+
 # e.g. "sv3-3_Bellossom.png" -> set "sv3", number "3", name "Bellossom"
 PATTERN = re.compile(r"^(?P<set>.+)-(?P<num>[^-_]+)_(?P<name>.+)\.png$", re.IGNORECASE)
 
@@ -64,6 +70,8 @@ def main():
     cards, skipped = [], []
     for p in sorted(SRC.glob("*.png")):
         c = parse(p)
+        if c and c["id"] in EXCLUDE:
+            continue
         (cards if c else skipped).append(c or p.name)
     ids = [c["id"] for c in cards]
     dupes = {i for i in ids if ids.count(i) > 1}

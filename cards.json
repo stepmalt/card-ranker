@@ -360,16 +360,6 @@
   "height": 1024
  },
  {
-  "id": "ex5-18",
-  "name": "Gorebyss",
-  "set": "ex5",
-  "number": "18",
-  "image": "cards/ex5-18.webp",
-  "thumb": "cards/thumbs/ex5-18.webp",
-  "width": 733,
-  "height": 1024
- },
- {
   "id": "ex5-37",
   "name": "Igglybuff",
   "set": "ex5",
@@ -2766,16 +2756,6 @@
   "number": "87",
   "image": "cards/xy4-87.webp",
   "thumb": "cards/thumbs/xy4-87.webp",
-  "width": 733,
-  "height": 1024
- },
- {
-  "id": "xy5-111",
-  "name": "Zigzagoon",
-  "set": "xy5",
-  "number": "111",
-  "image": "cards/xy5-111.webp",
-  "thumb": "cards/thumbs/xy5-111.webp",
   "width": 733,
   "height": 1024
  },
