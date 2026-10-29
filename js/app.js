@@ -599,7 +599,7 @@ function doneView() {
   </div></div>`;
 }
 
-// Choose side-by-side vs stacked, whichever gives the bigger cards.
+// Size the cards to fill the space: one card for the tier draft, two side by side for matchups.
 function sizeArena() {
   const arena = $('.arena');
   if (!arena) return;
@@ -610,15 +610,8 @@ function sizeArena() {
   if (arena.dataset.mode === 'single') {
     w = Math.min(W, H / CARD_RATIO, 560);
   } else {
-    const gap = W >= 900 ? 36 : 12;
-    const side = Math.min((W - gap) / 2, H / CARD_RATIO);
-    const stack = Math.min(W, (H - gap) / 2 / CARD_RATIO);
-    const stacked = stack > side * 1.05;
-    arena.classList.toggle('stack', stacked);
-    w = Math.min(stacked ? stack : side, 520);
-    arena.querySelectorAll('.key-hint').forEach((h, k) => {
-      h.textContent = stacked ? (k ? '↓' : '↑') : (k ? '→' : '←');
-    });
+    const gap = W >= 900 ? 36 : 8;
+    w = Math.min((W - gap) / 2, H / CARD_RATIO, 520);
   }
   arena.style.setProperty('--card-w', `${Math.floor(w)}px`);
 }
