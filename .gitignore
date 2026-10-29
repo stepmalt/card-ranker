@@ -1,3 +1,6 @@
 # Original full-size PNGs (~210 MB) stay local only
 final pics/
 .DS_Store
+
+# Favourites ranker: full-size originals downloaded from Dex (~1 GB)
+favorites/source/originals/

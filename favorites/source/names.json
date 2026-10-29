@@ -1,0 +1,3714 @@
+{
+ "base2-12": {
+  "name": "Vaporeon",
+  "setName": "Jungle"
+ },
+ "base6-74": {
+  "name": "Eevee",
+  "setName": "Legendary Collection"
+ },
+ "ex4-46": {
+  "name": "Squirtle",
+  "setName": "Team Magma vs Team Aqua"
+ },
+ "me5-51": {
+  "name": "Inkay",
+  "setName": "Pitch Black"
+ },
+ "me5-61": {
+  "name": "Shieldon",
+  "setName": "Pitch Black"
+ },
+ "me5-85": {
+  "name": "Fomantis",
+  "setName": "Pitch Black"
+ },
+ "me5-87": {
+  "name": "Goldeen",
+  "setName": "Pitch Black"
+ },
+ "me55-113": {
+  "name": "Meowth",
+  "setName": "30th Celebration"
+ },
+ "me55-116": {
+  "name": "Eevee",
+  "setName": "30th Celebration"
+ },
+ "me55-117": {
+  "name": "Eevee",
+  "setName": "30th Celebration"
+ },
+ "me55-118": {
+  "name": "Eevee",
+  "setName": "30th Celebration"
+ },
+ "me55-120": {
+  "name": "Igglybuff",
+  "setName": "30th Celebration"
+ },
+ "me55-124": {
+  "name": "Minior",
+  "setName": "30th Celebration"
+ },
+ "me55-135": {
+  "name": "Morpeko",
+  "setName": "30th Celebration"
+ },
+ "me55-144": {
+  "name": "Meowth",
+  "setName": "30th Celebration"
+ },
+ "me55-152": {
+  "name": "Mew ex",
+  "setName": "30th Celebration"
+ },
+ "me55-155": {
+  "name": "Jirachi ex",
+  "setName": "30th Celebration"
+ },
+ "me55-25": {
+  "name": "Pikachu",
+  "setName": "30th Celebration"
+ },
+ "me55-26": {
+  "name": "Pikachu",
+  "setName": "30th Celebration"
+ },
+ "me55-28": {
+  "name": "Pikachu",
+  "setName": "30th Celebration"
+ },
+ "me55-29": {
+  "name": "Pikachu",
+  "setName": "30th Celebration"
+ },
+ "me55-35": {
+  "name": "Pikachu",
+  "setName": "30th Celebration"
+ },
+ "me55-36": {
+  "name": "Pikachu",
+  "setName": "30th Celebration"
+ },
+ "me55-39": {
+  "name": "Pikachu",
+  "setName": "30th Celebration"
+ },
+ "me55-4": {
+  "name": "Illumise",
+  "setName": "30th Celebration"
+ },
+ "me55-40": {
+  "name": "Pikachu",
+  "setName": "30th Celebration"
+ },
+ "me55-42": {
+  "name": "Pikachu",
+  "setName": "30th Celebration"
+ },
+ "me55-45": {
+  "name": "Pikachu",
+  "setName": "30th Celebration"
+ },
+ "me55-46": {
+  "name": "Pikachu",
+  "setName": "30th Celebration"
+ },
+ "me55-47": {
+  "name": "Pikachu",
+  "setName": "30th Celebration"
+ },
+ "me55-67": {
+  "name": "Marill",
+  "setName": "30th Celebration"
+ },
+ "me55-73": {
+  "name": "Drifloon",
+  "setName": "30th Celebration"
+ },
+ "me55-74": {
+  "name": "Cresselia",
+  "setName": "30th Celebration"
+ },
+ "me55-78": {
+  "name": "Cosmog",
+  "setName": "30th Celebration"
+ },
+ "me55-8": {
+  "name": "Vivillon",
+  "setName": "30th Celebration"
+ },
+ "me55-9": {
+  "name": "Vulpix",
+  "setName": "30th Celebration"
+ },
+ "neo3-3": {
+  "name": "Celebi",
+  "setName": "Neo Revelation"
+ },
+ "neo3-48": {
+  "name": "Quagsire",
+  "setName": "Neo Revelation"
+ },
+ "me1-1": {
+  "name": "Bulbasaur",
+  "setName": "Mega Evolution"
+ },
+ "me1-12": {
+  "name": "Celebi",
+  "setName": "Mega Evolution"
+ },
+ "me1-133": {
+  "name": "Bulbasaur",
+  "setName": "Mega Evolution"
+ },
+ "me1-136": {
+  "name": "Shuckle",
+  "setName": "Mega Evolution"
+ },
+ "me1-138": {
+  "name": "Vulpix",
+  "setName": "Mega Evolution"
+ },
+ "me1-52": {
+  "name": "Helioptile",
+  "setName": "Mega Evolution"
+ },
+ "me1-9": {
+  "name": "Bayleef",
+  "setName": "Mega Evolution"
+ },
+ "me2-104": {
+  "name": "Togedemaru",
+  "setName": "Phantasmal Flames"
+ },
+ "me2-106": {
+  "name": "Meowth",
+  "setName": "Phantasmal Flames"
+ },
+ "me2-22": {
+  "name": "Dewgong",
+  "setName": "Phantasmal Flames"
+ },
+ "me2-34": {
+  "name": "Pawmot",
+  "setName": "Phantasmal Flames"
+ },
+ "me2-73": {
+  "name": "Togedemaru",
+  "setName": "Phantasmal Flames"
+ },
+ "me2-97": {
+  "name": "Dewgong",
+  "setName": "Phantasmal Flames"
+ },
+ "me2-98": {
+  "name": "Piplup",
+  "setName": "Phantasmal Flames"
+ },
+ "me3-90": {
+  "name": "Rowlet",
+  "setName": "Perfect Order"
+ },
+ "me3-92": {
+  "name": "Aurorus",
+  "setName": "Perfect Order"
+ },
+ "me3-93": {
+  "name": "Dedenne",
+  "setName": "Perfect Order"
+ },
+ "me3-94": {
+  "name": "Clefairy",
+  "setName": "Perfect Order"
+ },
+ "me3-95": {
+  "name": "Espurr",
+  "setName": "Perfect Order"
+ },
+ "me4-1": {
+  "name": "Weedle",
+  "setName": "Chaos Rising"
+ },
+ "me4-29": {
+  "name": "Ampharos",
+  "setName": "Chaos Rising"
+ },
+ "me4-36": {
+  "name": "Espurr",
+  "setName": "Chaos Rising"
+ },
+ "me4-40": {
+  "name": "Pumpkaboo",
+  "setName": "Chaos Rising"
+ },
+ "me4-5": {
+  "name": "Chespin",
+  "setName": "Chaos Rising"
+ },
+ "me4-67": {
+  "name": "Sliggoo",
+  "setName": "Chaos Rising"
+ },
+ "me4-68": {
+  "name": "Goodra",
+  "setName": "Chaos Rising"
+ },
+ "me4-87": {
+  "name": "Chespin",
+  "setName": "Chaos Rising"
+ },
+ "me4-95": {
+  "name": "Sliggoo",
+  "setName": "Chaos Rising"
+ },
+ "me1-143": {
+  "name": "Helioptile",
+  "setName": "Mega Evolution"
+ },
+ "me1-154": {
+  "name": "Stufful",
+  "setName": "Mega Evolution"
+ },
+ "sv10-21": {
+  "name": "Smoliv",
+  "setName": "Destined Rivals"
+ },
+ "sv10-22": {
+  "name": "Dolliv",
+  "setName": "Destined Rivals"
+ },
+ "sv10-29": {
+  "name": "Ponyta",
+  "setName": "Destined Rivals"
+ },
+ "sv10-40": {
+  "name": "Torchic",
+  "setName": "Destined Rivals"
+ },
+ "sv10-6": {
+  "name": "Breloom",
+  "setName": "Destined Rivals"
+ },
+ "sv10-7": {
+  "name": "Cynthia's Roselia",
+  "setName": "Destined Rivals"
+ },
+ "sv10-185": {
+  "name": "Shaymin",
+  "setName": "Destined Rivals"
+ },
+ "sv10-235": {
+  "name": "Arven's Mabosstiff ex",
+  "setName": "Destined Rivals"
+ },
+ "sv10-56": {
+  "name": "Gorebyss",
+  "setName": "Destined Rivals"
+ },
+ "sv10-58": {
+  "name": "Floatzel",
+  "setName": "Destined Rivals"
+ },
+ "sv10-64": {
+  "name": "Cetoddle",
+  "setName": "Destined Rivals"
+ },
+ "sv10-85": {
+  "name": "Team Rocket's Chingling",
+  "setName": "Destined Rivals"
+ },
+ "sv7-19": {
+  "name": "Ponyta",
+  "setName": "Stellar Crown"
+ },
+ "sv7-26": {
+  "name": "Scorbunny",
+  "setName": "Stellar Crown"
+ },
+ "sv7-33": {
+  "name": "Marill",
+  "setName": "Stellar Crown"
+ },
+ "sv8-122": {
+  "name": "Alolan Diglett",
+  "setName": "Surging Sparks"
+ },
+ "sv8-134": {
+  "name": "Altaria",
+  "setName": "Surging Sparks"
+ },
+ "sv8-16": {
+  "name": "Vulpix",
+  "setName": "Surging Sparks"
+ },
+ "sv8-205": {
+  "name": "Phanpy",
+  "setName": "Surging Sparks"
+ },
+ "sv8-29": {
+  "name": "Fuecoco",
+  "setName": "Surging Sparks"
+ },
+ "sv8-50": {
+  "name": "Quaxly",
+  "setName": "Surging Sparks"
+ },
+ "sv8-7": {
+  "name": "Vivillon",
+  "setName": "Surging Sparks"
+ },
+ "sv8-74": {
+  "name": "Azumarill",
+  "setName": "Surging Sparks"
+ },
+ "sv8-75": {
+  "name": "Smoochum",
+  "setName": "Surging Sparks"
+ },
+ "sv9-124": {
+  "name": "Audino",
+  "setName": "Journey Together"
+ },
+ "sv9-126": {
+  "name": "Cinccino",
+  "setName": "Journey Together"
+ },
+ "sv9-16": {
+  "name": "Sprigatito",
+  "setName": "Journey Together"
+ },
+ "sv9-164": {
+  "name": "Lillie's Ribombee",
+  "setName": "Journey Together"
+ },
+ "sv9-165": {
+  "name": "Swinub",
+  "setName": "Journey Together"
+ },
+ "sv9-168": {
+  "name": "Furret",
+  "setName": "Journey Together"
+ },
+ "sv9-170": {
+  "name": "Hop's Wooloo",
+  "setName": "Journey Together"
+ },
+ "sv9-22": {
+  "name": "Torchic",
+  "setName": "Journey Together"
+ },
+ "sv9-49": {
+  "name": "N's Joltik",
+  "setName": "Journey Together"
+ },
+ "sv9-6": {
+  "name": "Petilil",
+  "setName": "Journey Together"
+ },
+ "sv9-66": {
+  "name": "Lillie's Cutiefly",
+  "setName": "Journey Together"
+ },
+ "sv9-67": {
+  "name": "Lillie's Ribombee",
+  "setName": "Journey Together"
+ },
+ "sv9-78": {
+  "name": "Piloswine",
+  "setName": "Journey Together"
+ },
+ "svp-168": {
+  "name": "Vaporeon",
+  "setName": "Scarlet & Violet Promos"
+ },
+ "svp-170": {
+  "name": "Leafeon",
+  "setName": "Scarlet & Violet Promos"
+ },
+ "svp-172": {
+  "name": "Sylveon",
+  "setName": "Scarlet & Violet Promos"
+ },
+ "svp-183": {
+  "name": "Lillie's Ribombee",
+  "setName": "Scarlet & Violet Promos"
+ },
+ "sv5-124": {
+  "name": "Lickitung",
+  "setName": "Temporal Forces"
+ },
+ "sv5-130": {
+  "name": "Skitty",
+  "setName": "Temporal Forces"
+ },
+ "sv5-136": {
+  "name": "Minccino",
+  "setName": "Temporal Forces"
+ },
+ "sv5-26": {
+  "name": "Ponyta",
+  "setName": "Temporal Forces"
+ },
+ "sv5-64": {
+  "name": "Marill",
+  "setName": "Temporal Forces"
+ },
+ "sv5-65": {
+  "name": "Azumarill",
+  "setName": "Temporal Forces"
+ },
+ "sv5-7": {
+  "name": "Breloom",
+  "setName": "Temporal Forces"
+ },
+ "sv5-85": {
+  "name": "Drilbur",
+  "setName": "Temporal Forces"
+ },
+ "sv6-133": {
+  "name": "Chansey",
+  "setName": "Twilight Masquerade"
+ },
+ "sv6-135": {
+  "name": "Eevee",
+  "setName": "Twilight Masquerade"
+ },
+ "sv6-169": {
+  "name": "Sunflora",
+  "setName": "Twilight Masquerade"
+ },
+ "sv6-178": {
+  "name": "Wattrel",
+  "setName": "Twilight Masquerade"
+ },
+ "sv6-181": {
+  "name": "Hisuian Growlithe",
+  "setName": "Twilight Masquerade"
+ },
+ "sv6-188": {
+  "name": "Eevee",
+  "setName": "Twilight Masquerade"
+ },
+ "sv6-41": {
+  "name": "Poliwag",
+  "setName": "Twilight Masquerade"
+ },
+ "sv6-55": {
+  "name": "Phione",
+  "setName": "Twilight Masquerade"
+ },
+ "sv6-56": {
+  "name": "Froakie",
+  "setName": "Twilight Masquerade"
+ },
+ "sv6-75": {
+  "name": "Wattrel",
+  "setName": "Twilight Masquerade"
+ },
+ "sv7-113": {
+  "name": "Eevee",
+  "setName": "Stellar Crown"
+ },
+ "sv7-150": {
+  "name": "Joltik",
+  "setName": "Stellar Crown"
+ },
+ "sv7-152": {
+  "name": "Milcery",
+  "setName": "Stellar Crown"
+ },
+ "sv7-34": {
+  "name": "Azumarill",
+  "setName": "Stellar Crown"
+ },
+ "sv7-54": {
+  "name": "Togedemaru",
+  "setName": "Stellar Crown"
+ },
+ "sv7-56": {
+  "name": "Pawmi",
+  "setName": "Stellar Crown"
+ },
+ "sv7-65": {
+  "name": "Alcremie",
+  "setName": "Stellar Crown"
+ },
+ "svp-108": {
+  "name": "Flaaffy",
+  "setName": "Scarlet & Violet Black Star Promos"
+ },
+ "svp-118": {
+  "name": "Tatsugiri",
+  "setName": "Scarlet & Violet Black Star Promos"
+ },
+ "svp-88": {
+  "name": "Pikachu",
+  "setName": "Scarlet & Violet Black Star Promos"
+ },
+ "sv3-16": {
+  "name": "Bounsweet",
+  "setName": "Obsidian Flames"
+ },
+ "sv3-19": {
+  "name": "Smoliv",
+  "setName": "Obsidian Flames"
+ },
+ "sv3-6": {
+  "name": "Surskit",
+  "setName": "Obsidian Flames"
+ },
+ "sv3-7": {
+  "name": "Masquerain",
+  "setName": "Obsidian Flames"
+ },
+ "sv3-8": {
+  "name": "Combee",
+  "setName": "Obsidian Flames"
+ },
+ "sv4-189": {
+  "name": "Mantyke",
+  "setName": "Paradox Rift"
+ },
+ "sv4-195": {
+  "name": "Blitzle",
+  "setName": "Paradox Rift"
+ },
+ "sv4-2": {
+  "name": "Masquerain",
+  "setName": "Paradox Rift"
+ },
+ "sv4-201": {
+  "name": "Minior",
+  "setName": "Paradox Rift"
+ },
+ "sv4-213": {
+  "name": "Swablu",
+  "setName": "Paradox Rift"
+ },
+ "sv4-253": {
+  "name": "Altaria ex",
+  "setName": "Paradox Rift"
+ },
+ "sv4-39": {
+  "name": "Mantyke",
+  "setName": "Paradox Rift"
+ },
+ "sv4-60": {
+  "name": "Plusle",
+  "setName": "Paradox Rift"
+ },
+ "sv4-61": {
+  "name": "Minun",
+  "setName": "Paradox Rift"
+ },
+ "sv4-77": {
+  "name": "Pumpkaboo",
+  "setName": "Paradox Rift"
+ },
+ "sv4-79": {
+  "name": "Flittle",
+  "setName": "Paradox Rift"
+ },
+ "sv4-82": {
+  "name": "Tinkatink",
+  "setName": "Paradox Rift"
+ },
+ "sv4-86": {
+  "name": "Scream Tail",
+  "setName": "Paradox Rift"
+ },
+ "sv4-9": {
+  "name": "Steenee",
+  "setName": "Paradox Rift"
+ },
+ "svp-102": {
+  "name": "Oddish",
+  "setName": "Scarlet & Violet Black Star Promos"
+ },
+ "svp-65": {
+  "name": "Scream Tail",
+  "setName": "Scarlet & Violet Black Star Promos"
+ },
+ "sv1-100": {
+  "name": "Flittle",
+  "setName": "Scarlet & Violet"
+ },
+ "sv1-13": {
+  "name": "Sprigatito",
+  "setName": "Scarlet & Violet"
+ },
+ "sv1-144": {
+  "name": "Chansey",
+  "setName": "Scarlet & Violet"
+ },
+ "sv1-20": {
+  "name": "Smoliv",
+  "setName": "Scarlet & Violet"
+ },
+ "sv1-42": {
+  "name": "Slowpoke",
+  "setName": "Scarlet & Violet"
+ },
+ "sv1-47": {
+  "name": "Floatzel",
+  "setName": "Scarlet & Violet"
+ },
+ "sv1-52": {
+  "name": "Quaxly",
+  "setName": "Scarlet & Violet"
+ },
+ "sv1-66": {
+  "name": "Mareep",
+  "setName": "Scarlet & Violet"
+ },
+ "sv1-73": {
+  "name": "Pawmi",
+  "setName": "Scarlet & Violet"
+ },
+ "sv1-89": {
+  "name": "Drifloon",
+  "setName": "Scarlet & Violet"
+ },
+ "sv1-94": {
+  "name": "Dedenne",
+  "setName": "Scarlet & Violet"
+ },
+ "sv1-98": {
+  "name": "Fidough",
+  "setName": "Scarlet & Violet"
+ },
+ "sv2-12": {
+  "name": "Sprigatito",
+  "setName": "Paldea Evolved"
+ },
+ "sv2-13": {
+  "name": "Sprigatito",
+  "setName": "Paldea Evolved"
+ },
+ "sv2-154": {
+  "name": "Girafarig",
+  "setName": "Paldea Evolved"
+ },
+ "sv2-166": {
+  "name": "Tandemaus",
+  "setName": "Paldea Evolved"
+ },
+ "sv2-167": {
+  "name": "Tandemaus",
+  "setName": "Paldea Evolved"
+ },
+ "sv2-196": {
+  "name": "Sprigatito",
+  "setName": "Paldea Evolved"
+ },
+ "sv2-216": {
+  "name": "Tinkatink",
+  "setName": "Paldea Evolved"
+ },
+ "sv2-3": {
+  "name": "Jumpluff",
+  "setName": "Paldea Evolved"
+ },
+ "sv2-34": {
+  "name": "Fuecoco",
+  "setName": "Paldea Evolved"
+ },
+ "sv2-35": {
+  "name": "Fuecoco",
+  "setName": "Paldea Evolved"
+ },
+ "sv2-49": {
+  "name": "Quaxly",
+  "setName": "Paldea Evolved"
+ },
+ "sv2-8": {
+  "name": "Combee",
+  "setName": "Paldea Evolved"
+ },
+ "sv3-111": {
+  "name": "Drilbur",
+  "setName": "Obsidian Flames"
+ },
+ "sv3-127": {
+  "name": "Paldean Wooper",
+  "setName": "Obsidian Flames"
+ },
+ "sv3-128": {
+  "name": "Paldean Clodsire",
+  "setName": "Obsidian Flames"
+ },
+ "sv3-173": {
+  "name": "Audino",
+  "setName": "Obsidian Flames"
+ },
+ "sv3-199": {
+  "name": "Ninetales",
+  "setName": "Obsidian Flames"
+ },
+ "sv3-202": {
+  "name": "Cleffa",
+  "setName": "Obsidian Flames"
+ },
+ "sv3-53": {
+  "name": "Cubchoo",
+  "setName": "Obsidian Flames"
+ },
+ "sv3-61": {
+  "name": "Finizen",
+  "setName": "Obsidian Flames"
+ },
+ "sv3-83": {
+  "name": "Togepi",
+  "setName": "Obsidian Flames"
+ },
+ "sv3-84": {
+  "name": "Togetic",
+  "setName": "Obsidian Flames"
+ },
+ "sv3-85": {
+  "name": "Togekiss",
+  "setName": "Obsidian Flames"
+ },
+ "svp-15": {
+  "name": "Flaaffy",
+  "setName": "Scarlet & Violet Black Star Promos"
+ },
+ "svp-41": {
+  "name": "Paldean Wooper",
+  "setName": "Scarlet & Violet Black Star Promos"
+ },
+ "svp-44": {
+  "name": "Charmander",
+  "setName": "Scarlet & Violet Black Star Promos"
+ },
+ "mcd22-3": {
+  "name": "Gossifleur",
+  "setName": "McDonald's Collection 2022"
+ },
+ "mcd22-4": {
+  "name": "Growlithe",
+  "setName": "McDonald's Collection 2022"
+ },
+ "sv1-145": {
+  "name": "Blissey",
+  "setName": "Scarlet & Violet"
+ },
+ "sv1-148": {
+  "name": "Starly",
+  "setName": "Scarlet & Violet"
+ },
+ "sv1-151": {
+  "name": "Skwovet",
+  "setName": "Scarlet & Violet"
+ },
+ "sv1-200": {
+  "name": "Dolliv",
+  "setName": "Scarlet & Violet"
+ },
+ "sv1-206": {
+  "name": "Wiglett",
+  "setName": "Scarlet & Violet"
+ },
+ "sv1-209": {
+  "name": "Pawmot",
+  "setName": "Scarlet & Violet"
+ },
+ "sv1-213": {
+  "name": "Fidough",
+  "setName": "Scarlet & Violet"
+ },
+ "sv1-218": {
+  "name": "Mabosstiff",
+  "setName": "Scarlet & Violet"
+ },
+ "sv1-221": {
+  "name": "Starly",
+  "setName": "Scarlet & Violet"
+ },
+ "svp-6": {
+  "name": "Pawmot",
+  "setName": "Scarlet & Violet Black Star Promos"
+ },
+ "swsh11-1": {
+  "name": "Oddish",
+  "setName": "Lost Origin"
+ },
+ "swsh11-108": {
+  "name": "Carbink",
+  "setName": "Lost Origin"
+ },
+ "swsh11-121": {
+  "name": "Inkay",
+  "setName": "Lost Origin"
+ },
+ "swsh11-137": {
+  "name": "Pidgeot V",
+  "setName": "Lost Origin"
+ },
+ "swsh11-139": {
+  "name": "Lickilicky",
+  "setName": "Lost Origin"
+ },
+ "swsh11-14": {
+  "name": "Roselia",
+  "setName": "Lost Origin"
+ },
+ "swsh11-3": {
+  "name": "Vileplume",
+  "setName": "Lost Origin"
+ },
+ "swsh11-39": {
+  "name": "Shellos",
+  "setName": "Lost Origin"
+ },
+ "swsh11-46": {
+  "name": "Ducklett",
+  "setName": "Lost Origin"
+ },
+ "swsh11-62": {
+  "name": "Clefairy",
+  "setName": "Lost Origin"
+ },
+ "swsh11-8": {
+  "name": "Beautifly",
+  "setName": "Lost Origin"
+ },
+ "swsh12-143": {
+  "name": "Altaria",
+  "setName": "Silver Tempest"
+ },
+ "swsh12-21": {
+  "name": "Ponyta",
+  "setName": "Silver Tempest"
+ },
+ "swsh12-34": {
+  "name": "Alolan Vulpix VSTAR",
+  "setName": "Silver Tempest"
+ },
+ "swsh12pt5-111": {
+  "name": "Bidoof",
+  "setName": "Crown Zenith"
+ },
+ "swsh12pt5-40": {
+  "name": "Shinx",
+  "setName": "Crown Zenith"
+ },
+ "swsh12pt5-47": {
+  "name": "Emolga",
+  "setName": "Crown Zenith"
+ },
+ "swsh12pt5gg-GG06": {
+  "name": "Manaphy",
+  "setName": "Crown Zenith Galarian Gallery"
+ },
+ "swsh12pt5gg-GG10": {
+  "name": "Mew",
+  "setName": "Crown Zenith Galarian Gallery"
+ },
+ "swsh12pt5gg-GG19": {
+  "name": "Altaria",
+  "setName": "Crown Zenith Galarian Gallery"
+ },
+ "swsh12pt5gg-GG21": {
+  "name": "Hisuian Goodra",
+  "setName": "Crown Zenith Galarian Gallery"
+ },
+ "swsh12pt5gg-GG27": {
+  "name": "Swablu",
+  "setName": "Crown Zenith Galarian Gallery"
+ },
+ "swsh12pt5gg-GG34": {
+  "name": "Mareep",
+  "setName": "Crown Zenith Galarian Gallery"
+ },
+ "swsh12pt5gg-GG35": {
+  "name": "Leafeon VSTAR",
+  "setName": "Crown Zenith Galarian Gallery"
+ },
+ "swshp-SWSH153": {
+  "name": "Pikachu",
+  "setName": "SWSH Black Star Promos"
+ },
+ "swshp-SWSH242": {
+  "name": "Comfey",
+  "setName": "SWSH Black Star Promos"
+ },
+ "swshp-SWSH275": {
+  "name": "Manaphy",
+  "setName": "SWSH Black Star Promos"
+ },
+ "swshp-SWSH276": {
+  "name": "Togetic",
+  "setName": "SWSH Black Star Promos"
+ },
+ "mcd22-5": {
+  "name": "Victini",
+  "setName": "McDonald's Collection 2022"
+ },
+ "mcd22-9": {
+  "name": "Flaaffy",
+  "setName": "McDonald's Collection 2022"
+ },
+ "pgo-15": {
+  "name": "Squirtle",
+  "setName": "Pokémon GO"
+ },
+ "pgo-76": {
+  "name": "Dragonite V",
+  "setName": "Pokémon GO"
+ },
+ "swsh10-11": {
+  "name": "Combee",
+  "setName": "Astral Radiance"
+ },
+ "swsh10-13": {
+  "name": "Leafeon",
+  "setName": "Astral Radiance"
+ },
+ "swsh10-14": {
+  "name": "Shaymin",
+  "setName": "Astral Radiance"
+ },
+ "swsh10-18": {
+  "name": "Hisuian Lilligant VSTAR",
+  "setName": "Astral Radiance"
+ },
+ "swsh10-41": {
+  "name": "Oshawott",
+  "setName": "Astral Radiance"
+ },
+ "swsh10-63": {
+  "name": "Drifloon",
+  "setName": "Astral Radiance"
+ },
+ "swsh8-109": {
+  "name": "Morpeko",
+  "setName": "Fusion Strike"
+ },
+ "swsh8-124": {
+  "name": "Meloetta",
+  "setName": "Fusion Strike"
+ },
+ "swsh8-195": {
+  "name": "Goomy",
+  "setName": "Fusion Strike"
+ },
+ "swsh8-199": {
+  "name": "Meowth",
+  "setName": "Fusion Strike"
+ },
+ "swsh8-203": {
+  "name": "Blissey",
+  "setName": "Fusion Strike"
+ },
+ "swsh8-210": {
+  "name": "Skitty",
+  "setName": "Fusion Strike"
+ },
+ "swsh8-211": {
+  "name": "Delcatty",
+  "setName": "Fusion Strike"
+ },
+ "swsh8-245": {
+  "name": "Celebi V",
+  "setName": "Fusion Strike"
+ },
+ "swsh8-32": {
+  "name": "Growlithe",
+  "setName": "Fusion Strike"
+ },
+ "swsh8-36": {
+  "name": "Victini",
+  "setName": "Fusion Strike"
+ },
+ "swsh8-58": {
+  "name": "Marill",
+  "setName": "Fusion Strike"
+ },
+ "swsh8-62": {
+  "name": "Mudkip",
+  "setName": "Fusion Strike"
+ },
+ "swsh8-67": {
+  "name": "Gorebyss",
+  "setName": "Fusion Strike"
+ },
+ "swsh8-95": {
+  "name": "Tynamo",
+  "setName": "Fusion Strike"
+ },
+ "swsh9-12": {
+  "name": "Cherubi",
+  "setName": "Brilliant Stars"
+ },
+ "swsh9-120": {
+  "name": "Bidoof",
+  "setName": "Brilliant Stars"
+ },
+ "swsh9-125": {
+  "name": "Cinccino",
+  "setName": "Brilliant Stars"
+ },
+ "swsh9-54": {
+  "name": "Clefable",
+  "setName": "Brilliant Stars"
+ },
+ "swsh9-71": {
+  "name": "Alcremie",
+  "setName": "Brilliant Stars"
+ },
+ "swsh9tg-TG02": {
+  "name": "Vaporeon",
+  "setName": "Brilliant Stars Trainer Gallery"
+ },
+ "swsh9tg-TG08": {
+  "name": "Alcremie",
+  "setName": "Brilliant Stars Trainer Gallery"
+ },
+ "swshp-SWSH172": {
+  "name": "Tepig",
+  "setName": "SWSH Black Star Promos"
+ },
+ "swshp-SWSH174": {
+  "name": "Espeon",
+  "setName": "SWSH Black Star Promos"
+ },
+ "swshp-SWSH175": {
+  "name": "Eevee",
+  "setName": "SWSH Black Star Promos"
+ },
+ "swshp-SWSH181": {
+  "name": "Vaporeon V",
+  "setName": "SWSH Black Star Promos"
+ },
+ "swshp-SWSH190": {
+  "name": "Eevee",
+  "setName": "SWSH Black Star Promos"
+ },
+ "swshp-SWSH191": {
+  "name": "Leafeon",
+  "setName": "SWSH Black Star Promos"
+ },
+ "swshp-SWSH211": {
+  "name": "Sylveon",
+  "setName": "SWSH Black Star Promos"
+ },
+ "swshp-SWSH222": {
+  "name": "Oshawott",
+  "setName": "SWSH Black Star Promos"
+ },
+ "cel25-5": {
+  "name": "Pikachu",
+  "setName": "Celebrations"
+ },
+ "mcd21-1": {
+  "name": "Bulbasaur",
+  "setName": "McDonald's Collection 2021"
+ },
+ "mcd21-19": {
+  "name": "Mudkip",
+  "setName": "McDonald's Collection 2021"
+ },
+ "mcd21-2": {
+  "name": "Chikorita",
+  "setName": "McDonald's Collection 2021"
+ },
+ "mcd21-8": {
+  "name": "Grookey",
+  "setName": "McDonald's Collection 2021"
+ },
+ "swsh4-130": {
+  "name": "Eevee",
+  "setName": "Vivid Voltage"
+ },
+ "swsh4-140": {
+  "name": "Togekiss V",
+  "setName": "Vivid Voltage"
+ },
+ "swsh4-23": {
+  "name": "Charmander",
+  "setName": "Vivid Voltage"
+ },
+ "swsh4-33": {
+  "name": "Oshawott",
+  "setName": "Vivid Voltage"
+ },
+ "swsh4-76": {
+  "name": "Whimsicott",
+  "setName": "Vivid Voltage"
+ },
+ "swsh4-9": {
+  "name": "Celebi",
+  "setName": "Vivid Voltage"
+ },
+ "swsh4-91": {
+  "name": "Drilbur",
+  "setName": "Vivid Voltage"
+ },
+ "swsh45-11": {
+  "name": "Grookey",
+  "setName": "Shining Fates"
+ },
+ "swsh45-24": {
+  "name": "Manaphy",
+  "setName": "Shining Fates"
+ },
+ "swsh45-35": {
+  "name": "Morpeko",
+  "setName": "Shining Fates"
+ },
+ "swsh45-52": {
+  "name": "Eevee",
+  "setName": "Shining Fates"
+ },
+ "swsh5-1": {
+  "name": "Bellsprout",
+  "setName": "Battle Styles"
+ },
+ "swsh5-114": {
+  "name": "Lickilicky",
+  "setName": "Battle Styles"
+ },
+ "swsh5-60": {
+  "name": "Espurr",
+  "setName": "Battle Styles"
+ },
+ "swsh6-127": {
+  "name": "Skwovet",
+  "setName": "Chilling Reign"
+ },
+ "swsh6-13": {
+  "name": "Bounsweet",
+  "setName": "Chilling Reign"
+ },
+ "swsh6-183": {
+  "name": "Blissey V",
+  "setName": "Chilling Reign"
+ },
+ "swsh6-38": {
+  "name": "Sealeo",
+  "setName": "Chilling Reign"
+ },
+ "swsh6-49": {
+  "name": "Ampharos",
+  "setName": "Chilling Reign"
+ },
+ "swsh6-50": {
+  "name": "Blitzle",
+  "setName": "Chilling Reign"
+ },
+ "swsh6-7": {
+  "name": "Celebi V",
+  "setName": "Chilling Reign"
+ },
+ "swsh7-102": {
+  "name": "Zorua",
+  "setName": "Evolving Skies"
+ },
+ "swsh7-126": {
+  "name": "Teddiursa",
+  "setName": "Evolving Skies"
+ },
+ "swsh7-132": {
+  "name": "Swablu",
+  "setName": "Evolving Skies"
+ },
+ "swsh7-167": {
+  "name": "Leafeon V",
+  "setName": "Evolving Skies"
+ },
+ "swsh7-180": {
+  "name": "Espeon V",
+  "setName": "Evolving Skies"
+ },
+ "swsh7-49": {
+  "name": "Pikachu",
+  "setName": "Evolving Skies"
+ },
+ "swsh7-50": {
+  "name": "Raichu",
+  "setName": "Evolving Skies"
+ },
+ "swsh7-56": {
+  "name": "Ampharos",
+  "setName": "Evolving Skies"
+ },
+ "swsh7-76": {
+  "name": "Pumpkaboo",
+  "setName": "Evolving Skies"
+ },
+ "swshp-SWSH058": {
+  "name": "Alcremie",
+  "setName": "SWSH Black Star Promos"
+ },
+ "swshp-SWSH080": {
+  "name": "Dedenne",
+  "setName": "SWSH Black Star Promos"
+ },
+ "swshp-SWSH088": {
+  "name": "Cherrim",
+  "setName": "SWSH Black Star Promos"
+ },
+ "swshp-SWSH116": {
+  "name": "Morpeko",
+  "setName": "SWSH Black Star Promos"
+ },
+ "swshp-SWSH127": {
+  "name": "Eevee",
+  "setName": "SWSH Black Star Promos"
+ },
+ "mcd19-12": {
+  "name": "Eevee",
+  "setName": "McDonald's Collection 2019"
+ },
+ "sm11-147": {
+  "name": "Dratini",
+  "setName": "Unified Minds"
+ },
+ "sm11-17": {
+  "name": "Bounsweet",
+  "setName": "Unified Minds"
+ },
+ "sm11-26": {
+  "name": "Victini",
+  "setName": "Unified Minds"
+ },
+ "sm11-39": {
+  "name": "Finneon",
+  "setName": "Unified Minds"
+ },
+ "sm11-57": {
+  "name": "Alolan Raichu",
+  "setName": "Unified Minds"
+ },
+ "sm11-8": {
+  "name": "Swadloon",
+  "setName": "Unified Minds"
+ },
+ "sm11-88": {
+  "name": "Munna",
+  "setName": "Unified Minds"
+ },
+ "sm12-149": {
+  "name": "Flabébé",
+  "setName": "Cosmic Eclipse"
+ },
+ "sm12-151": {
+  "name": "Floette",
+  "setName": "Cosmic Eclipse"
+ },
+ "sm12-166": {
+  "name": "Eevee",
+  "setName": "Cosmic Eclipse"
+ },
+ "sm12-167": {
+  "name": "Eevee",
+  "setName": "Cosmic Eclipse"
+ },
+ "sm12-168": {
+  "name": "Igglybuff",
+  "setName": "Cosmic Eclipse"
+ },
+ "sm12-17": {
+  "name": "Rowlet",
+  "setName": "Cosmic Eclipse"
+ },
+ "sm12-18": {
+  "name": "Rowlet",
+  "setName": "Cosmic Eclipse"
+ },
+ "sm12-182": {
+  "name": "Bewear",
+  "setName": "Cosmic Eclipse"
+ },
+ "sm12-2": {
+  "name": "Oddish",
+  "setName": "Cosmic Eclipse"
+ },
+ "sm12-42": {
+  "name": "Vaporeon",
+  "setName": "Cosmic Eclipse"
+ },
+ "sm12-49": {
+  "name": "Spheal",
+  "setName": "Cosmic Eclipse"
+ },
+ "sma-SV6": {
+  "name": "Charmander",
+  "setName": "Hidden Fates Shiny Vault"
+ },
+ "smp-SM224": {
+  "name": "Celebi",
+  "setName": "SM Black Star Promos"
+ },
+ "smp-SM237": {
+  "name": "Leafeon",
+  "setName": "SM Black Star Promos"
+ },
+ "swsh1-147": {
+  "name": "Cinccino",
+  "setName": "Sword & Shield"
+ },
+ "swsh1-74": {
+  "name": "Yamper",
+  "setName": "Sword & Shield"
+ },
+ "swsh1-92": {
+  "name": "Diglett",
+  "setName": "Sword & Shield"
+ },
+ "swsh2-10": {
+  "name": "Surskit",
+  "setName": "Rebel Clash"
+ },
+ "swsh2-24": {
+  "name": "Vulpix",
+  "setName": "Rebel Clash"
+ },
+ "swsh2-73": {
+  "name": "Morpeko",
+  "setName": "Rebel Clash"
+ },
+ "swsh2-75": {
+  "name": "Clefable",
+  "setName": "Rebel Clash"
+ },
+ "swsh3-15": {
+  "name": "Steenee",
+  "setName": "Darkness Ablaze"
+ },
+ "swsh3-57": {
+  "name": "Ampharos",
+  "setName": "Darkness Ablaze"
+ },
+ "swsh35-48": {
+  "name": "Swablu",
+  "setName": "Champion's Path"
+ },
+ "swsh35-6": {
+  "name": "Vulpix",
+  "setName": "Champion's Path"
+ },
+ "swshp-SWSH001": {
+  "name": "Grookey",
+  "setName": "SWSH Black Star Promos"
+ },
+ "swshp-SWSH010": {
+  "name": "Gossifleur",
+  "setName": "SWSH Black Star Promos"
+ },
+ "swshp-SWSH072": {
+  "name": "Vaporeon",
+  "setName": "SWSH Black Star Promos"
+ },
+ "det1-1": {
+  "name": "Bulbasaur",
+  "setName": "Detective Pikachu"
+ },
+ "det1-17": {
+  "name": "Ditto",
+  "setName": "Detective Pikachu"
+ },
+ "sm10-11": {
+  "name": "Venomoth",
+  "setName": "Unbroken Bonds"
+ },
+ "sm10-131": {
+  "name": "Cleffa",
+  "setName": "Unbroken Bonds"
+ },
+ "sm10-134": {
+  "name": "Jigglypuff",
+  "setName": "Unbroken Bonds"
+ },
+ "sm10-138": {
+  "name": "Togekiss",
+  "setName": "Unbroken Bonds"
+ },
+ "sm10-141": {
+  "name": "Spritzee",
+  "setName": "Unbroken Bonds"
+ },
+ "sm10-142": {
+  "name": "Aromatisse",
+  "setName": "Unbroken Bonds"
+ },
+ "sm10-147": {
+  "name": "Meowth",
+  "setName": "Unbroken Bonds"
+ },
+ "sm10-161": {
+  "name": "Happiny",
+  "setName": "Unbroken Bonds"
+ },
+ "sm10-2": {
+  "name": "Caterpie",
+  "setName": "Unbroken Bonds"
+ },
+ "sm10-37": {
+  "name": "Poliwag",
+  "setName": "Unbroken Bonds"
+ },
+ "sm10-42": {
+  "name": "Slowpoke",
+  "setName": "Unbroken Bonds"
+ },
+ "sm10-5": {
+  "name": "Oddish",
+  "setName": "Unbroken Bonds"
+ },
+ "sm11-171": {
+  "name": "Bidoof",
+  "setName": "Unified Minds"
+ },
+ "sm11-174": {
+  "name": "Pidove",
+  "setName": "Unified Minds"
+ },
+ "sm11-177": {
+  "name": "Audino",
+  "setName": "Unified Minds"
+ },
+ "sm11-185": {
+  "name": "Komala",
+  "setName": "Unified Minds"
+ },
+ "sm8-104": {
+  "name": "Meloetta",
+  "setName": "Lost Thunder"
+ },
+ "sm8-111": {
+  "name": "Phanpy",
+  "setName": "Lost Thunder"
+ },
+ "sm8-13": {
+  "name": "Skiploom",
+  "setName": "Lost Thunder"
+ },
+ "sm8-147": {
+  "name": "Morelull",
+  "setName": "Lost Thunder"
+ },
+ "sm8-148": {
+  "name": "Shiinotic",
+  "setName": "Lost Thunder"
+ },
+ "sm8-152": {
+  "name": "Chansey",
+  "setName": "Lost Thunder"
+ },
+ "sm8-153": {
+  "name": "Blissey",
+  "setName": "Lost Thunder"
+ },
+ "sm8-163": {
+  "name": "Pikipek",
+  "setName": "Lost Thunder"
+ },
+ "sm8-26": {
+  "name": "Beautifly",
+  "setName": "Lost Thunder"
+ },
+ "sm8-33": {
+  "name": "Shaymin",
+  "setName": "Lost Thunder"
+ },
+ "sm8-80": {
+  "name": "Pachirisu",
+  "setName": "Lost Thunder"
+ },
+ "sm8-84": {
+  "name": "Dedenne",
+  "setName": "Lost Thunder"
+ },
+ "sm9-12": {
+  "name": "Charmander",
+  "setName": "Team Up"
+ },
+ "sm9-16": {
+  "name": "Ninetales",
+  "setName": "Team Up"
+ },
+ "sm9-22": {
+  "name": "Squirtle",
+  "setName": "Team Up"
+ },
+ "sm9-42": {
+  "name": "Flaaffy",
+  "setName": "Team Up"
+ },
+ "sm9-47": {
+  "name": "Joltik",
+  "setName": "Team Up"
+ },
+ "sm9-49": {
+  "name": "Helioptile",
+  "setName": "Team Up"
+ },
+ "sm9-99": {
+  "name": "Jirachi",
+  "setName": "Team Up"
+ },
+ "smp-SM161": {
+  "name": "Jirachi",
+  "setName": "SM Black Star Promos"
+ },
+ "mcd18-3": {
+  "name": "Horsea",
+  "setName": "McDonald's Collection 2018"
+ },
+ "sm3-1": {
+  "name": "Caterpie",
+  "setName": "Burning Shadows"
+ },
+ "sm3-110": {
+  "name": "Stufful",
+  "setName": "Burning Shadows"
+ },
+ "sm3-35": {
+  "name": "Azumarill",
+  "setName": "Burning Shadows"
+ },
+ "sm3-4": {
+  "name": "Oddish",
+  "setName": "Burning Shadows"
+ },
+ "sm3-95": {
+  "name": "Cutiefly",
+  "setName": "Burning Shadows"
+ },
+ "sm35-25": {
+  "name": "Manaphy",
+  "setName": "Shining Legends"
+ },
+ "sm35-33": {
+  "name": "Plusle",
+  "setName": "Shining Legends"
+ },
+ "sm4-19": {
+  "name": "Swinub",
+  "setName": "Crimson Invasion"
+ },
+ "sm4-41": {
+  "name": "Spoink",
+  "setName": "Crimson Invasion"
+ },
+ "sm4-55": {
+  "name": "Stufful",
+  "setName": "Crimson Invasion"
+ },
+ "sm4-56": {
+  "name": "Bewear",
+  "setName": "Crimson Invasion"
+ },
+ "sm4-81": {
+  "name": "Starly",
+  "setName": "Crimson Invasion"
+ },
+ "sm4-85": {
+  "name": "Minccino",
+  "setName": "Crimson Invasion"
+ },
+ "sm5-15": {
+  "name": "Shaymin",
+  "setName": "Ultra Prism"
+ },
+ "sm5-4": {
+  "name": "Roselia",
+  "setName": "Ultra Prism"
+ },
+ "sm5-84": {
+  "name": "Shieldon",
+  "setName": "Ultra Prism"
+ },
+ "sm5-93": {
+  "name": "Shiinotic",
+  "setName": "Ultra Prism"
+ },
+ "sm6-18": {
+  "name": "Litleo",
+  "setName": "Forbidden Light"
+ },
+ "sm6-22": {
+  "name": "Froakie",
+  "setName": "Forbidden Light"
+ },
+ "sm6-27": {
+  "name": "Amaura",
+  "setName": "Forbidden Light"
+ },
+ "sm6-28": {
+  "name": "Aurorus",
+  "setName": "Forbidden Light"
+ },
+ "sm6-8": {
+  "name": "Vivillon",
+  "setName": "Forbidden Light"
+ },
+ "sm6-84": {
+  "name": "Flabébé",
+  "setName": "Forbidden Light"
+ },
+ "sm6-85": {
+  "name": "Floette",
+  "setName": "Forbidden Light"
+ },
+ "sm6-87": {
+  "name": "Sylveon",
+  "setName": "Forbidden Light"
+ },
+ "sm6-88": {
+  "name": "Dedenne",
+  "setName": "Forbidden Light"
+ },
+ "sm6-93": {
+  "name": "Sliggoo",
+  "setName": "Forbidden Light"
+ },
+ "sm7-121": {
+  "name": "Delcatty",
+  "setName": "Celestial Storm"
+ },
+ "sm7-16": {
+  "name": "Masquerain",
+  "setName": "Celestial Storm"
+ },
+ "sm7-25": {
+  "name": "Torchic",
+  "setName": "Celestial Storm"
+ },
+ "sm7-33": {
+  "name": "Mudkip",
+  "setName": "Celestial Storm"
+ },
+ "sm75-25": {
+  "name": "Wooper",
+  "setName": "Dragon Majesty"
+ },
+ "sm75-27": {
+  "name": "Corsola",
+  "setName": "Dragon Majesty"
+ },
+ "sm75-30": {
+  "name": "Phione",
+  "setName": "Dragon Majesty"
+ },
+ "sm75-34": {
+  "name": "Dratini",
+  "setName": "Dragon Majesty"
+ },
+ "sm75-57": {
+  "name": "Swablu",
+  "setName": "Dragon Majesty"
+ },
+ "smp-SM79": {
+  "name": "Shining Celebi",
+  "setName": "SM Black Star Promos"
+ },
+ "g1-55": {
+  "name": "Doduo",
+  "setName": "Generations"
+ },
+ "g1-RC10": {
+  "name": "Dedenne",
+  "setName": "Generations"
+ },
+ "g1-RC13": {
+  "name": "Jirachi",
+  "setName": "Generations"
+ },
+ "g1-RC14": {
+  "name": "Espurr",
+  "setName": "Generations"
+ },
+ "g1-RC19": {
+  "name": "Swirlix",
+  "setName": "Generations"
+ },
+ "g1-RC22": {
+  "name": "Diancie",
+  "setName": "Generations"
+ },
+ "g1-RC23": {
+  "name": "Swablu",
+  "setName": "Generations"
+ },
+ "g1-RC25": {
+  "name": "Fletchling",
+  "setName": "Generations"
+ },
+ "g1-RC9": {
+  "name": "Raichu",
+  "setName": "Generations"
+ },
+ "xy5-103": {
+  "name": "Azumarill",
+  "setName": "Primal Clash"
+ },
+ "xy5-14": {
+  "name": "Masquerain",
+  "setName": "Primal Clash"
+ },
+ "xy5-20": {
+  "name": "Vulpix",
+  "setName": "Primal Clash"
+ },
+ "xy5-25": {
+  "name": "Torchic",
+  "setName": "Primal Clash"
+ },
+ "xy5-52": {
+  "name": "Gorebyss",
+  "setName": "Primal Clash"
+ },
+ "xy5-56": {
+  "name": "Manaphy",
+  "setName": "Primal Clash"
+ },
+ "xy6-13": {
+  "name": "Victini",
+  "setName": "Roaring Skies"
+ },
+ "xy6-43": {
+  "name": "Togepi",
+  "setName": "Roaring Skies"
+ },
+ "xy6-45": {
+  "name": "Togekiss",
+  "setName": "Roaring Skies"
+ },
+ "xy6-5": {
+  "name": "Beautifly",
+  "setName": "Roaring Skies"
+ },
+ "xy6-73": {
+  "name": "Swablu",
+  "setName": "Roaring Skies"
+ },
+ "xy7-1": {
+  "name": "Oddish",
+  "setName": "Ancient Origins"
+ },
+ "xy7-56": {
+  "name": "Whimsicott",
+  "setName": "Ancient Origins"
+ },
+ "xy8-101": {
+  "name": "Flabébé",
+  "setName": "BREAKthrough"
+ },
+ "xy8-15": {
+  "name": "Vivillon",
+  "setName": "BREAKthrough"
+ },
+ "xy8-25": {
+  "name": "Fennekin",
+  "setName": "BREAKthrough"
+ },
+ "xy8-72": {
+  "name": "Swoobat",
+  "setName": "BREAKthrough"
+ },
+ "xy9-16": {
+  "name": "Psyduck",
+  "setName": "BREAKpoint"
+ },
+ "xy9-2": {
+  "name": "Bayleef",
+  "setName": "BREAKpoint"
+ },
+ "xy9-29": {
+  "name": "Corsola",
+  "setName": "BREAKpoint"
+ },
+ "xy9-32": {
+  "name": "Manaphy-EX",
+  "setName": "BREAKpoint"
+ },
+ "xy9-36": {
+  "name": "Ducklett",
+  "setName": "BREAKpoint"
+ },
+ "xy9-44": {
+  "name": "Shinx",
+  "setName": "BREAKpoint"
+ },
+ "xy9-5": {
+  "name": "Kricketot",
+  "setName": "BREAKpoint"
+ },
+ "xy9-84": {
+  "name": "Spritzee",
+  "setName": "BREAKpoint"
+ },
+ "xy9-85": {
+  "name": "Aromatisse",
+  "setName": "BREAKpoint"
+ },
+ "xyp-XY110": {
+  "name": "Mew",
+  "setName": "XY Black Star Promos"
+ },
+ "xyp-XY56": {
+  "name": "Blissey",
+  "setName": "XY Black Star Promos"
+ },
+ "xyp-XY67": {
+  "name": "Jirachi",
+  "setName": "XY Black Star Promos"
+ },
+ "xyp-XY88": {
+  "name": "Chespin",
+  "setName": "XY Black Star Promos"
+ },
+ "bw10-75": {
+  "name": "Teddiursa",
+  "setName": "Plasma Blast"
+ },
+ "bw11-13": {
+  "name": "Dwebble",
+  "setName": "Legendary Treasures"
+ },
+ "bw11-20": {
+  "name": "Vulpix",
+  "setName": "Legendary Treasures"
+ },
+ "bw11-33": {
+  "name": "Piplup",
+  "setName": "Legendary Treasures"
+ },
+ "bw11-4": {
+  "name": "Cherubi",
+  "setName": "Legendary Treasures"
+ },
+ "bw11-75": {
+  "name": "Duosion",
+  "setName": "Legendary Treasures"
+ },
+ "bw11-78": {
+  "name": "Meloetta",
+  "setName": "Legendary Treasures"
+ },
+ "bw11-89": {
+  "name": "Zorua",
+  "setName": "Legendary Treasures"
+ },
+ "bw11-RC17": {
+  "name": "Audino",
+  "setName": "Legendary Treasures"
+ },
+ "bw11-RC18": {
+  "name": "Minccino",
+  "setName": "Legendary Treasures"
+ },
+ "bw11-RC5": {
+  "name": "Torchic",
+  "setName": "Legendary Treasures"
+ },
+ "bw4-3": {
+  "name": "Kricketot",
+  "setName": "Next Destinies"
+ },
+ "bw4-31": {
+  "name": "Vanillite",
+  "setName": "Next Destinies"
+ },
+ "bw4-83": {
+  "name": "Pidove",
+  "setName": "Next Destinies"
+ },
+ "bw5-15": {
+  "name": "Torchic",
+  "setName": "Dark Explorers"
+ },
+ "bw5-41": {
+  "name": "Joltik",
+  "setName": "Dark Explorers"
+ },
+ "bw6-108": {
+  "name": "Audino",
+  "setName": "Dragons Exalted"
+ },
+ "bw6-12": {
+  "name": "Roselia",
+  "setName": "Dragons Exalted"
+ },
+ "bw6-18": {
+  "name": "Vulpix",
+  "setName": "Dragons Exalted"
+ },
+ "bw6-30": {
+  "name": "Sealeo",
+  "setName": "Dragons Exalted"
+ },
+ "bw7-1": {
+  "name": "Oddish",
+  "setName": "Boundaries Crossed"
+ },
+ "bw7-10": {
+  "name": "Shaymin",
+  "setName": "Boundaries Crossed"
+ },
+ "bw7-113": {
+  "name": "Skitty",
+  "setName": "Boundaries Crossed"
+ },
+ "bw7-17": {
+  "name": "Lilligant",
+  "setName": "Boundaries Crossed"
+ },
+ "bw7-44": {
+  "name": "Frillish",
+  "setName": "Boundaries Crossed"
+ },
+ "bw7-69": {
+  "name": "Musharna",
+  "setName": "Boundaries Crossed"
+ },
+ "bw7-77": {
+  "name": "Meloetta",
+  "setName": "Boundaries Crossed"
+ },
+ "bw8-4": {
+  "name": "Combee",
+  "setName": "Plasma Storm"
+ },
+ "bw8-40": {
+  "name": "Cubchoo",
+  "setName": "Plasma Storm"
+ },
+ "bw8-6": {
+  "name": "Cherubi",
+  "setName": "Plasma Storm"
+ },
+ "bw8-7": {
+  "name": "Cherrim",
+  "setName": "Plasma Storm"
+ },
+ "bw8-71": {
+  "name": "Phanpy",
+  "setName": "Plasma Storm"
+ },
+ "bw9-22": {
+  "name": "Quagsire",
+  "setName": "Plasma Freeze"
+ },
+ "bw9-81": {
+  "name": "Dratini",
+  "setName": "Plasma Freeze"
+ },
+ "bw9-96": {
+  "name": "Staravia",
+  "setName": "Plasma Freeze"
+ },
+ "bwp-BW49": {
+  "name": "Lilligant",
+  "setName": "BW Black Star Promos"
+ },
+ "bwp-BW52": {
+  "name": "Lillipup",
+  "setName": "BW Black Star Promos"
+ },
+ "bwp-BW89": {
+  "name": "Vaporeon",
+  "setName": "BW Black Star Promos"
+ },
+ "xy0-28": {
+  "name": "Skitty",
+  "setName": "Kalos Starter Set"
+ },
+ "xy0-3": {
+  "name": "Chespin",
+  "setName": "Kalos Starter Set"
+ },
+ "bw1-10": {
+  "name": "Lilligant",
+  "setName": "Black & White"
+ },
+ "bw1-13": {
+  "name": "Deerling",
+  "setName": "Black & White"
+ },
+ "bw1-15": {
+  "name": "Tepig",
+  "setName": "Black & White"
+ },
+ "bw1-30": {
+  "name": "Dewott",
+  "setName": "Black & White"
+ },
+ "bw1-36": {
+  "name": "Ducklett",
+  "setName": "Black & White"
+ },
+ "bw1-48": {
+  "name": "Munna",
+  "setName": "Black & White"
+ },
+ "bw1-51": {
+  "name": "Swoobat",
+  "setName": "Black & White"
+ },
+ "bw2-11": {
+  "name": "Whimsicott",
+  "setName": "Emerging Powers"
+ },
+ "bw2-12": {
+  "name": "Whimsicott",
+  "setName": "Emerging Powers"
+ },
+ "bw2-13": {
+  "name": "Petilil",
+  "setName": "Emerging Powers"
+ },
+ "bw2-14": {
+  "name": "Lilligant",
+  "setName": "Emerging Powers"
+ },
+ "bw2-29": {
+  "name": "Cubchoo",
+  "setName": "Emerging Powers"
+ },
+ "bw2-83": {
+  "name": "Audino",
+  "setName": "Emerging Powers"
+ },
+ "bw2-84": {
+  "name": "Minccino",
+  "setName": "Emerging Powers"
+ },
+ "bw2-85": {
+  "name": "Cinccino",
+  "setName": "Emerging Powers"
+ },
+ "bw3-6": {
+  "name": "Dwebble",
+  "setName": "Noble Victories"
+ },
+ "bwp-BW17": {
+  "name": "Ducklett",
+  "setName": "BW Black Star Promos"
+ },
+ "col1-18": {
+  "name": "Pachirisu",
+  "setName": "Call of Legends"
+ },
+ "col1-23": {
+  "name": "Ampharos",
+  "setName": "Call of Legends"
+ },
+ "hgss1-44": {
+  "name": "Igglybuff",
+  "setName": "HeartGold & SoulSilver"
+ },
+ "hgss1-45": {
+  "name": "Mantine",
+  "setName": "HeartGold & SoulSilver"
+ },
+ "hgss1-51": {
+  "name": "Skiploom",
+  "setName": "HeartGold & SoulSilver"
+ },
+ "hgss1-57": {
+  "name": "Caterpie",
+  "setName": "HeartGold & SoulSilver"
+ },
+ "hgss1-6": {
+  "name": "Jumpluff",
+  "setName": "HeartGold & SoulSilver"
+ },
+ "hgss1-77": {
+  "name": "Phanpy",
+  "setName": "HeartGold & SoulSilver"
+ },
+ "hgss1-87": {
+  "name": "Vulpix",
+  "setName": "HeartGold & SoulSilver"
+ },
+ "hgss1-9": {
+  "name": "Quagsire",
+  "setName": "HeartGold & SoulSilver"
+ },
+ "hgss2-3": {
+  "name": "Manaphy",
+  "setName": "HS—Unleashed"
+ },
+ "hgss2-69": {
+  "name": "Weedle",
+  "setName": "HS—Unleashed"
+ },
+ "hgss3-1": {
+  "name": "Bellossom",
+  "setName": "HS—Undaunted"
+ },
+ "hgss3-70": {
+  "name": "Togepi",
+  "setName": "HS—Undaunted"
+ },
+ "hgss3-9": {
+  "name": "Togekiss",
+  "setName": "HS—Undaunted"
+ },
+ "hgss4-2": {
+  "name": "Altaria",
+  "setName": "HS—Triumphant"
+ },
+ "hgss4-3": {
+  "name": "Celebi",
+  "setName": "HS—Triumphant"
+ },
+ "hgss4-57": {
+  "name": "Bellsprout",
+  "setName": "HS—Triumphant"
+ },
+ "hgss4-65": {
+  "name": "Kricketot",
+  "setName": "HS—Triumphant"
+ },
+ "hgss4-66": {
+  "name": "Lickitung",
+  "setName": "HS—Triumphant"
+ },
+ "hgss4-77": {
+  "name": "Spoink",
+  "setName": "HS—Triumphant"
+ },
+ "pl4-15": {
+  "name": "Cherrim",
+  "setName": "Arceus"
+ },
+ "dp1-18": {
+  "name": "Azumarill",
+  "setName": "Diamond & Pearl"
+ },
+ "dp1-45": {
+  "name": "Cherrim",
+  "setName": "Diamond & Pearl"
+ },
+ "dp1-77": {
+  "name": "Clefairy",
+  "setName": "Diamond & Pearl"
+ },
+ "dp1-78": {
+  "name": "Cleffa",
+  "setName": "Diamond & Pearl"
+ },
+ "dp1-88": {
+  "name": "Marill",
+  "setName": "Diamond & Pearl"
+ },
+ "dp1-9": {
+  "name": "Manaphy",
+  "setName": "Diamond & Pearl"
+ },
+ "dp1-91": {
+  "name": "Misdreavus",
+  "setName": "Diamond & Pearl"
+ },
+ "dp1-94": {
+  "name": "Ponyta",
+  "setName": "Diamond & Pearl"
+ },
+ "dp2-102": {
+  "name": "Spheal",
+  "setName": "Mysterious Treasures"
+ },
+ "dp2-5": {
+  "name": "Blissey",
+  "setName": "Mysterious Treasures"
+ },
+ "dp2-76": {
+  "name": "Chansey",
+  "setName": "Mysterious Treasures"
+ },
+ "dp2-77": {
+  "name": "Chikorita",
+  "setName": "Mysterious Treasures"
+ },
+ "dp2-83": {
+  "name": "Finneon",
+  "setName": "Mysterious Treasures"
+ },
+ "dp2-86": {
+  "name": "Kricketot",
+  "setName": "Mysterious Treasures"
+ },
+ "dp2-98": {
+  "name": "Shinx",
+  "setName": "Mysterious Treasures"
+ },
+ "dpp-DP04": {
+  "name": "Pachirisu",
+  "setName": "DP Black Star Promos"
+ },
+ "ex13-19": {
+  "name": "Bellossom δ",
+  "setName": "Holon Phantoms"
+ },
+ "ex13-47": {
+  "name": "Masquerain",
+  "setName": "Holon Phantoms"
+ },
+ "ex13-73": {
+  "name": "Oddish δ",
+  "setName": "Holon Phantoms"
+ },
+ "ex13-75": {
+  "name": "Phanpy",
+  "setName": "Holon Phantoms"
+ },
+ "ex13-83": {
+  "name": "Torchic",
+  "setName": "Holon Phantoms"
+ },
+ "ex14-41": {
+  "name": "Skitty",
+  "setName": "Crystal Guardians"
+ },
+ "ex14-49": {
+  "name": "Charmander δ",
+  "setName": "Crystal Guardians"
+ },
+ "ex14-58": {
+  "name": "Mudkip",
+  "setName": "Crystal Guardians"
+ },
+ "ex14-62": {
+  "name": "Spoink",
+  "setName": "Crystal Guardians"
+ },
+ "ex14-66": {
+  "name": "Torchic",
+  "setName": "Crystal Guardians"
+ },
+ "ex14-7": {
+  "name": "Luvdisc",
+  "setName": "Crystal Guardians"
+ },
+ "ex15-15": {
+  "name": "Dewgong δ",
+  "setName": "Dragon Frontiers"
+ },
+ "ex15-19": {
+  "name": "Lickitung δ",
+  "setName": "Dragon Frontiers"
+ },
+ "ex15-44": {
+  "name": "Chikorita δ",
+  "setName": "Dragon Frontiers"
+ },
+ "ex15-70": {
+  "name": "Vulpix δ",
+  "setName": "Dragon Frontiers"
+ },
+ "ex15-71": {
+  "name": "Wooper δ",
+  "setName": "Dragon Frontiers"
+ },
+ "ex16-37": {
+  "name": "Sealeo",
+  "setName": "Power Keepers"
+ },
+ "ex16-62": {
+  "name": "Skitty",
+  "setName": "Power Keepers"
+ },
+ "ex16-65": {
+  "name": "Spheal",
+  "setName": "Power Keepers"
+ },
+ "pop3-4": {
+  "name": "Minun",
+  "setName": "POP Series 3"
+ },
+ "pop4-14": {
+  "name": "Squirtle",
+  "setName": "POP Series 4"
+ },
+ "pop5-10": {
+  "name": "Charmander δ",
+  "setName": "POP Series 5"
+ },
+ "pop6-15": {
+  "name": "Piplup",
+  "setName": "POP Series 6"
+ },
+ "tk2b-5": {
+  "name": "Mareep",
+  "setName": "EX Trainer Kit 2 Minun"
+ },
+ "ex10-3": {
+  "name": "Bellossom",
+  "setName": "Unseen Forces"
+ },
+ "ex10-37": {
+  "name": "Corsola",
+  "setName": "Unseen Forces"
+ },
+ "ex10-44": {
+  "name": "Quagsire",
+  "setName": "Unseen Forces"
+ },
+ "ex11-20": {
+  "name": "Azurill",
+  "setName": "Delta Species"
+ },
+ "ex11-29": {
+  "name": "Snow-cloud Castform",
+  "setName": "Delta Species"
+ },
+ "ex11-31": {
+  "name": "Sunny Castform",
+  "setName": "Delta Species"
+ },
+ "ex11-35": {
+  "name": "Ditto",
+  "setName": "Delta Species"
+ },
+ "ex12-17": {
+  "name": "Gorebyss",
+  "setName": "Legend Maker"
+ },
+ "ex12-65": {
+  "name": "Spheal",
+  "setName": "Legend Maker"
+ },
+ "ex3-7": {
+  "name": "Minun",
+  "setName": "Dragon"
+ },
+ "ex3-8": {
+  "name": "Plusle",
+  "setName": "Dragon"
+ },
+ "ex4-39": {
+  "name": "Bulbasaur",
+  "setName": "Team Magma vs Team Aqua"
+ },
+ "ex5-18": {
+  "name": "Gorebyss",
+  "setName": "Hidden Legends"
+ },
+ "ex5-20": {
+  "name": "Masquerain",
+  "setName": "Hidden Legends"
+ },
+ "ex5-23": {
+  "name": "Rain Castform",
+  "setName": "Hidden Legends"
+ },
+ "ex5-25": {
+  "name": "Snow-cloud Castform",
+  "setName": "Hidden Legends"
+ },
+ "ex5-37": {
+  "name": "Igglybuff",
+  "setName": "Hidden Legends"
+ },
+ "ex5-40": {
+  "name": "Luvdisc",
+  "setName": "Hidden Legends"
+ },
+ "ex5-47": {
+  "name": "Sealeo",
+  "setName": "Hidden Legends"
+ },
+ "ex5-63": {
+  "name": "Jigglypuff",
+  "setName": "Hidden Legends"
+ },
+ "ex6-3": {
+  "name": "Dewgong",
+  "setName": "FireRed & LeafGreen"
+ },
+ "ex6-4": {
+  "name": "Ditto",
+  "setName": "FireRed & LeafGreen"
+ },
+ "ex6-54": {
+  "name": "Bulbasaur",
+  "setName": "FireRed & LeafGreen"
+ },
+ "ex6-64": {
+  "name": "Growlithe",
+  "setName": "FireRed & LeafGreen"
+ },
+ "ex6-76": {
+  "name": "Ponyta",
+  "setName": "FireRed & LeafGreen"
+ },
+ "ex7-1": {
+  "name": "Azumarill",
+  "setName": "Team Rocket Returns"
+ },
+ "ex7-45": {
+  "name": "Mantine",
+  "setName": "Team Rocket Returns"
+ },
+ "ex7-53": {
+  "name": "Dratini",
+  "setName": "Team Rocket Returns"
+ },
+ "ex7-58": {
+  "name": "Horsea",
+  "setName": "Team Rocket Returns"
+ },
+ "ex7-75": {
+  "name": "Sentret",
+  "setName": "Team Rocket Returns"
+ },
+ "ex8-39": {
+  "name": "Masquerain",
+  "setName": "Deoxys"
+ },
+ "ex8-61": {
+  "name": "Goldeen",
+  "setName": "Deoxys"
+ },
+ "ex8-69": {
+  "name": "Phanpy",
+  "setName": "Deoxys"
+ },
+ "ex8-9": {
+  "name": "Jirachi",
+  "setName": "Deoxys"
+ },
+ "np-21": {
+  "name": "Jirachi",
+  "setName": "Nintendo Black Star Promos"
+ },
+ "pop1-12": {
+  "name": "Minun",
+  "setName": "POP Series 1"
+ },
+ "pop1-13": {
+  "name": "Plusle",
+  "setName": "POP Series 1"
+ },
+ "pop2-14": {
+  "name": "Luvdisc",
+  "setName": "POP Series 2"
+ },
+ "pop2-15": {
+  "name": "Phanpy",
+  "setName": "POP Series 2"
+ },
+ "tk1a-6": {
+  "name": "Skitty",
+  "setName": "EX Trainer Kit Latias"
+ },
+ "ecard1-124": {
+  "name": "Pikachu",
+  "setName": "Expedition Base Set"
+ },
+ "ecard1-136": {
+  "name": "Vulpix",
+  "setName": "Expedition Base Set"
+ },
+ "ecard1-41": {
+  "name": "Clefable",
+  "setName": "Expedition Base Set"
+ },
+ "ecard1-54": {
+  "name": "Meganium",
+  "setName": "Expedition Base Set"
+ },
+ "ecard1-58": {
+  "name": "Pichu",
+  "setName": "Expedition Base Set"
+ },
+ "ecard1-77": {
+  "name": "Flaaffy",
+  "setName": "Expedition Base Set"
+ },
+ "ecard1-98": {
+  "name": "Charmander",
+  "setName": "Expedition Base Set"
+ },
+ "ecard2-100": {
+  "name": "Phanpy",
+  "setName": "Aquapolis"
+ },
+ "ecard2-43": {
+  "name": "Vileplume",
+  "setName": "Aquapolis"
+ },
+ "ecard2-48": {
+  "name": "Furret",
+  "setName": "Aquapolis"
+ },
+ "ecard2-5": {
+  "name": "Bellossom",
+  "setName": "Aquapolis"
+ },
+ "ecard2-69": {
+  "name": "Chansey",
+  "setName": "Aquapolis"
+ },
+ "ecard2-97": {
+  "name": "Oddish",
+  "setName": "Aquapolis"
+ },
+ "ecard2-H5": {
+  "name": "Bellossom",
+  "setName": "Aquapolis"
+ },
+ "ecard3-105": {
+  "name": "Sunflora",
+  "setName": "Skyridge"
+ },
+ "ecard3-48": {
+  "name": "Cleffa",
+  "setName": "Skyridge"
+ },
+ "ecard3-67": {
+  "name": "Igglybuff",
+  "setName": "Skyridge"
+ },
+ "ex1-5": {
+  "name": "Delcatty",
+  "setName": "Ruby & Sapphire"
+ },
+ "ex1-62": {
+  "name": "Phanpy",
+  "setName": "Ruby & Sapphire"
+ },
+ "ex2-30": {
+  "name": "Azumarill",
+  "setName": "Sandstorm"
+ },
+ "ex3-75": {
+  "name": "Swablu",
+  "setName": "Dragon"
+ },
+ "ex3-9": {
+  "name": "Roselia",
+  "setName": "Dragon"
+ },
+ "ex3-98": {
+  "name": "Charmander",
+  "setName": "Dragon"
+ },
+ "neo1-3": {
+  "name": "Bellossom",
+  "setName": "Neo Genesis"
+ },
+ "neo1-30": {
+  "name": "Clefairy",
+  "setName": "Neo Genesis"
+ },
+ "neo1-51": {
+  "name": "Togepi",
+  "setName": "Neo Genesis"
+ },
+ "neo1-53": {
+  "name": "Chikorita",
+  "setName": "Neo Genesis"
+ },
+ "neo2-58": {
+  "name": "Mareep",
+  "setName": "Neo Discovery"
+ },
+ "neo2-62": {
+  "name": "Poliwag",
+  "setName": "Neo Discovery"
+ },
+ "neo3-54": {
+  "name": "Smoochum",
+  "setName": "Neo Revelation"
+ },
+ "neo4-23": {
+  "name": "Light Lanturn",
+  "setName": "Neo Destiny"
+ },
+ "neo4-31": {
+  "name": "Chansey",
+  "setName": "Neo Destiny"
+ },
+ "neo4-50": {
+  "name": "Light Ninetales",
+  "setName": "Neo Destiny"
+ },
+ "neo4-53": {
+  "name": "Light Venomoth",
+  "setName": "Neo Destiny"
+ },
+ "neo4-56": {
+  "name": "Togepi",
+  "setName": "Neo Destiny"
+ },
+ "neo4-66": {
+  "name": "Girafarig",
+  "setName": "Neo Destiny"
+ },
+ "neo4-72": {
+  "name": "Light Sunflora",
+  "setName": "Neo Destiny"
+ },
+ "neo4-76": {
+  "name": "Phanpy",
+  "setName": "Neo Destiny"
+ },
+ "neo4-91": {
+  "name": "Vulpix",
+  "setName": "Neo Destiny"
+ },
+ "np-8": {
+  "name": "Torchic",
+  "setName": "Nintendo Black Star Promos"
+ },
+ "base4-76": {
+  "name": "Goldeen",
+  "setName": "Base Set 2"
+ },
+ "base5-53": {
+  "name": "Dratini",
+  "setName": "Team Rocket"
+ },
+ "basep-20": {
+  "name": "Psyduck",
+  "setName": "Wizards Black Star Promos"
+ },
+ "gym2-10": {
+  "name": "Koga's Ditto",
+  "setName": "Gym Challenge"
+ },
+ "gym2-40": {
+  "name": "Erika's Clefairy",
+  "setName": "Gym Challenge"
+ },
+ "gym2-64": {
+  "name": "Blaine's Ponyta",
+  "setName": "Gym Challenge"
+ },
+ "neo1-58": {
+  "name": "Girafarig",
+  "setName": "Neo Genesis"
+ },
+ "neo1-68": {
+  "name": "Oddish",
+  "setName": "Neo Genesis"
+ },
+ "me25-117": {
+  "name": "Carbink",
+  "setName": "Ascended Heroes"
+ },
+ "me25-219": {
+  "name": "Beautifly",
+  "setName": "Ascended Heroes"
+ },
+ "me25-221": {
+  "name": "Budew",
+  "setName": "Ascended Heroes"
+ },
+ "me25-226": {
+  "name": "Psyduck",
+  "setName": "Ascended Heroes"
+ },
+ "me25-235": {
+  "name": "Togekiss",
+  "setName": "Ascended Heroes"
+ },
+ "me25-242": {
+  "name": "Carbink",
+  "setName": "Ascended Heroes"
+ },
+ "me25-272": {
+  "name": "Mega Meganium ex",
+  "setName": "Ascended Heroes"
+ },
+ "me25-36": {
+  "name": "Scorbunny",
+  "setName": "Ascended Heroes"
+ },
+ "me25-39": {
+  "name": "Psyduck",
+  "setName": "Ascended Heroes"
+ },
+ "me25-63": {
+  "name": "Helioptile",
+  "setName": "Ascended Heroes"
+ },
+ "me25-82": {
+  "name": "Togekiss",
+  "setName": "Ascended Heroes"
+ },
+ "sv105w-1": {
+  "name": "Snivy",
+  "setName": "Black Bolt"
+ },
+ "sv105w-25": {
+  "name": "Cubchoo",
+  "setName": "Black Bolt"
+ },
+ "sv105w-33": {
+  "name": "Thundurus",
+  "setName": "Black Bolt"
+ },
+ "sv105w-6": {
+  "name": "Petilil",
+  "setName": "Black Bolt"
+ },
+ "sv105b-38": {
+  "name": "Sigilyph",
+  "setName": "White Flare"
+ },
+ "sv105b-6": {
+  "name": "Deerling",
+  "setName": "White Flare"
+ },
+ "sv105b-74": {
+  "name": "Lillipup",
+  "setName": "White Flare"
+ },
+ "sv105b-75": {
+  "name": "Herdier",
+  "setName": "White Flare"
+ },
+ "sv105b-76": {
+  "name": "Stoutland",
+  "setName": "White Flare"
+ },
+ "sv105b-77": {
+  "name": "Bouffalant ex",
+  "setName": "White Flare"
+ },
+ "sv105b-91": {
+  "name": "Deerling",
+  "setName": "White Flare"
+ },
+ "sv105b-92": {
+  "name": "Sawsbuck",
+  "setName": "White Flare"
+ },
+ "sv105w-105": {
+  "name": "Seismitoad",
+  "setName": "Black Bolt"
+ },
+ "sv105w-114": {
+  "name": "Eelektrik",
+  "setName": "Black Bolt"
+ },
+ "sv105w-116": {
+  "name": "Munna",
+  "setName": "Black Bolt"
+ },
+ "sv105w-120": {
+  "name": "Elgyem",
+  "setName": "Black Bolt"
+ },
+ "sv105w-154": {
+  "name": "Rufflet",
+  "setName": "Black Bolt"
+ },
+ "sv105w-165": {
+  "name": "Kyurem ex",
+  "setName": "Black Bolt"
+ },
+ "sv105w-74": {
+  "name": "Audino",
+  "setName": "Black Bolt"
+ },
+ "sv105w-87": {
+  "name": "Snivy",
+  "setName": "Black Bolt"
+ },
+ "sv105w-88": {
+  "name": "Servine",
+  "setName": "Black Bolt"
+ },
+ "sv105w-90": {
+  "name": "Simisage",
+  "setName": "Black Bolt"
+ },
+ "sv105w-91": {
+  "name": "Petilil",
+  "setName": "Black Bolt"
+ },
+ "sv105w-96": {
+  "name": "Amoonguss",
+  "setName": "Black Bolt"
+ },
+ "sv105b-103": {
+  "name": "Chandelure",
+  "setName": "White Flare"
+ },
+ "sv105b-113": {
+  "name": "Vanilluxe",
+  "setName": "White Flare"
+ },
+ "sv105b-116": {
+  "name": "Joltik",
+  "setName": "White Flare"
+ },
+ "sv105b-117": {
+  "name": "Galvantula",
+  "setName": "White Flare"
+ },
+ "sv105b-119": {
+  "name": "Woobat",
+  "setName": "White Flare"
+ },
+ "sv105b-153": {
+  "name": "Watchog",
+  "setName": "White Flare"
+ },
+ "sv45-7": {
+  "name": "Charmander",
+  "setName": "Paldean Fates"
+ },
+ "sv65-1": {
+  "name": "Joltik",
+  "setName": "Shrouded Fable"
+ },
+ "sv65-3": {
+  "name": "Rowlet",
+  "setName": "Shrouded Fable"
+ },
+ "sv65-48": {
+  "name": "Meowth",
+  "setName": "Shrouded Fable"
+ },
+ "sv65-50": {
+  "name": "Eevee",
+  "setName": "Shrouded Fable"
+ },
+ "sv65-52": {
+  "name": "Stufful",
+  "setName": "Shrouded Fable"
+ },
+ "sv65-67": {
+  "name": "Horsea",
+  "setName": "Shrouded Fable"
+ },
+ "sv65-71": {
+  "name": "Cresselia",
+  "setName": "Shrouded Fable"
+ },
+ "sv65-76": {
+  "name": "Cufant",
+  "setName": "Shrouded Fable"
+ },
+ "sv85-144": {
+  "name": "Leafeon ex",
+  "setName": "Prismatic Evolutions"
+ },
+ "sv85-7": {
+  "name": "Cottonee",
+  "setName": "Prismatic Evolutions"
+ },
+ "sv85-83": {
+  "name": "Buneary",
+  "setName": "Prismatic Evolutions"
+ },
+ "sv35-10": {
+  "name": "Caterpie",
+  "setName": "151"
+ },
+ "sv35-108": {
+  "name": "Lickitung",
+  "setName": "151"
+ },
+ "sv35-12": {
+  "name": "Butterfree",
+  "setName": "151"
+ },
+ "sv35-13": {
+  "name": "Weedle",
+  "setName": "151"
+ },
+ "sv35-147": {
+  "name": "Dratini",
+  "setName": "151"
+ },
+ "sv35-15": {
+  "name": "Beedrill",
+  "setName": "151"
+ },
+ "sv35-166": {
+  "name": "Bulbasaur",
+  "setName": "151"
+ },
+ "sv35-172": {
+  "name": "Caterpie",
+  "setName": "151"
+ },
+ "sv35-35": {
+  "name": "Clefairy",
+  "setName": "151"
+ },
+ "sv35-43": {
+  "name": "Oddish",
+  "setName": "151"
+ },
+ "sv35-45": {
+  "name": "Vileplume",
+  "setName": "151"
+ },
+ "sv35-54": {
+  "name": "Psyduck",
+  "setName": "151"
+ },
+ "sv35-60": {
+  "name": "Poliwag",
+  "setName": "151"
+ },
+ "sv35-7": {
+  "name": "Squirtle",
+  "setName": "151"
+ },
+ "sv35-79": {
+  "name": "Slowpoke",
+  "setName": "151"
+ },
+ "sv45-109": {
+  "name": "Charmander",
+  "setName": "Paldean Fates"
+ },
+ "sv45-226": {
+  "name": "Pawmi",
+  "setName": "Paldean Fates"
+ },
+ "sm2-10": {
+  "name": "Victini",
+  "setName": "Guardians Rising"
+ },
+ "sm2-102": {
+  "name": "Blissey",
+  "setName": "Guardians Rising"
+ },
+ "sm2-5": {
+  "name": "Lilligant",
+  "setName": "Guardians Rising"
+ },
+ "sm2-91": {
+  "name": "Whimsicott",
+  "setName": "Guardians Rising"
+ },
+ "sm2-93": {
+  "name": "Comfey",
+  "setName": "Guardians Rising"
+ },
+ "sm2-95": {
+  "name": "Sliggoo",
+  "setName": "Guardians Rising"
+ },
+ "sv35-175": {
+  "name": "Psyduck",
+  "setName": "151"
+ },
+ "sv35-199": {
+  "name": "Charizard ex",
+  "setName": "151"
+ },
+ "mcd16-8": {
+  "name": "Jigglypuff",
+  "setName": "McDonald's Collection 2016"
+ },
+ "sm1-28": {
+  "name": "Psyduck",
+  "setName": "Sun & Moon"
+ },
+ "sm1-40": {
+  "name": "Brionne",
+  "setName": "Sun & Moon"
+ },
+ "sm1-53": {
+  "name": "Togedemaru",
+  "setName": "Sun & Moon"
+ },
+ "sm1-7": {
+  "name": "Surskit",
+  "setName": "Sun & Moon"
+ },
+ "sm1-8": {
+  "name": "Masquerain",
+  "setName": "Sun & Moon"
+ },
+ "sm1-93": {
+  "name": "Ribombee",
+  "setName": "Sun & Moon"
+ },
+ "smp-SM24": {
+  "name": "Popplio",
+  "setName": "SM Black Star Promos"
+ },
+ "xy11-28": {
+  "name": "Shellos",
+  "setName": "Steam Siege"
+ },
+ "xy11-40": {
+  "name": "Ampharos",
+  "setName": "Steam Siege"
+ },
+ "xy11-5": {
+  "name": "Jumpluff",
+  "setName": "Steam Siege"
+ },
+ "xy11-69": {
+  "name": "Shieldon",
+  "setName": "Steam Siege"
+ },
+ "xy11-76": {
+  "name": "Marill",
+  "setName": "Steam Siege"
+ },
+ "xy12-14": {
+  "name": "Vulpix",
+  "setName": "Evolutions"
+ },
+ "xyp-XY139": {
+  "name": "Floette",
+  "setName": "XY Black Star Promos"
+ },
+ "xyp-XY187": {
+  "name": "Celebi",
+  "setName": "XY Black Star Promos"
+ },
+ "xyp-XY188": {
+  "name": "Shaymin",
+  "setName": "XY Black Star Promos"
+ },
+ "xyp-XY192": {
+  "name": "Mew",
+  "setName": "XY Black Star Promos"
+ },
+ "xyp-XY193": {
+  "name": "Meloetta",
+  "setName": "XY Black Star Promos"
+ },
+ "xyp-XY195": {
+  "name": "Jirachi",
+  "setName": "XY Black Star Promos"
+ },
+ "g1-50": {
+  "name": "Clefairy",
+  "setName": "Generations"
+ },
+ "g1-51": {
+  "name": "Clefable",
+  "setName": "Generations"
+ },
+ "xy10-16": {
+  "name": "Dewgong",
+  "setName": "Fates Collide"
+ },
+ "xy10-49": {
+  "name": "Carbink",
+  "setName": "Fates Collide"
+ },
+ "xy10-71": {
+  "name": "Whimsicott",
+  "setName": "Fates Collide"
+ },
+ "xy10-8": {
+  "name": "Deerling",
+  "setName": "Fates Collide"
+ },
+ "xy10-84": {
+  "name": "Audino-EX",
+  "setName": "Fates Collide"
+ },
+ "xy10-88": {
+  "name": "Cinccino",
+  "setName": "Fates Collide"
+ },
+ "xy4-20": {
+  "name": "Frillish",
+  "setName": "Phantom Forces"
+ },
+ "xy4-28": {
+  "name": "Helioptile",
+  "setName": "Phantom Forces"
+ },
+ "xy4-29": {
+  "name": "Helioptile",
+  "setName": "Phantom Forces"
+ },
+ "xy5-104": {
+  "name": "Azumarill",
+  "setName": "Primal Clash"
+ },
+ "xy5-111": {
+  "name": "Zigzagoon",
+  "setName": "Primal Clash"
+ },
+ "xyp-XY111": {
+  "name": "Celebi",
+  "setName": "XY Black Star Promos"
+ },
+ "xyp-XY113": {
+  "name": "Manaphy",
+  "setName": "XY Black Star Promos"
+ },
+ "xyp-XY115": {
+  "name": "Shaymin",
+  "setName": "XY Black Star Promos"
+ },
+ "xyp-XY38": {
+  "name": "Mudkip",
+  "setName": "XY Black Star Promos"
+ },
+ "xy2-62": {
+  "name": "Flabébé",
+  "setName": "Flashfire"
+ },
+ "xy2-63": {
+  "name": "Flabébé",
+  "setName": "Flashfire"
+ },
+ "xy2-64": {
+  "name": "Floette",
+  "setName": "Flashfire"
+ },
+ "xy2-65": {
+  "name": "Floette",
+  "setName": "Flashfire"
+ },
+ "xy2-67": {
+  "name": "Spritzee",
+  "setName": "Flashfire"
+ },
+ "xy3-12": {
+  "name": "Torchic",
+  "setName": "Furious Fists"
+ },
+ "xy3-21": {
+  "name": "Cubchoo",
+  "setName": "Furious Fists"
+ },
+ "xy3-25": {
+  "name": "Amaura",
+  "setName": "Furious Fists"
+ },
+ "xy3-71": {
+  "name": "Clefable",
+  "setName": "Furious Fists"
+ },
+ "xy3-72": {
+  "name": "Sylveon",
+  "setName": "Furious Fists"
+ },
+ "xy3-80": {
+  "name": "Eevee",
+  "setName": "Furious Fists"
+ },
+ "xy4-69": {
+  "name": "Slurpuff",
+  "setName": "Phantom Forces"
+ },
+ "xy4-76": {
+  "name": "Sliggoo",
+  "setName": "Phantom Forces"
+ },
+ "xy4-87": {
+  "name": "Bunnelby",
+  "setName": "Phantom Forces"
+ },
+ "xyp-XY15": {
+  "name": "Slurpuff",
+  "setName": "XY Black Star Promos"
+ },
+ "bwp-BW87": {
+  "name": "Leafeon",
+  "setName": "BW Black Star Promos"
+ },
+ "pl3-52": {
+  "name": "Breloom",
+  "setName": "Supreme Victors"
+ },
+ "pl3-55": {
+  "name": "Cherrim",
+  "setName": "Supreme Victors"
+ },
+ "pl4-46": {
+  "name": "Ponyta",
+  "setName": "Arceus"
+ },
+ "pl4-55": {
+  "name": "Buneary",
+  "setName": "Arceus"
+ },
+ "pl4-60": {
+  "name": "Cherubi",
+  "setName": "Arceus"
+ },
+ "xy1-104": {
+  "name": "Skitty",
+  "setName": "XY"
+ },
+ "xy1-113": {
+  "name": "Fletchling",
+  "setName": "XY"
+ },
+ "xy1-15": {
+  "name": "Scatterbug",
+  "setName": "XY"
+ },
+ "xy1-17": {
+  "name": "Vivillon",
+  "setName": "XY"
+ },
+ "xy1-49": {
+  "name": "Spoink",
+  "setName": "XY"
+ },
+ "xy1-56": {
+  "name": "Pumpkaboo",
+  "setName": "XY"
+ },
+ "xy1-88": {
+  "name": "Jigglypuff",
+  "setName": "XY"
+ },
+ "xy1-90": {
+  "name": "Wigglytuff",
+  "setName": "XY"
+ },
+ "xy1-92": {
+  "name": "Spritzee",
+  "setName": "XY"
+ },
+ "xy2-72": {
+  "name": "Goomy",
+  "setName": "Flashfire"
+ },
+ "xy2-74": {
+  "name": "Goodra",
+  "setName": "Flashfire"
+ },
+ "xy2-81": {
+  "name": "Sentret",
+  "setName": "Flashfire"
+ },
+ "xyp-XY11": {
+  "name": "Skiddo",
+  "setName": "XY Black Star Promos"
+ },
+ "pl1-1": {
+  "name": "Ampharos",
+  "setName": "Platinum"
+ },
+ "pl1-14": {
+  "name": "Shaymin",
+  "setName": "Platinum"
+ },
+ "pl1-18": {
+  "name": "Altaria",
+  "setName": "Platinum"
+ },
+ "pl1-21": {
+  "name": "Beautifly",
+  "setName": "Platinum"
+ },
+ "pl1-4": {
+  "name": "Delcatty",
+  "setName": "Platinum"
+ },
+ "pl2-34": {
+  "name": "Vaporeon",
+  "setName": "Rising Rivals"
+ },
+ "pl2-7": {
+  "name": "Jirachi",
+  "setName": "Rising Rivals"
+ },
+ "pl3-109": {
+  "name": "Kricketot",
+  "setName": "Supreme Victors"
+ },
+ "pl3-118": {
+  "name": "Pachirisu",
+  "setName": "Supreme Victors"
+ },
+ "pl3-121": {
+  "name": "Piplup",
+  "setName": "Supreme Victors"
+ },
+ "pl3-123": {
+  "name": "Roselia",
+  "setName": "Supreme Victors"
+ },
+ "pl3-125": {
+  "name": "Seel",
+  "setName": "Supreme Victors"
+ },
+ "pl3-68": {
+  "name": "Masquerain",
+  "setName": "Supreme Victors"
+ },
+ "pl3-71": {
+  "name": "Minun",
+  "setName": "Supreme Victors"
+ },
+ "pl3-76": {
+  "name": "Plusle",
+  "setName": "Supreme Victors"
+ },
+ "pl3-91": {
+  "name": "Bidoof",
+  "setName": "Supreme Victors"
+ },
+ "pl3-96": {
+  "name": "Cherubi",
+  "setName": "Supreme Victors"
+ },
+ "pl3-99": {
+  "name": "Combee",
+  "setName": "Supreme Victors"
+ },
+ "pop9-16": {
+  "name": "Piplup",
+  "setName": "POP Series 9"
+ },
+ "pop9-2": {
+  "name": "Manaphy",
+  "setName": "POP Series 9"
+ },
+ "dp6-20": {
+  "name": "Bellossom",
+  "setName": "Legends Awakened"
+ },
+ "dp6-27": {
+  "name": "Ditto",
+  "setName": "Legends Awakened"
+ },
+ "dp6-49": {
+  "name": "Castform Rain Form",
+  "setName": "Legends Awakened"
+ },
+ "dp6-50": {
+  "name": "Castform Snow-Cloud Form",
+  "setName": "Legends Awakened"
+ },
+ "dp6-51": {
+  "name": "Castform Sunny Form",
+  "setName": "Legends Awakened"
+ },
+ "dp7-45": {
+  "name": "Pichu",
+  "setName": "Stormfront"
+ },
+ "dp7-52": {
+  "name": "Staravia",
+  "setName": "Stormfront"
+ },
+ "dp7-58": {
+  "name": "Drifloon",
+  "setName": "Stormfront"
+ },
+ "dp7-71": {
+  "name": "Ponyta",
+  "setName": "Stormfront"
+ },
+ "dp7-72": {
+  "name": "Roselia",
+  "setName": "Stormfront"
+ },
+ "dp7-75": {
+  "name": "Starly",
+  "setName": "Stormfront"
+ },
+ "pl1-102": {
+  "name": "Vulpix",
+  "setName": "Platinum"
+ },
+ "pl1-22": {
+  "name": "Blissey",
+  "setName": "Platinum"
+ },
+ "pl1-35": {
+  "name": "Luvdisc",
+  "setName": "Platinum"
+ },
+ "pl1-38": {
+  "name": "Shaymin",
+  "setName": "Platinum"
+ },
+ "pl1-76": {
+  "name": "Happiny",
+  "setName": "Platinum"
+ },
+ "pl1-80": {
+  "name": "Lickitung",
+  "setName": "Platinum"
+ },
+ "pl1-82": {
+  "name": "Mareep",
+  "setName": "Platinum"
+ },
+ "pl1-93": {
+  "name": "Skitty",
+  "setName": "Platinum"
+ },
+ "pop8-6": {
+  "name": "Cherrim",
+  "setName": "POP Series 8"
+ },
+ "dp3-11": {
+  "name": "Jumpluff",
+  "setName": "Secret Wonders"
+ },
+ "dp3-50": {
+  "name": "Flaaffy",
+  "setName": "Secret Wonders"
+ },
+ "dp4-2": {
+  "name": "Cresselia",
+  "setName": "Great Encounters"
+ },
+ "dp4-38": {
+  "name": "Gorebyss",
+  "setName": "Great Encounters"
+ },
+ "dp4-72": {
+  "name": "Jigglypuff",
+  "setName": "Great Encounters"
+ },
+ "dp4-82": {
+  "name": "Slowpoke",
+  "setName": "Great Encounters"
+ },
+ "dp4-86": {
+  "name": "Swablu",
+  "setName": "Great Encounters"
+ },
+ "dp4-89": {
+  "name": "Torchic",
+  "setName": "Great Encounters"
+ },
+ "dp5-12": {
+  "name": "Phione",
+  "setName": "Majestic Dawn"
+ },
+ "dp5-18": {
+  "name": "Espeon",
+  "setName": "Majestic Dawn"
+ },
+ "dp5-27": {
+  "name": "Phione",
+  "setName": "Majestic Dawn"
+ },
+ "dp5-59": {
+  "name": "Combee",
+  "setName": "Majestic Dawn"
+ },
+ "dp5-62": {
+  "name": "Eevee",
+  "setName": "Majestic Dawn"
+ },
+ "dp5-8": {
+  "name": "Manaphy",
+  "setName": "Majestic Dawn"
+ },
+ "dp6-114": {
+  "name": "Poliwag",
+  "setName": "Legends Awakened"
+ },
+ "dp6-119": {
+  "name": "Skitty",
+  "setName": "Legends Awakened"
+ },
+ "dp6-121": {
+  "name": "Spoink",
+  "setName": "Legends Awakened"
+ },
+ "dp6-86": {
+  "name": "Buneary",
+  "setName": "Legends Awakened"
+ },
+ "pop7-1": {
+  "name": "Ampharos",
+  "setName": "POP Series 7"
+ },
+ "pop7-16": {
+  "name": "Sentret",
+  "setName": "POP Series 7"
+ },
+ "dp3-107": {
+  "name": "Shellos West Sea",
+  "setName": "Secret Wonders"
+ },
+ "dp3-109": {
+  "name": "Shuckle",
+  "setName": "Secret Wonders"
+ },
+ "dp3-112": {
+  "name": "Squirtle",
+  "setName": "Secret Wonders"
+ },
+ "dp3-62": {
+  "name": "Roselia",
+  "setName": "Secret Wonders"
+ },
+ "dp3-67": {
+  "name": "Smoochum",
+  "setName": "Secret Wonders"
+ },
+ "dp3-83": {
+  "name": "Clefairy",
+  "setName": "Secret Wonders"
+ },
+ "dp3-85": {
+  "name": "Diglett",
+  "setName": "Secret Wonders"
+ },
+ "dp3-98": {
+  "name": "Phanpy",
+  "setName": "Secret Wonders"
+ },
+ "pop6-11": {
+  "name": "Bidoof",
+  "setName": "POP Series 6"
+ },
+ "pop6-12": {
+  "name": "Buneary",
+  "setName": "POP Series 6"
+ },
+ "pop6-13": {
+  "name": "Cherubi",
+  "setName": "POP Series 6"
+ },
+ "pop6-3": {
+  "name": "Manaphy",
+  "setName": "POP Series 6"
+ },
+ "pop6-4": {
+  "name": "Pachirisu",
+  "setName": "POP Series 6"
+ },
+ "ba20c-16": {
+  "name": "Charmander",
+  "setName": ""
+ },
+ "ba20p-25": {
+  "name": "Alolan Raichu",
+  "setName": ""
+ },
+ "ba20p-45": {
+  "name": "Blitzle",
+  "setName": ""
+ },
+ "ba20p-5": {
+  "name": "Chansey",
+  "setName": ""
+ },
+ "ba22p-1": {
+  "name": "Yamper",
+  "setName": ""
+ },
+ "cclb-3": {
+  "name": "Blastoise",
+  "setName": ""
+ },
+ "cclc-1": {
+  "name": "Charmander",
+  "setName": ""
+ },
+ "mcd18fr-21": {
+  "name": "Slowpoke",
+  "setName": ""
+ },
+ "mcd19fr-21": {
+  "name": "Alolan Raichu",
+  "setName": ""
+ },
+ "mcd19fr-37": {
+  "name": "Lickitung",
+  "setName": ""
+ },
+ "mcd19fr-9": {
+  "name": "Charmander",
+  "setName": ""
+ },
+ "mcd23-1": {
+  "name": "Sprigatito",
+  "setName": ""
+ },
+ "mcd23-7": {
+  "name": "Pawmi",
+  "setName": ""
+ },
+ "mcd24-4": {
+  "name": "Jigglypuff",
+  "setName": ""
+ },
+ "me55cc-8": {
+  "name": "Delcatty",
+  "setName": ""
+ },
+ "mep-105": {
+  "name": "Mew",
+  "setName": ""
+ },
+ "mep-7": {
+  "name": "Psyduck",
+  "setName": ""
+ },
+ "mep-86": {
+  "name": "Slowpoke",
+  "setName": ""
+ },
+ "mfbs-1": {
+  "name": "Squirtle",
+  "setName": ""
+ },
+ "svp-191": {
+  "name": "Sprigatito",
+  "setName": ""
+ },
+ "svp-208": {
+  "name": "Victini",
+  "setName": ""
+ },
+ "tk10b-14": {
+  "name": "Pikachu",
+  "setName": ""
+ },
+ "tk3a-2": {
+  "name": "Floatzel",
+  "setName": ""
+ },
+ "tk3a-3": {
+  "name": "Goldeen",
+  "setName": ""
+ },
+ "tk5b-18": {
+  "name": "Audino",
+  "setName": ""
+ },
+ "tk7a-1": {
+  "name": "Fletchling",
+  "setName": ""
+ },
+ "tk7a-12": {
+  "name": "Bidoof",
+  "setName": ""
+ },
+ "tk7b-11": {
+  "name": "Pidgey",
+  "setName": ""
+ },
+ "tk7b-13": {
+  "name": "Clefairy",
+  "setName": ""
+ },
+ "tk7b-16": {
+  "name": "Clefable",
+  "setName": ""
+ },
+ "tk8a-27": {
+  "name": "Skitty",
+  "setName": ""
+ },
+ "tk9a-12": {
+  "name": "Blitzle",
+  "setName": ""
+ },
+ "tk9a-26": {
+  "name": "Blitzle",
+  "setName": ""
+ }
+}

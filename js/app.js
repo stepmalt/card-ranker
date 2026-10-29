@@ -508,7 +508,7 @@ function tierView(q) {
   const c = card(q.card);
   const left = d.progress.byStage.tier;
   return `<section class="play">
-    <div class="stage-note">${cards.length - left + 1} of ${cards.length} · how do you feel about ${esc(c.name)}?</div>
+    <div class="stage-note">${cards.length - left + 2} of ${cards.length} · how do you feel about ${esc(c.name)}?</div>
     <div class="tier-card-wrap arena" data-mode="single">
       <div class="slot">
         <button class="pick" data-hold="${c.image}" data-action="zoom" data-src="${c.image}" aria-label="${esc(c.name)} — view full size">

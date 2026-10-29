@@ -80,3 +80,24 @@ Notes:
 - **Keeping your save safe.** Your progress lives in the browser, and Safari on iPhone can clear a website's data if you don't visit it for about a week. The app asks the browser to keep its data permanently (browsers may say no). It reminds you to back up every 100 picks, and again when your last backup is 3 or more days old. On iPhone, the safest setup is to open the site in Safari, tap **Share → Add to Home Screen**, and always rank from that Home Screen icon. The app shows this tip once, and it's also under **⋯ → Add to Home Screen**. The Home Screen app has its own storage separate from Safari, so if you already have picks in Safari, **Back up** there first and **Load backup** inside the Home Screen app.
 - Saves belong to each browser and each address, so `localhost:8000` and the github.io site keep separate saves. Use **Back up** on one and **Load backup** on the other to move a ranking.
 - `.nojekyll` makes GitHub serve the files as they are.
+
+## Favourite cards ranker (`favorites/`)
+
+A second, completely separate ranker for the 928 cards in my Dex "cool cards" folder. It lives at `…/card-ranker/favorites/`, with its own copy of the code (`favorites/js/`, `favorites/css/`), its own save and its own backups. Nothing in it touches the Pokémon ranker, and Pokémon-ranker backups are refused there.
+
+How it ranks 928 cards in about 1,000–1,100 picks instead of 5,500:
+1. **Quick sort:** 12 cards per page (78 pages). Tap the ones you love. Only hearted cards go on; the rest are listed at the bottom as "not a favourite". You can heart or un-heart any card later from its detail sheet.
+2. **Tier draft** of your favourites, then the tier review step.
+3. **5 Swiss rounds.** Rounds 3–5 are contender rounds, for cards that could still make the finals.
+4. **Finals** for the top 60, so the top 50 is precise. Then boundary challenges at #10, #25 and #50, and a top 10 round robin.
+
+In simulations, a session with about 210 hearted cards took about 1,060 picks, and no true top-50 card missed the finals.
+
+Rebuilding its data (only needed if the folder changes):
+```bash
+favorites/source/download.sh                   # card images from Dex → favorites/source/originals/ (git-ignored, ~760 MB)
+python3 -I favorites/source/lookup_names.py    # card names from pokemontcg.io → names.json
+python3 favorites/source/build_cards.py        # WebP images, thumbnails and favorites/cards.json
+node favorites/source/simulate.mjs             # simulated session: picks and accuracy
+```
+`favorites/source/cool-cards-ids.txt` is the list of card IDs read from the Dex folder.
